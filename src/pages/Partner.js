@@ -1,14 +1,25 @@
 import * as React from "react"
 
 
+import {
+    becomeAPartner,
+    becomeAPartnerForm,
+    featureContent,
+    heroPartnerObj,
+} from "../components/SectionPartners/partnersItems";
+import AboutHero from "../components/Heroes/AboutHero";
+import PerksSlide from "../components/Perks/PerksSlide";
+import Features from "../components/Features/Features";
 
 const PartnerPage = () => {
     return (
         <>
-            <h1>PartnerPage Page</h1>
-            <p>Sunt labore ad culpa ipsum in cupidatat reprehenderit aliquip consectetur mollit quis deserunt.</p>
-            <p>Sunt labore ad culpa ipsum in cupidatat reprehenderit aliquip consectetur mollit quis deserunt.</p>
-            <p>Sunt labore ad culpa ipsum in cupidatat reprehenderit aliquip consectetur mollit quis deserunt.</p>
+            <AboutHero  heroObj={heroPartnerObj} />
+            <PerksSlide perksObj={heroPartnerObj.perks} />
+            <Features
+                background={"background-color-off-pink"}
+                content={featureContent}
+            />
         </>
     )
 }

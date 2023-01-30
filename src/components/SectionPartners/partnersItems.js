@@ -1,8 +1,8 @@
-import hydrachain from "../../../static/images/partners/hydra-logo.webp";
-import locktrip from "../../../static/images/partners/locktrip_logo.svg";
-import bitcoingold from "../../../static/images/partners/logo-btg-1.png";
-import unifarm from "../../../static/images/partners/unifrarm-logo.png";
-import stakingrewards from "../../../static/images/partners/stakingrewards.svg";
+import hydrachain from "../../images/partners/hydra-logo.webp";
+import locktrip from "../../images/partners/locktrip_logo.svg";
+import bitcoingold from "../../images/partners/logo-btg-1.png";
+import unifarm from "../../images/partners/unifrarm-logo.png";
+import stakingrewards from "../../images/partners/stakingrewards.svg";
 
 export const logosParners = [
     {

@@ -5,6 +5,10 @@ import SectionWallet from "../SectionWallet/SectionWallet";
 import SectionBank from "../SectionBank/SectionBank";
 import CryptoBank from "../CryptoBank/CryptoBank";
 import SectionPartners from "../SectionPartners/SectionPartners";
+import SectionCard from "../SectionCard/SectionCard";
+import SectionCta from "../SectionCta/SectionCta";
+import SectionPress from "../SectionPress/SectionPress";
+import SectionWealth from "../SectionWealth/SectionWealth";
 
 const heroObj = {
     titleObj: {
@@ -31,11 +35,15 @@ const cardContent = {
 export default function Home() {
     return (
        <>
-           <Hero heroObj={heroObj} />
+           <Hero heroObj={ heroObj } />
            <SectionWallet />
            <SectionBank />
            <CryptoBank />
            <SectionPartners />
+           <SectionCard cardContent={ cardContent }  />
+           <SectionWealth />
+           <SectionCta />
+           <SectionPress />
        </>
     );
 }
