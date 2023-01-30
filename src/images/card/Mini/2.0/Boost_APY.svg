@@ -1,0 +1,20 @@
+<svg width="109" height="109" xmlns="http://www.w3.org/2000/svg" fill="none">
+ <defs>
+  <clipPath id="clip0_117_5261">
+   <rect id="svg_1" x="26" y="26" fill="white" height="56" width="56"/>
+  </clipPath>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_2" fill="#3418d8" d="m10,48.0181c0,-20.9968 17.0213,-38.0181 38.0181,-38.0181l11.9638,0c20.9968,0 38.0181,17.0213 38.0181,38.0181l0,11.9638c0,20.9968 -17.0213,38.0181 -38.0181,38.0181l-11.9638,0c-20.9968,0 -38.0181,-17.0213 -38.0181,-38.0181l0,-11.9638z"/>
+  <g id="svg_3" clip-path="url(#clip0_117_5261)">
+   <path id="svg_4" stroke-miterlimit="10" stroke-width="2.5" stroke="#F3FBFD" d="m57.4381,70.7747c10.7074,0 19.3874,-8.68 19.3874,-19.3873c0,-10.7074 -8.68,-19.3874 -19.3874,-19.3874c-10.7073,0 -19.3873,8.68 -19.3873,19.3874c0,10.7073 8.68,19.3873 19.3873,19.3873z"/>
+   <path id="svg_5" stroke-miterlimit="10" stroke-width="2.5" stroke="#F3FBFD" d="m49.5039,60.2093l16.8261,-16.8616"/>
+   <path id="svg_6" stroke-miterlimit="10" stroke-width="2.5" stroke="#F3FBFD" d="m63.3764,62.1297c1.6307,0 2.9526,-1.3219 2.9526,-2.9525c0,-1.6307 -1.3219,-2.9526 -2.9526,-2.9526c-1.6307,0 -2.9526,1.3219 -2.9526,2.9526c0,1.6306 1.3219,2.9525 2.9526,2.9525z"/>
+   <path id="svg_7" stroke-miterlimit="10" stroke-width="2.5" stroke="#F3FBFD" d="m52.5991,47.3671c1.6306,0 2.9525,-1.322 2.9525,-2.9526c0,-1.6307 -1.3219,-2.9526 -2.9525,-2.9526c-1.6307,0 -2.9526,1.3219 -2.9526,2.9526c0,1.6306 1.3219,2.9526 2.9526,2.9526z"/>
+   <path id="svg_8" stroke-miterlimit="10" stroke-width="2.5" stroke="#F3FBFD" d="m31.5742,77.6507l10.1619,-10.162"/>
+   <path id="svg_9" stroke-miterlimit="10" stroke-width="2.5" stroke="#F3FBFD" d="m37.2775,63.3081l-4.6584,4.6583"/>
+   <path id="svg_10" stroke-miterlimit="10" stroke-width="2.5" stroke="#F3FBFD" d="m45.5536,71.6094l-8.5531,8.5531"/>
+  </g>
+ </g>
+</svg>
