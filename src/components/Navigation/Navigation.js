@@ -3,7 +3,7 @@ import { useEffect, useState, useContext } from "react";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "gatsby";
-
+import Container from 'react-bootstrap/Container';
 import Modal from 'react-bootstrap/Modal';
 import { iconItems, menuItems, mobileIcon } from "./navItems";
 import ScanQrCode from "../QrCode/ScanQrCode";
@@ -67,40 +67,41 @@ export default function Navigation() {
                     <div className="is-nav navHeight">
                         <div className="nav_full-wrapper">
                             <Navbar className="nav_menu-links w-nav-menu navbar-main">
-                                <Navbar.Brand href="/" className="nav_left-wrapper">
-                                    <div className="nav_brandlink margin-right w-nav-brand">
-                                        <Link to="/">
-                                            <img
-                                                src={ChangeXLogoColor  || ''}
-                                                loading="lazy"
-                                                alt="ChangeX Logo"
-                                                className="nav_logo"
-                                            ></img>
-                                        </Link>
-                                    </div>
-                                </Navbar.Brand>
-                                <Nav activeKey={activeKey} className={"hide-mobile-landscape"}>
-                                    <>
-                                      {menuItems.map((menu, index) => {
-                                            return (
-                                                <div
-                                                    key={index}
-                                                    className={`nav_menu-links navDisplay ${
-                                                        menu.hasLine ? "navItemBorder" : ""
-                                                    }`}
-                                                    id={menu.id}
-                                                >
-                                                    <Nav.Item as="li" >
-                                                        <Link onClick={()=> {setActiveKey(menu.id )}}  to={menu.url  || ''} eventkey={index.toString()}>
-                                                            {menu.title}
-                                                        </Link>
-                                                    </Nav.Item>
-                                                </div>
-                                            );
-                                        })}
-                                    </>
-                                </Nav>
+                                    <Navbar.Brand href="/" className="nav_left-wrapper">
+                                        <div className="nav_brandlink margin-right w-nav-brand">
+                                            <Link to="/">
+                                                <img
+                                                    src={ChangeXLogoColor  || ''}
+                                                    loading="lazy"
+                                                    alt="ChangeX Logo"
+                                                    className="nav_logo"
+                                                ></img>
+                                            </Link>
+                                        </div>
+                                    </Navbar.Brand>
+                                    <Nav activeKey={activeKey} className={"hide-mobile-landscape"}>
+                                        <>
+                                          {menuItems.map((menu, index) => {
+                                                return (
+                                                    <div
+                                                        key={index}
+                                                        className={`nav_menu-links navDisplay ${
+                                                            menu.hasLine ? "navItemBorder" : ""
+                                                        }`}
+                                                        id={menu.id}
+                                                    >
+                                                        <Nav.Item as="li" >
+                                                            <Link onClick={()=> {setActiveKey(menu.id )}}  to={menu.url  || ''} eventkey={index.toString()}>
+                                                                {menu.title}
+                                                            </Link>
+                                                        </Nav.Item>
+                                                    </div>
+                                                );
+                                            })}
+                                        </>
+                                    </Nav>
                             </Navbar>
+
 
                             <div className="nav_right-wrapper">
                                 <div className="nav_stats-wrapper">

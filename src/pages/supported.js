@@ -3,12 +3,14 @@ import * as React from "react"
 import SupportedTokensTable from "../components/SectionToken/SupportedTokensTable";
 
 
-import { titleObj } from "../components/SectionToken/tokenItems";
+import {titleObj, tokenPageDeFiData} from "../components/SectionToken/tokenItems";
 import {PurpleButtonRoute} from "../components/Buttons/PurpleRoute";
+import Layout from "../components/Layout/Layout";
+import Seo from "../components/SEO/Seo";
 
-const SupportedTokens = () => {
+const Supported = () => {
     return (
-        <>
+        <Layout>
             <div className="padding-global">
                 <div className="container-large">
                     <div className="margin-auto-large">
@@ -43,10 +45,16 @@ const SupportedTokens = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </Layout>
     )
 }
 
-export default SupportedTokens
+export default Supported
 
-export const Head = () => <title>Changex Supported Tokens</title>
+export const Head = () => (
+    <>
+        <Seo  description={tokenPageDeFiData.head2}
+              title={tokenPageDeFiData.head}
+              imageAlt="Supported Changex Tokens"/>
+    </>
+)

@@ -12,10 +12,12 @@ import {
     featureContent,
     featureContent2
 } from "../components/SectionWealth/wealthItems";
+import Layout from "../components/Layout/Layout";
+import Seo from "../components/SEO/Seo";
 
 const WealthPage = () => {
     return (
-        <>
+        <Layout>
             <InnerHero heroObj={heroObj} />
             <section id="wealth" className="section_invest">
                 <SliderSection
@@ -33,10 +35,16 @@ const WealthPage = () => {
                     content={featureContent2}
                 />
             </section>
-        </>
+        </Layout>
     )
 }
 
 export default WealthPage
 
-export const Head = () => <title>Wealth Page</title>
+export const Head = () => (
+    <>
+        <Seo description={heroObj.titleObj.h3}
+             title={heroObj.titleObj.h2}
+             imageAlt="Changex Wealth" />
+    </>
+)

@@ -9,6 +9,8 @@ import SectionCta from "../components/SectionCta/SectionCta";
 
 import { heroObj, roadMapAboutData } from "../components/Common/aboutItems";
 import { teamAdvisorsData, teamExpertsData, titleAdvisorsObj, titleExpertsObj } from "../components/SectionTeam/teamItems";
+import Layout from "../components/Layout/Layout";
+import Seo from "../components/SEO/Seo";
 
 const thoughtObj = {
     page: 'About',
@@ -22,7 +24,7 @@ const thoughtObj = {
 
 const AboutPage = () => {
     return (
-        <>
+        <Layout>
             <AboutHero heroObj={ heroObj }/>
             <div className="padding-global-top">
                 <div className="container-large ">
@@ -36,10 +38,16 @@ const AboutPage = () => {
                 <Roadmap background={'background-color-black'} roadmapData={roadMapAboutData}/>
                 <SectionCta />
             </section>
-        </>
+        </Layout>
     )
 }
 
 export default AboutPage
 
-export const Head = () => <title>About Page</title>
+export const Head = () => (
+    <>
+        <Seo description={heroObj.titleObj.h3}
+             title={heroObj.titleObj.h2}
+             imageAlt="Changex About"/>
+    </>
+)

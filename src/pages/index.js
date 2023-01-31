@@ -2,18 +2,15 @@ import * as React from "react"
 import Layout from "../components/Layout/Layout";
 import ApyContextProvider from "../components/Context/ApyContext";
 import PricesContextProvider from "../components/Context/PriceContext";
-import Navigation from "../components/Navigation/Navigation";
-import Footer from "../components/Footer/Footer";
+import Home from "../components/Home/Home";
 
 const IndexPage = () => {
   return (
       <ApyContextProvider>
           <PricesContextProvider>
-              <Navigation />
-              <Layout>
-
-              </Layout>
-              <Footer />
+          <Layout>
+              <Home />
+          </Layout>
           </PricesContextProvider>
       </ApyContextProvider>
   )

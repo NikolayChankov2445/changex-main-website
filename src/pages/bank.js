@@ -13,10 +13,13 @@ import SectionSlider from "../components/SectionSlider/SectionSlider";
 import SectionCard from "../components/SectionCard/SectionCard";
 import ThoughtWall from "../components/Common/ThoughtWall";
 import SectionCta from "../components/SectionCta/SectionCta";
+import Layout from "../components/Layout/Layout";
+import Seo from "../components/SEO/Seo";
+
 
 const BankPage = () => {
     return (
-        <>
+        <Layout>
             <InnerHero heroObj={heroObj} />
             <section id="bank" className="section_bank">
                 <SectionSlider
@@ -29,10 +32,16 @@ const BankPage = () => {
                 <ThoughtWall thoughtObj={thoughtObj} />
                 <SectionCta />
             </section>
-        </>
+        </Layout>
     )
 }
 
 export default BankPage
 
-export const Head = () => <title>Bank Page</title>
+export const Head = () => (
+    <>
+        <Seo description={heroObj.titleObj.h3}
+             title={heroObj.titleObj.h2}
+             imageAlt="Changex Bank"/>
+    </>
+)

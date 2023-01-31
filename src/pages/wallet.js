@@ -13,6 +13,8 @@ import {
     cardContent
 } from "../components/SectionWallet/walletItems";
 import SectionCard from "../components/SectionCard/SectionCard";
+import Layout from "../components/Layout/Layout";
+import Seo from "../components/SEO/Seo";
 
 const swapCryptoTitleObj = {
     titleObj: {
@@ -31,7 +33,7 @@ const swapCryptoTitleObj = {
 
 const WalletPage = () => {
     return (
-        <>
+        <Layout>
             <InnerHero heroObj={heroObj} />
             <section id="wallet" >
                 <SectionAdvantages
@@ -48,10 +50,16 @@ const WalletPage = () => {
                 />
                 <SectionCard cardContent={ cardContent }  />
             </section>
-        </>
+        </Layout>
     )
 }
 
 export default WalletPage
 
-export const Head = () => <title>Wallet Page</title>
+export const Head = () => (
+    <>
+        <Seo  description={heroObj.titleObj.h3}
+              title={heroObj.titleObj.h2}
+              imageAlt="Changex Wallet" />
+    </>
+)
