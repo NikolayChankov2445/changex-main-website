@@ -1,9 +1,8 @@
 import React from "react";
 import "../../styles/style.css";
-import Footer from "../Footer/Footer";
 
-import "../../styles/style.css";
 import Navigation from "../Navigation/Navigation";
+import Footer from "../Footer/Footer";
 
 export default function Layout({ children }) {
     return (

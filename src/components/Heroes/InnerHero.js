@@ -21,6 +21,8 @@ export default function InnerHero( { heroObj } ){
         setShowModal(true);
     }
 
+    const handleClose = () => setShowModal(false);
+
     return (
         <section id="inner-hero" className={`${heroObj.class === 'tokenPage' ? 'vh-responsive-token' : 'vh-responsive'}`}>
             <div className="padding-global relative">
@@ -101,13 +103,14 @@ export default function InnerHero( { heroObj } ){
                 </div>
                 <div className={`${heroObj.class} absolute`}></div>
             </div>
-            <Modal id="changex modal" isOpen={showModal}>
+            <Modal id="Changex_modal" show={showModal} onHide={handleClose} animation={true}>
                 <>
-                    <ScanQrCode className="section-scanpopup wf-section"
-                                 showModal={showModal}
-                                 setShowModal={setShowModal}
-                                 aria-labelledby="modal-modal-title"
-                                 aria-describedby="modal-modal-description">
+                    <ScanQrCode
+                        className="section-scanpopup wf-section"
+                        showModal={showModal}
+                        setShowModal={setShowModal}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description">
                     </ScanQrCode>
                 </>
             </Modal>
