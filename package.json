@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@ant-design/plots": "^1.2.4",
     "antd": "^5.1.6",
     "axios": "^1.2.6",
     "gatsby": "^5.5.0",

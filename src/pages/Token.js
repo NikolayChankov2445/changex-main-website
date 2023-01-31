@@ -1,14 +1,27 @@
 import * as React from "react"
+import InnerHero from "../components/Heroes/InnerHero";
 
+import { faqBankContent } from "../components/Faq/faqItems";
+import {
+    heroObj, tokenPageDeFiData,
+    tokenPageTokenomicsData,
+} from "../components/SectionToken/tokenItems";
+import DefiToken from "../components/Defi/DefiToken";
+import Tokenomics from "../components/SectionToken/Tokenomics";
 
 
 const TokenPage = () => {
     return (
         <>
-            <h1>TokenPage Page</h1>
-            <p>Sunt labore ad culpa ipsum in cupidatat reprehenderit aliquip consectetur mollit quis deserunt.</p>
-            <p>Sunt labore ad culpa ipsum in cupidatat reprehenderit aliquip consectetur mollit quis deserunt.</p>
-            <p>Sunt labore ad culpa ipsum in cupidatat reprehenderit aliquip consectetur mollit quis deserunt.</p>
+            <InnerHero heroObj={heroObj} />
+            <DefiToken background={'background-color-black'} tokenData={tokenPageDeFiData } />
+            <Tokenomics
+                background={"background-color-black"}
+                tokenData={tokenPageTokenomicsData}
+            />
+            <section id="token-page">
+
+            </section>
         </>
     )
 }
