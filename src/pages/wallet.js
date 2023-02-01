@@ -15,6 +15,7 @@ import {
 import SectionCard from "../components/SectionCard/SectionCard";
 import Layout from "../components/Layout/Layout";
 import Seo from "../components/SEO/Seo";
+import SwapCrypto from "../components/SwapCrypto/SwapCrypto";
 
 const swapCryptoTitleObj = {
     titleObj: {
@@ -42,6 +43,7 @@ const WalletPage = () => {
                     title={"The DeFi Wallet That Changes Everything"}
                     advantages={advantages}
                 />
+                <SwapCrypto titleObj={swapCryptoTitleObj} />
                 <SliderSection
                     textData={textData}
                     sliderData={sliderDataWalletPage}
