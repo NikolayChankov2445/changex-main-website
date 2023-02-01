@@ -1,6 +1,6 @@
-import hydrachain from "../../images/social/logo-hydra.svg";
-import uniswap from "../../images/social/uniswapImg.svg";
-import mexc from "../../images/social/logo-mexc.svg";
+import hydrachain from "../../../static/assets/images/social/logo-hydra.svg";
+import uniswap from "../../../static/assets/images/social/uniswapImg.svg";
+import mexc from "../../../static/assets/images/social/logo-mexc.svg";
 
 
 export const titleObj = {
@@ -44,22 +44,22 @@ export const textData = {
 
 export const advantages = [
     {
-        src: '/images/card/Mini/2.0/stack.svg',
+        src: '/assets/images/card/Mini/2.0/stack.svg',
         text: 'CHANGE has a fixed supply of 425 million tokens that favors growth: every transaction in Changex serves to reduce total supply and protect the price.',
         title: 'Burn'
     },
     {
-        src: '/images/card/Mini/2.0/cashback.svg',
+        src: '/assets/images/card/Mini/2.0/cashback.svg',
         text: 'Earn on your tokens with staking and power-up your CHANGE: every staked asset in Changex increases your CHANGE rewards. Bonuses stack.',
         title: 'Earn More'
     },
     {
-        src: '/images/card/Mini/2.0/Boost_APY.svg',
+        src: '/assets/images/card/Mini/2.0/Boost_APY.svg',
         text: 'Stake or simply trade: CHANGE lets you jump between blockchains with ease - Hydra and Ethereum are yours to explore, with BSC and more to come.\n',
         title: 'Explore'
     },
     {
-        src: '/images/card/Mini/2.0/yourMoney.svg',
+        src: '/assets/images/card/Mini/2.0/yourMoney.svg',
         text: 'Unlock exclusive app features by holding and/or staking CHANGE in Changex: higher cashback, higher stablecoin APR, and more.\n',
         title: 'Get Benefits'
     }
@@ -112,12 +112,12 @@ export const tokenPageTokenomicsData = {
         }],
     learnMore: [
         {
-            img: '/images/social/logo-coinmarketcap-white.svg',
+            img: '/assets/images/social/logo-coinmarketcap-white.svg',
             title: 'CoinMarketCap',
             link: 'https://coinmarketcap.com/currencies/changex/'
         },
         {
-            img: '/images/social/coingecko.svg',
+            img: '/assets/images/social/coingecko.svg',
             title: 'CoinGecko',
             link: 'https://www.coingecko.com/en/coins/changex?'
         }
@@ -159,43 +159,43 @@ export const tokenPageDeFiData = {
         {
             title: 'Stake CHANGE',
             content: 'Earn passive income and unlock additional features',
-            image: '/images/token/icn-stakechange.svg'
+            image: '/assets/images/token/icn-stakechange.svg'
         },
         {
             title: 'Burn It',
             content: 'All crypto-crypto and fiat-crypto transactions reduce supply',
-            image: '/images/token/icn-burnit.svg'
+            image: '/assets/images/token/icn-burnit.svg'
         },
         {
             title: 'Stake PoS Assets',
             content: 'Changex supports multi-chain staking',
-            image: '/images/token/icn-stakeposassets.svg'
+            image: '/assets/images/token/icn-stakeposassets.svg'
         },
         {
             title: 'Boost CHANGE APR',
             content: 'Every staked asset increases staking rewards.',
-            image: '/images/token/icn-boostchangeapr.svg'
+            image: '/assets/images/token/icn-boostchangeapr.svg'
         },
         {
             title: 'Deflationary CHANGE',
             content: 'Rewards increase while supply decreases',
-            image: '/images/token/icn-deflationary.svg'
+            image: '/assets/images/token/icn-deflationary.svg'
         },
         {
             title: 'Grow Your Wealth',
             content: 'While you sleep.',
-            image: '/images/token/icn-growwealth.svg'
+            image: '/assets/images/token/icn-growwealth.svg'
         },
     ],
     centerIcon: '/images/token/defi_circle.svg',
     learnMore: [
         {
-            img: '/images/social/logo-coinmarketcap-white.svg',
+            img: '/assets/images/social/logo-coinmarketcap-white.svg',
             title: 'CoinMarketCap',
             link: 'https://coinmarketcap.com/currencies/changex/'
         },
         {
-            img: '/images/social/coingecko.svg',
+            img: '/assets/images/social/coingecko.svg',
             title: 'CoinGecko',
             link: 'https://www.coingecko.com/en/coins/changex?'
         }

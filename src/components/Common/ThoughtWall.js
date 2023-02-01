@@ -21,10 +21,10 @@ export default function ThoughtWall({ thoughtObj }) {
             if (window.innerWidth <= 600) {
                 $(".bankThought").attr(
                     "src",
-                    `../../images/bank/bank_${imageIndex}_mobile.png`
+                    `/assets/images/bank/bank_${imageIndex}_mobile.png`
                 );
             } else {
-                $(".bankThought").attr("src", `../../images/bank/bank_${imageIndex}.png`);
+                $(".bankThought").attr("src", `/assets/images/bank/bank_${imageIndex}.png`);
             }
         }
     }
@@ -35,10 +35,10 @@ export default function ThoughtWall({ thoughtObj }) {
             if (window.innerWidth <= 600) {
                 $(".bankThought").attr(
                     "src",
-                    `../../images/bank/bank_${eventKey}_mobile.png`
+                    `/assets/images/bank/bank_${eventKey}_mobile.png`
                 );
             } else {
-                $(".bankThought").attr("src", `../../images/bank/bank_${eventKey}.png`);
+                $(".bankThought").attr("src", `/assets/images/bank/bank_${eventKey}.png`);
             }
         }
 
@@ -84,22 +84,23 @@ export default function ThoughtWall({ thoughtObj }) {
                                 <FaAngleRight />{" "}
                     </span>
                         }>
-
-                        {sliderThoughtData.map((item, index) => {
-                            return (
-                                <Carousel.Item key={index} className="w-100 carouselItem">
-                                    <div className="slider-header">
-                                        <h4 className="slider-header-text">{item.head}</h4>
-                                    </div>
-                                    <div className="slider-content">
-                                        <p className="slider-content-text">{item.p1}</p>
-                                    </div>
-                                    <div className="slider-content">
-                                        <p className="slider-content-text">{item.p2}</p>
-                                    </div>
-                                </Carousel.Item>
-                            );
-                        })}
+                        <>
+                            {sliderThoughtData.map((item, index) => {
+                                return (
+                                    <Carousel.Item key={index} className="w-100 carouselItem">
+                                        <div className="slider-header">
+                                            <h4 className="slider-header-text">{item.head}</h4>
+                                        </div>
+                                        <div className="slider-content">
+                                            <p className="slider-content-text">{item.p1}</p>
+                                        </div>
+                                        <div className="slider-content">
+                                            <p className="slider-content-text">{item.p2}</p>
+                                        </div>
+                                    </Carousel.Item>
+                                );
+                            })}
+                        </>
                     </Carousel>
                 )}
 

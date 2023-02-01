@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/style.css";
+
 import Hero from "../Heroes/Hero";
 import SectionWallet from "../SectionWallet/SectionWallet";
 import SectionBank from "../SectionBank/SectionBank";
@@ -21,7 +21,7 @@ const heroObj = {
     text: "",
     appBtnsVisible: true,
     scrollBtnText: "",
-    backgroundImage: "../../../static/images/Hero-BGimg-mobile.png",
+    backgroundImage: "/assets/images/Hero-BGimg-mobile.png",
 };
 
 const cardContent = {

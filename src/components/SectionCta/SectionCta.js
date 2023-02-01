@@ -1,9 +1,9 @@
 import * as React from "react";
 
 import { useState } from "react";
-import DownloadApple from "../../images/common/DW-Apple-Lime.svg";
-import DownloadGoogle from "../../images/common/DW-Google-Lime.svg";
-import ScanQRCode from "../../images/common/download-qr.svg";
+import DownloadApple from "../../../static/assets/images/common/DW-Apple-Lime.svg";
+import DownloadGoogle from "../../../static/assets/images/common/DW-Google-Lime.svg";
+import ScanQRCode from "../../../static/assets/images/common/download-qr.svg";
 import ScanQrCode from "../QrCode/ScanQrCode";
 import Modal from 'react-bootstrap/Modal';
 
@@ -65,7 +65,7 @@ export default function SectionCta() {
                         </div>
                         <div className="cta-image">
                             <img
-                                src={ScanQRCode || ''}
+                                src={"/assets/images/cta/image-cta-black.png"  || ""}
                                 alt={"cta"}
                             ></img>
                             <button
@@ -73,7 +73,7 @@ export default function SectionCta() {
                                 className="button is-qr-cta w-inline-block"
                             >
                                 <img
-                                    src=""
+                                    src={ScanQRCode}
                                     loading="lazy"
                                     width="75"
                                     alt="Changex QR code"

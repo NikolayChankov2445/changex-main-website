@@ -33,7 +33,7 @@ export default function TokensCrawl({ crawlDirection }) {
                                     </div>
                                     <div>
                                         <img
-                                            src={`/images/token/${item.symbol}.svg` || ''}
+                                            src={`/assets/images/token/${item.symbol}.svg` || ''}
                                             loading="lazy"
                                             alt={item.symbol}
                                             className="crawlImg"

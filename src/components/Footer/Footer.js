@@ -1,14 +1,13 @@
 import * as React from "react";
-import "../../styles/style.css";
 import { useState } from "react";
 import { Link } from "gatsby";
 
 import {menuItemsFooter, menuItemsFooter2, menuItemsFooterSocial} from "../Navigation/navItems";
 import ScanQrCode from "../QrCode/ScanQrCode";
-import ChangeXLogoColor from "../../images/common/Logo_footer.svg";
-import DownloadApple from "../../images/common/DW-Apple.svg";
-import DownloadGoogle from "../../images/common/DW-Google.svg";
-import QRBlack from "../../images/common/icn-qr-black.svg";
+import ChangeXLogoColor from "../../../static/assets/images/common/Logo_footer.svg";
+import DownloadApple from "../../../static/assets/images/common/DW-Apple.svg";
+import DownloadGoogle from "../../../static/assets/images/common/DW-Google.svg";
+import QRBlack from "../../../static/assets/images/common/icn-qr-black.svg";
 import Modal from "react-bootstrap/Modal";
 
 

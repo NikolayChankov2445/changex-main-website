@@ -1,7 +1,7 @@
-import AppleBlackIcon from "../../images/common/icn-apple-black.svg";
-import PlaystoreBlackIcon from "../../images/common/icn-playstore-black.svg";
-import AppleIcon from "../../images/common/DW-Apple.svg";
-import GoogleIcon from "../../images/common/DW-Google.svg";
+import AppleBlackIcon from "../../../static/assets/images/common/icn-apple-black.svg";
+import PlaystoreBlackIcon from "../../../static/assets/images/common/icn-playstore-black.svg";
+import AppleIcon from "../../../static/assets/images/common/DW-Apple.svg";
+import GoogleIcon from "../../../static/assets/images/common/DW-Google.svg";
 
 export const menuItems = [
     {
@@ -11,20 +11,7 @@ export const menuItems = [
         className: 'nav_menu-links w-nav-menu',
         dropdown: true,
         footer: true,
-        submenu: [
-            {
-                title: 'DeFy Crypto Wallet',
-                url: 'defycryptowallet',
-            },
-            {
-                title: 'Swap Crypto',
-                url: 'swapcrypto',
-            },
-            {
-                title: 'Buy and Sell crypto',
-                url: 'buysellcrypto',
-            },
-        ]
+        submenu: []
     },
     {
         title: 'Bank',
@@ -34,16 +21,7 @@ export const menuItems = [
         dropdown: true,
         hasLine: false,
         footer: true,
-        submenu: [
-            {
-                title: 'Debit card',
-                url: 'debitcard',
-            },
-            {
-                title: 'SEPA Bank Account',
-                url: 'sepabankaccount',
-            }
-        ]
+        submenu: []
     },
     {
         title: 'Wealth',
@@ -53,20 +31,7 @@ export const menuItems = [
         dropdown: true,
         hasLine: false,
         footer: true,
-        submenu: [
-            {
-                title: 'Staking',
-                url: 'staking',
-            },
-            {
-                title: 'Lending',
-                url: 'lending',
-            },
-            {
-                title: 'Savings',
-                url: 'savings'
-            },
-        ]
+        submenu: []
     },
     {
         title: 'CHANGE token',
@@ -84,29 +49,7 @@ export const menuItems = [
         className: 'nav_menu-links w-nav-menu',
         hasLine: false,
         submenu: []
-    },
-    /* {
-         title: 'FAQs',
-         url: '/faqs',
-         id: 'faqs',
-         className: 'nav_menu-links w-nav-menu',
-         dropdown: false,
-         submenu: []
-     }*/
-    /*    {
-            title: 'Company',
-            url: '/company',
-            id: 'company',
-            className: 'nav_menu-links w-nav-menu',
-            submenu: []
-        },
-        {
-            title: 'Learn',
-            url: '/learn',
-            id: 'learn',
-            className: 'nav_menu-links w-nav-menu',
-            submenu: []
-        }*/
+    }
 ];
 
 export const iconItems = [
@@ -220,7 +163,7 @@ export const menuItemsFooter2 = [
         title: 'ICO Information',
         url: "https://legacy.changex.io/",
         id: 'ico',
-        className: '"button footer-links w-inline-block',
+        className: 'button footer-links w-inline-block',
         hasLine: false,
         link: false
     }
@@ -230,7 +173,7 @@ export const menuItemsFooterSocial = [
     {
         title: 'Telegram',
         url: 'https://t.me/changex_official',
-        src: "/images/social/telegram.svg",
+        src: "/assets/images/social/telegram.svg",
         id: 'telegram',
         className: 'button social-link w-inline-block',
         hasLine: false,
@@ -239,7 +182,7 @@ export const menuItemsFooterSocial = [
     {
         title: 'Twitter',
         url: 'https://twitter.com/ChangeXapp',
-        src: "/images/social/twitter.svg",
+        src: "/assets/images/social/twitter.svg",
         id: 'twitter',
         className: 'button social-link w-inline-block',
         hasLine: false,
@@ -248,7 +191,7 @@ export const menuItemsFooterSocial = [
     {
         title: 'Telegram',
         url: 'https://changex.medium.com/',
-        src: "/images/social/carbon.svg",
+        src: "/assets/images/social/carbon.svg",
         id: 'carbon',
         className: 'button social-link w-inline-block',
         hasLine: false,
@@ -257,7 +200,7 @@ export const menuItemsFooterSocial = [
     {
         title: 'Facebook',
         url: 'https://www.facebook.com/ChangeXapp',
-        src: "/images/social/facebook.svg",
+        src: "/assets/images/social/facebook.svg",
         id: 'facebook',
         className: 'button social-link w-inline-block',
         hasLine: false,
@@ -266,7 +209,7 @@ export const menuItemsFooterSocial = [
     {
         title: 'LinkedIn',
         url: 'https://www.linkedin.com/company/changexapp/',
-        src: "/images/social/linkedIn.svg",
+        src: "/assets/images/social/linkedIn.svg",
         id: 'linkedin',
         className: 'button social-link w-inline-block',
         hasLine: false,

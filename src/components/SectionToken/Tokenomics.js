@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Pie } from '@ant-design/plots';
 
-
 import Banner from "../Common/Banner";
 import {bannerLogos, bannerTitleTokenomics} from "./tokenItems";
 
@@ -51,7 +50,8 @@ export default function Tokenomics({ background, tokenData}) {
         pieStyle: {
             lineWidth: 0,
         },
-        legend: false
+        legend: false,
+        color: ['#3418D8','#E0FB92','#11D48E','#8366F4','#303D48','#F3FBFD','#F4DF22','#E69F34']
     };
     return (
         <section id="tokenomics" className={background}>

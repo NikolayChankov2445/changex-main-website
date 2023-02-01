@@ -1,6 +1,6 @@
-import Staking_1 from "../../images/wealth/Staking_1.svg";
-import Doubleapy from "../../images/wealth/Doubleapy.svg";
-import Stablecoins from "../../images/wealth/Lend-Stablecoins.svg";
+import Staking_1 from "../../../static/assets/images/wealth/Staking_1.svg";
+import Doubleapy from "../../../static/assets/images/wealth/Doubleapy.svg";
+import Stablecoins from "../../../static/assets/images/wealth/Lend-Stablecoins.svg";
 
 
 export const menuTabs = [
@@ -48,7 +48,7 @@ export const stablecoins = {
 export const sliderDataLandingPage = [
     {
         id: "Tab1",
-        image: "/images/wealth/LeveragedStakingBlack.svg",
+        image: "/assets/images/wealth/LeveragedStakingBlack.svg",
         head: "",
         alt: "Investment Slider image for stake",
         text: "Staking any Proof-of-Stake asset in Changex boosts your CHANGE staking APR. Stake more assets to stack your boost and retain access to the tokens with liquid staking.",
@@ -57,7 +57,7 @@ export const sliderDataLandingPage = [
     },
     {
         id: "Tab2",
-        image: "/images/wealth/Benefits_Black.svg",
+        image: "/assets/images/wealth/Benefits_Black.svg",
         head: "",
         alt: "Investment Slider image for double your APY",
         text: "Use Changex's unique Leveraged staking product to amplify the staking rewards of any Proof-of-Stake asset by 1.2-2x and earn like never before.",
@@ -66,7 +66,7 @@ export const sliderDataLandingPage = [
     },
     {
         id: "Tab3",
-        image: "/images/wealth/Stablecoins.svg",
+        image: "/assets/images/wealth/Stablecoins.svg",
         head: "",
         alt: "Investment Slider image for lend stablecoins",
         text: "Lend your stablecoins for 5-9.5% APR and power the Leveraged staking economy. Everything is completely decentralized.",
@@ -78,7 +78,7 @@ export const sliderDataLandingPage = [
 export const sliderDataWealthPage = [
     {
         id: "card1",
-        image: "/images/wealth/StakingWealth.svg",
+        image: "/assets/images/wealth/StakingWealth.svg",
         head: "Flexible Stakind And Spending",
         alt: "Flexible Stakind And Spending",
         text: "Stake assets and maintain immediate access to them without interrupting the flow of rewards. This is a unique way to use your crypto in various ways while earning on it constantly.",
@@ -87,7 +87,7 @@ export const sliderDataWealthPage = [
     },
     {
         id: "card2",
-        image: "/images/wealth/Hydra.svg",
+        image: "/assets/images/wealth/Hydra.svg",
         head: "Delegated HYDRA Staking",
         alt: "Delegated HYDRA Staking",
         text: "Stake HYDRA offline and enjoy the full benefits of the HydraChain economy by delegating your coins to a staker. Rewards equal to 5 HYDRA or more are paid out daily.",
@@ -96,7 +96,7 @@ export const sliderDataWealthPage = [
     },
     {
         id: "card3",
-        image: "/images/wealth/WealthChange.svg",
+        image: "/assets/images/wealth/WealthChange.svg",
         head: "Earn Bonus CHANGE",
         alt: "Earn Bonus CHANGE",
         text: "Whenever you stake an asset in Changex, the APR for your staked CHANGE goes up, and the bonuses stack. Without CHANGE, this mechanism is not possible.",
@@ -200,7 +200,7 @@ export const featureContent = {
             buttonTxt: "Learn More",
             buttonUrl: "https://urlgeni.us/changexapp",
             buttonClass: "button-lime",
-            imageUrl: "/images/wealth/leverage_staking.svg",
+            imageUrl: "/assets/images/wealth/leverage_staking.svg",
             imageClass: "centerImage",
             alignImage: "right",
             commingSoon: false,
@@ -216,7 +216,7 @@ export const featureContent = {
             buttonUrl:
                 "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
             buttonClass: "button-lime",
-            imageUrl: "/images/wealth/lending.svg",
+            imageUrl: "/assets/images/wealth/lending.svg",
             imageClass: "centerImage",
             alignImage: "left",
             commingSoon: false,
@@ -237,7 +237,7 @@ export const featureContent2 = {
             buttonUrl:
                 "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
             buttonClass: "button-blue",
-            imageUrl: "/images/savings/Savings_Rainy_Day.png",
+            imageUrl: "/assets/images/savings/Savings_Rainy_Day.png",
             imageClass: "centerImage",
             alignImage: "right",
             commingSoon: true,

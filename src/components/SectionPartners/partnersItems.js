@@ -1,8 +1,8 @@
-import hydrachain from "../../images/partners/hydra-logo.webp";
-import locktrip from "../../images/partners/locktrip_logo.svg";
-import bitcoingold from "../../images/partners/logo-btg-1.png";
-import unifarm from "../../images/partners/unifrarm-logo.png";
-import stakingrewards from "../../images/partners/stakingrewards.svg";
+import hydrachain from "../../../static/assets/images/partners/hydra-logo.webp";
+import locktrip from "../../../static/assets/images/partners/locktrip_logo.svg";
+import bitcoingold from "../../../static/assets/images/partners/logo-btg-1.png";
+import unifarm from "../../../static/assets/images/partners/unifrarm-logo.png";
+import stakingrewards from "../../../static/assets/images/partners/stakingrewards.svg";
 
 export const logosParners = [
     {
@@ -63,34 +63,34 @@ export const heroPartnerObj = {
         ],
         perks0: [
             {
-                src: '/images/partners/icn-staking-noncustodial.svg',
+                src: '/assets/images/partners/icn-staking-noncustodial.svg',
                 title: 'CeDeFI Model',
                 text: 'We’re employing a CeDeFi model, which takes the best sides of traditional finance and the incredible opportunities of blockchain technology.'
             },
             {
-                src: '/images/partners/icn-marketingsupport.svg',
+                src: '/assets/images/partners/icn-marketingsupport.svg',
                 title: 'Simple, yet Powerful',
                 text: 'Tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
             },
             {
-                src: '/images/partners/icn-listingtop.svg',
+                src: '/assets/images/partners/icn-listingtop.svg',
                 title: 'Simple, yet Powerful',
                 text: 'Tool to manage, invest, and grow your wealth on your own terms, so that you can focus on what matters most - your financial wellbeing and your vision for the future.'
             }
         ],
         perks1: [
             {
-                src: '/images/partners/icn-zerocommision.svg',
+                src: '/assets/images/partners/icn-zerocommision.svg',
                 title: 'Staking in a Non-custodial DeFi Wallet',
                 text: 'Staking has never been so easy: enable your users to stake their tokens from their mobile devices in a few clicks.'
             },
             {
-                src: '/images/partners/icn-debitcard.svg',
+                src: '/assets/images/partners/icn-debitcard.svg',
                 title: 'Marketing Support',
                 text: 'We will promote your token to a DeFi-savvy community through our social media channels.'
             },
             {
-                src: '/images/partners/icn-leveragedstaking.svg',
+                src: '/assets/images/partners/icn-leveragedstaking.svg',
                 title: 'Top 20 Listing',
                 text: 'Get maximum attention for your token by placing it among the top 20 in our rankings on the “Buy” & “Stake” screens.'
             }
@@ -108,7 +108,7 @@ export const featureContent = {
             buttonTxt: "Read Whitepaper",
             buttonUrl: "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
             buttonClass: "button-blue",
-            imageUrl: "/images/partners/integrate-illustration.svg",
+            imageUrl: "/assets/images/partners/integrate-illustration.svg",
             imageClass: "centerImage",
             alignImage: 'right',
             commingSoon: true,
@@ -128,7 +128,7 @@ export const becomeAPartner = {
             buttonTxt: "",
             buttonUrl: "",
             buttonClass: "",
-            imageUrl: "/images/partners/superhero-backgroundfull_1920-1311.png",
+            imageUrl: "/assets/images/partners/superhero-backgroundfull_1920-1311.png",
             imageClass: "",
             alignImage: 'right',
             commingSoon: false,

@@ -1,6 +1,6 @@
 export const scrollImages = [
     {
-        src: '/images/wallet/icn-40x40-wallet.svg',
+        src: '/assets/images/wallet/icn-40x40-wallet.svg',
         caption: 'A wallet just for you',
         text: 'Own your crypto - Changex has no control over your wallet and can never access your funds. All information is kept safely on the blockchain',
         url: 'https://changex.io',
@@ -8,7 +8,7 @@ export const scrollImages = [
         h1: 'Wallet'
     },
     {
-        src: '/images/wallet/icn-40x40-wallet.svg',
+        src: '/assets/images/wallet/icn-40x40-wallet.svg',
         caption: 'Decentralyzed Crypto wallet',
         text: 'Access crypto from any point on Earth and stay in control with Changex’s highly-secure, non-custodial crypto wallet. No KYC required',
         url: 'https://changex.io',
@@ -16,7 +16,7 @@ export const scrollImages = [
         h1: 'Wallet'
     },
     {
-        src: 'images/wallet/scroll_4.svg',
+        src: '/assets/images/wallet/scroll_4.svg',
         caption: 'Buy and sell crypto',
         text: 'Trade cryptocurrencies with the click of a button with vetted protocols and contracts.',
         url: 'https://changex.io',
@@ -27,13 +27,16 @@ export const scrollImages = [
 
 export const slideImages = [
     {
-        url: '/images/wallet/cryptowallet_0_dark.webp',
+        image: '/assets/images/wallet/cryptowallet_0_dark.webp',
+        alt: 'Changex Crypto Wallet',
     },
     {
-        url: '/images/wallet/cryptowallet_1_dark.webp',
+        image: '/assets/images/wallet/cryptowallet_1_dark.webp',
+        alt: 'Changex Crypto Wallet Buy',
     },
     {
-        url: 'images/wallet/cryptowallet_2_dark.webp',
+        image: '/assets/images/wallet/cryptowallet_2_dark.webp',
+        alt: 'Changex Crypto Wallet Sell',
     }
 ];
 
@@ -125,29 +128,29 @@ export const heroObj = {
     appBtnsVisible: true,
     scrollToID: "",
     scrollBtnText: "",
-    backgroundImage: "../../images/Hero-BGimg-mobile.png",
+    backgroundImage: "/assets/images/Hero-BGimg-mobile.png",
     class: "walletPage"
 }
 
 
 export const advantages = [
     {
-        src: '/images/card/Mini/2.0/decentralized.svg',
+        src: '/assets/images/card/Mini/2.0/decentralized.svg',
         text: 'Explore the world of DeFi from a non-custodial crypto wallet. Access decentralized exchanges and a myriad of investment opportunities.',
         title: 'Decentralized'
     },
     {
-        src: '/images/card/Mini/2.0/cedefi.svg',
+        src: '/assets/images/card/Mini/2.0/cedefi.svg',
         text: 'Buy coins and tokens with Euro directly in the wallet via advanced fiat/crypto synergies - decentralization with the added comfort and simplicity of CeFi.',
         title: 'Hybrid CeDeFi'
     },
     {
-        src: '/images/card/Mini/2.0/multi_chain.svg',
+        src: '/assets/images/card/Mini/2.0/multi_chain.svg',
         text: 'Hold tokens on multiple blockchains in your DeFi non-custodial wallet. Swap and stake tokens without unnecessary complications.',
         title: 'Multi-Chain'
     },
     {
-        src: '/images/card/Mini/2.0/secure.svg',
+        src: '/assets/images/card/Mini/2.0/secure.svg',
         text: 'Changex has zero access to your data and assets - everything is safely stored on your device only, and our number one priority is your safety.',
         title: 'Secure'
     }
@@ -156,7 +159,7 @@ export const advantages = [
 export const sliderDataWalletPage = [
     {
         id: "card1",
-        image: "/images/wealth/StakingWealth.svg",
+        image: "/assets/images/wealth/StakingWealth.svg",
         head: "Fiat On-Ramp",
         alt: "Flexible Stakind And Spending",
         text: "Stake assets and maintain immediate access to them without interrupting the flow of rewards. This is a unique way to use your crypto in various ways while earning on it constantly.",
@@ -165,7 +168,7 @@ export const sliderDataWalletPage = [
     },
     {
         id: "card2",
-        image: "/images/wealth/Hydra.svg",
+        image: "/assets/images/wealth/Hydra.svg",
         head: "Crypto Off-Ramp",
         alt: "Delegated HYDRA Staking",
         text: "Stake HYDRA offline and enjoy the full benefits of the HydraChain economy by delegating your coins to a staker. Rewards equal to 5 HYDRA or more are paid out daily.",
@@ -174,7 +177,7 @@ export const sliderDataWalletPage = [
     },
     {
         id: "card3",
-        image: "/images/wealth/WealthChange.svg",
+        image: "/assets/images/wealth/WealthChange.svg",
         head: "Earn Bonus CHANGE",
         alt: "Earn Bonus CHANGE",
         text: "Whenever you stake an asset in Changex, the APR for your staked CHANGE goes up, and the bonuses stack. Without CHANGE, this mechanism is not possible.",

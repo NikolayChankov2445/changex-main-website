@@ -15,7 +15,7 @@ import Seo from "../components/SEO/Seo";
 const thoughtObj = {
     page: 'About',
     title: '',
-    image: '../images/about/thought-catalog.png',
+    image: '/assets/images/about/thought-catalog.png',
     className: "aboutPage",
     link: 'Change starts now.',
     p1:  'We leave out the tech and the complications, placing a formidable suite of financial tools safely in your pocket. All this in pursuit of better finance, and thus - better life.',

@@ -1,7 +1,7 @@
-import Cointelegraph from "../../images/press/Cointelegraph_logo-p-500.png";
-import Bloomberg from "../../images/press/New_Bloomberg_Logo.svg";
-import Cryptoslate from "../../images/press/cs-media-logo-light.png";
-import Cryptopotato from "../../images/press/cryptopotato-logo-200px.png";
+import Cointelegraph from "../../../static/assets/images/press/Cointelegraph_logo-p-500.png";
+import Bloomberg from "../../../static/assets/images/press/New_Bloomberg_Logo.svg";
+import Cryptoslate from "../../../static/assets/images/press/cs-media-logo-light.png";
+import Cryptopotato from "../../../static/assets/images/press/cryptopotato-logo-200px.png";
 
 
 export const logos = [

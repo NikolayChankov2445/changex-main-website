@@ -2,7 +2,7 @@ import * as React from "react";
 import { useState, useRef } from "react";
 
 import Carousel from "react-bootstrap/Carousel";
-import "react-slideshow-image/dist/styles.css";
+
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { scrollImages, slideImages } from "./walletItems";
 import {LimeButton} from "../Buttons/Lime";
@@ -52,15 +52,13 @@ export default function SectionWallet() {
                                     id="walletCarousel"
                                     height="500"
                                 >
-                                    <>
-                                        {slideImages.map((item, index) => {
-                                            return (
-                                                <div key={index} className="carousel-item">
-                                                    <img src={item.url} alt={item.url || ''} />
-                                                </div>
-                                            );
-                                        })}
-                                    </>
+                                    {slideImages.map((item, index) => {
+                                        return (
+                                            <div key={index} className="carousel-item">
+                                                <img src={item.image} alt={item.alt || ''} />
+                                            </div>
+                                        );
+                                    })}
                                 </Carousel>
                             </div>
                             <div

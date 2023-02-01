@@ -4,12 +4,12 @@ import { useState } from "react";
 import { advantages } from "../SectionToken/tokenItems";
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { BsArrowDown } from "react-icons/bs";
-import QRWhite from "../../images/common/icn-qr-white.svg";
+import QRWhite from "../../../static/assets/images/common/icn-qr-white.svg";
 import PriceApyBtns from "../Context/PriceApyBtns";
 import {PrimaryButton} from "../Buttons/Primary";
 import SectionAdvantages from "../SectionAdvantages/SectionAdvantages";
-import DownloadApple from "../../images/common/DW-Apple.svg";
-import DownloadGoogle from "../../images/common/DW-Google.svg";
+import DownloadApple from "../../../static/assets/images/common/DW-Apple.svg";
+import DownloadGoogle from "../../../static/assets/images/common/DW-Google.svg";
 import Modal from 'react-bootstrap/Modal';
 import ScanQrCode from "../QrCode/ScanQrCode";
 

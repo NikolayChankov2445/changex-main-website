@@ -9,7 +9,7 @@ export default function Hero({ heroObj }) {
                 <div className="container-hero">
                     <TitleHero contentObj={heroObj} />
                     <video className="videoTag" autoPlay loop muted>
-                        <source src="../images/common/Hero_Video_color.mp4" type="video/mp4" />
+                        <source src="/assets/images/common/Hero_Video_color.mp4" type="video/mp4" />
                     </video>
                     <div className="hero_text-wrapper">
                         <p
@@ -26,7 +26,7 @@ export default function Hero({ heroObj }) {
                         </p>
                         <div className="button is-qr w-inline-block">
                             <img
-                                src="../images/common/download-qr.svg"
+                                src="/assets/images/common/download-qr.svg"
                                 loading="lazy"
                                 width="75"
                                 alt="Changex QR code"

@@ -37,7 +37,7 @@ export default function TitleHero({ contentObj }) {
 
                         >
                             <img
-                                src={'../../images/common/DW-Apple.svg' || ''}
+                                src={'../../assets/images/common/DW-Apple.svg' || ''}
                                 alt="Apple"
                                 loading="lazy"
                             ></img>
@@ -51,7 +51,7 @@ export default function TitleHero({ contentObj }) {
                             href="https://play.google.com/store/apps/details?id=io.changex.app"
                         >
                             <img
-                                src={'../../images/common/DW-Google.svg' || ''}
+                                src={'/../../assets/images/common/DW-Google.svg' || ''}
                                 alt="Google"
                                 loading="lazy"
                             ></img>

@@ -6794,12 +6794,12 @@ a:hover {
     left: 0;
     height: 450px;
     right: 0;
-    position: absolute;
+    position: absolute !important;
     border: 1px solid var(--themeBlueBackgroundColor);
 }
 
 .bankStick .carousel {
-    position: absolute;
+    position: absolute !important;
     height: 95%;
 }
 

@@ -65,11 +65,11 @@ export default function SectionCard({ cardContent }) {
                             <div className="card_wrapper-right">
                                 <div className="image-holder card-image">
                                     <img
-                                        src="../../images/card/cards-img.png"
+                                        src="/assets/images/card/cards-img.png"
                                         loading="lazy"
                                         alt="changex cards"
                                         sizes="(max-width: 479px) 93vw, (max-width: 767px) 95vw, 50vw"
-                                        srcSet="../../images/card/cards-img-p-500.png 500w, ../../images/card/cards-img.png 729w"
+                                        srcSet="/assets/images/card/cards-img-p-500.png 500w, /assets/images/card/cards-img.png 729w"
                                         className="image-2"
                                     ></img>
                                 </div>

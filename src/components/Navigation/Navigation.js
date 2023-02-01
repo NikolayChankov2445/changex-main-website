@@ -6,10 +6,10 @@ import { Link } from "gatsby";
 import Modal from 'react-bootstrap/Modal';
 import { iconItems, menuItems, mobileIcon } from "./navItems";
 import ScanQrCode from "../QrCode/ScanQrCode";
-import ChangeXLogoColor from "../../images/common/Logo_navigation.svg";
-import QRBlack from "../../images/common/icn-qr-black.svg";
-import MenuIcon from "../../images/common/Menu-Icon_1Menu Icon.png";
-import ExternalLink from "../../images/common/external_link.svg";
+import ChangeXLogoColor from "../../../static/assets/images/common/Logo_navigation.svg";
+import QRBlack from "../../../static/assets/images/common/icn-qr-black.svg";
+import MenuIcon from "../../../static/assets/images/common/Menu-Icon_1Menu Icon.png";
+import ExternalLink from "../../../static/assets/images/common/external_link.svg";
 import {PricesContext} from "../Context/PriceContext";
 import {ApyContext} from "../Context/ApyContext";
 
