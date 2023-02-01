@@ -158,7 +158,7 @@ export default function Navigation() {
                                     <button
                                         onClick={openModal}
                                         id="qrcode"
-                                        className="nav_download-item"
+                                        className="nav_download-item transparent"
                                     >
                                         <img
                                             src={QRBlack  || ''}

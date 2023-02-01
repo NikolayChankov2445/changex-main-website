@@ -3122,7 +3122,7 @@ a:hover {
 
 .bankStick .carousel-indicators {
     position: absolute;
-    bottom: -10% !important;
+    bottom: -20% !important;
 }
 
 .carousel-indicators > button {
@@ -5187,6 +5187,15 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+
+    .bankStick .carousel-control-next {
+        top: 6% !important;
+    }
+
+    .bankStick .carousel-control-prev {
+        top: 6% !important;
+    }
+
     .bannerLogos {
         display: grid !important;
     }
@@ -5285,6 +5294,14 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
+
+    .bankStick .carousel-control-next {
+        top: 0 !important;
+    }
+
+    .bankStick .carousel-control-prev {
+        top: 0 !important;
+    }
 
     .is-qr-footer {
         display: none;
@@ -6836,7 +6853,7 @@ a:hover {
 }
 
 .slider-content-text {
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -6844,11 +6861,12 @@ a:hover {
     padding: 2rem 0 0 0;
 }
 
-.carousel-control-next {
+.bankStick .carousel-control-next {
     align-items: start;
     font-size: 20px;
     right: 2%;
     margin-left: 1rem;
+    top: 15%;
 }
 
 #walletCarousel {
@@ -6856,12 +6874,13 @@ a:hover {
     display: -moz-flex !important;
 }
 
-.carousel-control-prev {
+.bankStick .carousel-control-prev {
     align-items: start;
     font-size: 20px;
     right: 11%;
     left: auto;
     margin-right: 1rem;
+    top: 15%;
 }
 
 .carouselIcon {
