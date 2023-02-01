@@ -70,7 +70,7 @@ export const menuItems = [
     },
     {
         title: 'CHANGE token',
-        url: '/token-page',
+        url: '/token',
         id: 'token-page',
         className: 'nav_menu-links w-nav-menu',
         hasLine: true,
@@ -173,7 +173,7 @@ export const menuItemsFooter = [
     },
     {
         title: 'CHANGE token',
-        url: '/token-page',
+        url: '/token',
         id: 'token-page',
         className: 'nav_menu-links w-nav-menu',
         hasLine: true,
@@ -182,7 +182,7 @@ export const menuItemsFooter = [
     },
     {
         title: 'Suppported Tokens',
-        url: '/supported-tokens',
+        url: '/supported',
         id: 'supported-tokens',
         className: 'nav_menu-links w-nav-menu',
         hasLine: false,

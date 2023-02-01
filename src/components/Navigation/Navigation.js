@@ -3,7 +3,6 @@ import { useEffect, useState, useContext } from "react";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "gatsby";
-import Container from 'react-bootstrap/Container';
 import Modal from 'react-bootstrap/Modal';
 import { iconItems, menuItems, mobileIcon } from "./navItems";
 import ScanQrCode from "../QrCode/ScanQrCode";
@@ -249,7 +248,7 @@ export default function Navigation() {
                         </nav>
                     </div>
                 )}
-                <Modal id="Changex_modal" show={showModal} onHide={handleClose} animation={true}>
+                <Modal id="Changex_modal" show={showModal} onHide={handleClose} centered={true} animation={true}>
                     <>
                         <ScanQrCode
                             className="section-scanpopup wf-section"

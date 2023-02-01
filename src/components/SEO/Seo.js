@@ -1,5 +1,6 @@
 import * as React from "react";
 
+
 const SEO = ({ title, description, imageAlt }) => (
     <>
 
@@ -24,6 +25,8 @@ const SEO = ({ title, description, imageAlt }) => (
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="stylesheet" href={`${__dirname}/assets/styles/style.css`}/>
+        <link rel="stylesheet" href="rsuite/dist/rsuite.min.css"/>
     </>
 )
 

@@ -7,13 +7,12 @@ module.exports = {
     siteUrl: `https://www.changex.io`,
     description: `Non-custodial DeFi wallet with integrated banking and Visa Debit Card. Buy crypto, invest, and grow your wealth on easy mode.`
   },
-  plugins: [
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
+  plugins: [{
+    resolve: 'gatsby-plugin-google-analytics',
+    options: {
       "trackingId": "UA-221374557-1"
-      }
-    },
+    }
+  },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,6 +27,7 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {},
@@ -35,11 +35,5 @@ module.exports = {
     {
       resolve: `gatsby-plugin-smoothscroll`,
       options: {},
-    },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        "icon": `${__dirname}/src//images/icon.png`
-      }
     }]
 };
