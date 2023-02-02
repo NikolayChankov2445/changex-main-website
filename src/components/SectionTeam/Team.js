@@ -15,7 +15,9 @@ export default function Team({ titleObj, teamData }) {
                     <p className="margin-vertical margin-large">
                         <strong>{titleObj.paragraph}</strong>
                     </p>
-                    <div className="w-layout-grid grid-3"></div>
+                    <div className="w-layout-grid grid-3">
+
+                    </div>
                 </div>
             </div>
         </div>

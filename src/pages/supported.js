@@ -1,7 +1,6 @@
 import * as React from "react"
 
 import SupportedTokensTable from "../components/SectionToken/SupportedTokensTable";
-
 import {titleObj, tokenPageDeFiData} from "../components/SectionToken/tokenItems";
 import {PurpleButtonRoute} from "../components/Buttons/PurpleRoute";
 import Layout from "../components/Layout/Layout";

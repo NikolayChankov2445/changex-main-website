@@ -14,7 +14,7 @@ import {PricesContext} from "../Context/PriceContext";
 import {ApyContext} from "../Context/ApyContext";
 
 export default function Navigation() {
-    const [apy, setApy] = useState("$CHANGE");
+    const [apy, setApy] = useState("");
     const [openNav, setIsNavOpen] = useState(false);
     const [price, setPrice] = useState(null);
     const [showModal, setShowModal] = useState(false);
@@ -192,62 +192,61 @@ export default function Navigation() {
                         </div>
                     </div>
                 </div>
-                {openNav && (
-                    <div className="w_nav-overlay">
-                        <nav
-                            role="navigation"
-                            className="nav_menu-links-mobile"
-                            data-nav-menu-open=""
-                        >
-                            <Navbar className="navbar-main w-nav-menu">
-                                <Nav activeKey={activeKey} className="rs-navbar-mobile">
-                                    <>
-                                        {menuItems.map((menu, index) => {
-                                            return (
-                                                <div
-                                                    key={index}
-                                                    className="mobileNavBtns navDisplay"
-                                                    id={menu.id}
-                                                >
-                                                    <Nav.Item  className={`${activeKey === menu.id ? 'active' : ''}`} onClick={openNavDropDown}>
-                                                        <Link  onClick={()=> {setActiveKey(menu.id )}} to={menu.url  || ''} eventKey={index.toString()}>
-                                                            {menu.title}
-                                                        </Link>
-                                                    </Nav.Item>
-                                                </div>
-                                            );
-                                        })}
-                                    </>
-                                </Nav>
-                            </Navbar>
-                            <div className="infotainment">
-                                <div className="nav_right-wrapper margin-top margin-huge">
-                                    <div className="centered-items margin-top margin-large spread max-width-full-mobile-landscape">
-                                        {mobileIcon.map((icon, index) => {
-                                            return (
-                                                <a
-                                                    key={index}
-                                                    href={icon.href}
-                                                    id={icon.id}
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                    className="button is-store max-width-full-mobile-landscape w-inline-block"
-                                                >
-                                                    <img
-                                                        src={icon.src  || ''}
-                                                        loading="lazy"
-                                                        alt={icon.id}
-                                                        width="150"
-                                                    ></img>
-                                                </a>
-                                            );
-                                        })}
-                                    </div>
+                <div className={`${openNav ? "" : "hide"} w_nav-overlay fixed`}>
+                    <nav
+                        role="navigation"
+                        className="nav_menu-links-mobile"
+                        data-nav-menu-open=""
+                    >
+                        <Navbar className="navbar-main w-nav-menu">
+                            <Nav activeKey={activeKey} className="rs-navbar-mobile">
+                                <>
+                                    {menuItems.map((menu, index) => {
+                                        return (
+                                            <div
+                                                key={index}
+                                                className="mobileNavBtns navDisplay"
+                                                id={menu.id}
+                                            >
+                                                <Nav.Item  className={`${activeKey === menu.id ? 'active' : ''}`} onClick={openNavDropDown}>
+                                                    <Link  onClick={()=> {setActiveKey(menu.id )}} to={menu.url  || ''} eventKey={index.toString()}>
+                                                        {menu.title}
+                                                    </Link>
+                                                </Nav.Item>
+                                            </div>
+                                        );
+                                    })}
+                                </>
+                            </Nav>
+                        </Navbar>
+                        <div className="infotainment">
+                            <div className="nav_right-wrapper margin-top margin-huge">
+                                <div className="button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
+                                    {mobileIcon.map((icon, index) => {
+                                        return (
+                                            <>
+                                                <button
+                                                    className="button-store background-color-black"
+                                                    key={index}>
+                                                    <a
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                        href={icon.href}>
+                                                        <img
+                                                            src={icon.src || ''}
+                                                            alt={`Changex ${icon.id}`}
+                                                            loading="lazy">
+                                                        </img>
+                                                    </a>
+                                                </button>
+                                            </>
+                                        );
+                                    })}
                                 </div>
                             </div>
-                        </nav>
-                    </div>
-                )}
+                        </div>
+                    </nav>
+                </div>
                 <Modal id="Changex_modal" show={showModal} onHide={handleClose} centered={true} animation={true}>
                     <>
                         <ScanQrCode

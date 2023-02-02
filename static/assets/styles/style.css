@@ -4853,7 +4853,7 @@ a:hover {
         align-self: flex-start;
     }
 
-    /* .button-group.centered-items.margin-top.margin-large.spread {
+     .button-group.centered-items.margin-top.margin-large.spread {
          grid-column-gap: 0.4rem;
      }
 
@@ -4866,7 +4866,7 @@ a:hover {
          -webkit-justify-content: flex-start;
          -ms-flex-pack: start;
          justify-content: flex-start;
-     }*/
+     }
 
     .padding-section-medium {
         padding-top: 3rem;
@@ -6103,12 +6103,17 @@ a:hover {
 
 .infotainment {
     margin-bottom: 1.3rem;
+    padding: 0 1rem;
     display: flex;
 }
 
 .infotainment .nav_right-wrapper {
     display: block;
     margin: auto;
+}
+
+.fixed {
+    position: fixed !important;
 }
 
 .mobileNavBtns a {
