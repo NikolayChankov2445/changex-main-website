@@ -7094,6 +7094,7 @@ canvas {
     font-weight: 600 !important;
     font-size: 20px;
     border-bottom: 1px solid #303D48 !important;
+    vertical-align: middle;
 }
 
 .tableValue {
@@ -7103,6 +7104,8 @@ canvas {
     font-weight: 600 !important;
     font-size: 20px;
     border-bottom: 1px solid #303D48 !important;
+    vertical-align: middle;
+    text-align: right;
 }
 
 .tableCellIcon {
@@ -7111,14 +7114,18 @@ canvas {
 }
 
 .tableTokenomicsCellIcon {
-    padding: 0 !important;
     border-bottom: 1px solid #303D48 !important;
+    font-size: 28px !important;
 }
 
 .contentWrapper {
     text-align: center;
     margin: auto;
     padding: 2.5rem;
+}
+
+.tableRow {
+    height: 20px !important;
 }
 
 .tableCell {

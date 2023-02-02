@@ -3,6 +3,7 @@ import { Pie } from '@ant-design/plots';
 
 import Banner from "../Common/Banner";
 import {bannerLogos, bannerTitleTokenomics} from "./tokenItems";
+import TokenomicsTable from "./TokenomicsTable";
 
 export default function Tokenomics({ background, tokenData}) {
     const data = tokenData.chart;
@@ -80,7 +81,7 @@ export default function Tokenomics({ background, tokenData}) {
                             </div>
                         </div>
                         <div>
-
+                            <TokenomicsTable />
                         </div>
                     </div>
                     <div className="margin-top-medium">
