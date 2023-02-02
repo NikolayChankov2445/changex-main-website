@@ -7,13 +7,9 @@ import Seo from "../components/SEO/Seo";
 
 const IndexPage = () => {
   return (
-      <ApyContextProvider>
-          <PricesContextProvider>
           <Layout>
               <Home />
           </Layout>
-          </PricesContextProvider>
-      </ApyContextProvider>
   )
 }
 

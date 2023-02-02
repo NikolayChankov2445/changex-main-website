@@ -73,8 +73,8 @@ export default function Tokenomics({ background, tokenData}) {
                                 </div>
                                 {tokenData.learnMore.map((item, index) => {
                                     return (
-                                        <a href={item.link} target="_blank" rel="noreferrer">
-                                            <img  alt={item.title} style={{padding: "0 10px"}} id={item.title} key={index} src={item.img}/>
+                                        <a key={index} href={item.link} target="_blank" rel="noreferrer">
+                                            <img  alt={item.title} style={{padding: "0 10px"}} id={item.title} src={item.img}/>
                                         </a>
                                     )
                                 })}

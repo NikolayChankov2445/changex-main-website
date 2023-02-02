@@ -25,7 +25,7 @@ const swapCryptoTitleObj = {
     },
     text: "",
     appBtnsVisible: false,
-    buttonUrl: "/supported-tokens",
+    buttonUrl: "/supported",
     scrollBtnText: "View All",
     backgroundImage: "",
     class: "walletPage",

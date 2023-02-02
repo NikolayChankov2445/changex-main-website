@@ -66,7 +66,7 @@ export default function DefiToken({ background, tokenData}) {
                     <div className="defi-perks-wrapper">
                         <div className="grid-defi-perks">
 
-                            <div className="grid-header">
+                            <div key={0} className="grid-header">
                                 <Popconfirm
                                     placement="left"
                                     showCancel={false}
@@ -82,7 +82,7 @@ export default function DefiToken({ background, tokenData}) {
                             </div>
 
                             <div className="grid-second">
-                                <div>
+                                <div  key={1}>
                                     <Popconfirm
                                         placement="left"
                                         title={tokenData.perks[1].title}
@@ -96,7 +96,8 @@ export default function DefiToken({ background, tokenData}) {
                                         </PopUpBtn>
                                     </Popconfirm>
                                 </div>
-                                <div>
+
+                                <div  key={2}>
                                     <Popconfirm
                                         placement="left"
                                         title={tokenData.perks[2].title}
@@ -117,7 +118,7 @@ export default function DefiToken({ background, tokenData}) {
                             </div>
 
                             <div className="grid-main">
-                                <div>
+                                <div  key={5}>
                                     <Popconfirm
                                         placement="left"
                                         title={tokenData.perks[5].title}
@@ -131,7 +132,7 @@ export default function DefiToken({ background, tokenData}) {
                                         </PopUpBtn>
                                     </Popconfirm>
                                 </div>
-                                <div>
+                                <div  key={4}>
                                     <Popconfirm
                                         placement="left"
                                         title={tokenData.perks[4].title}
@@ -148,7 +149,7 @@ export default function DefiToken({ background, tokenData}) {
 
                             </div>
 
-                            <div className="grid-bottom">
+                            <div  key={3} className="grid-bottom">
                                 <Popconfirm
                                     placement="left"
                                     title={tokenData.perks[3].title}

@@ -7111,6 +7111,7 @@ canvas {
 .tableCellIcon {
     padding: 0 !important;
     border-bottom: 1px solid #F1F0F7 !important;
+    width: 200px;
 }
 
 .tableTokenomicsCellIcon {
