@@ -251,7 +251,6 @@ export default function Navigation() {
                 <Modal id="Changex_modal" show={showModal} onHide={handleClose} centered={true} animation={true}>
                     <>
                         <ScanQrCode
-                            className="section-scanpopup wf-section"
                             showModal={showModal}
                             setShowModal={setShowModal}
                             aria-labelledby="modal-modal-title"

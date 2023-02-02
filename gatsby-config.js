@@ -35,5 +35,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-smoothscroll`,
       options: {},
+    },{
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        "icon": `${__dirname}/static/assets/images/icon.png`,
+      }
     }]
 };

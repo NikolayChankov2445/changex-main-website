@@ -2,7 +2,7 @@ import * as React from "react";
 import { useRef, useState } from "react"
 
 import Carousel from "react-bootstrap/Carousel";
-
+import {Popconfirm } from 'antd';
 import {BiChevronLeft, BiChevronRight} from "react-icons/bi";
 import styled from "styled-components";
 
@@ -33,22 +33,9 @@ const PopUpBtn = styled.button`
 `
 
 export default function DefiToken({ background, tokenData}) {
-    const [anchorEl, setAnchorEl] = useState(null);
-    const [popupText, setPopupText] = useState('');
-    const [popupTitle, setPopupTitle] = useState('');
     const [slideItemsText, setSlideItemsText] = useState('1 of 6');
 
     const carouselRef = useRef();
-
-    const handleClick = (event ,index) => {
-        setPopupText(tokenData.perks[index].content)
-        setPopupTitle(tokenData.perks[index].title)
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
 
     function LeftBtnClick() {
         carouselRef.current.prev();
@@ -62,8 +49,6 @@ export default function DefiToken({ background, tokenData}) {
     function onSlide(eventKey) {
         setSlideItemsText(`${eventKey +1} of 6`)
     }
-
-    const open = Boolean(anchorEl);
 
     return (
         <section id="defi-perks" className={background}>
@@ -82,21 +67,48 @@ export default function DefiToken({ background, tokenData}) {
                         <div className="grid-defi-perks">
 
                             <div className="grid-header">
-                                <PopUpBtn onClick={(e) => {handleClick(e,0)}}>
-                                    <img width="210" height="200" src={tokenData.perks[0].image || ''} alt={tokenData.perks[0].title}/>
-                                </PopUpBtn>
+                                <Popconfirm
+                                    placement="left"
+                                    showCancel={false}
+                                    icon={false}
+                                    showConfirm={false}
+                                    title={tokenData.perks[0].title}
+                                    description={tokenData.perks[0].content}
+                                >
+                                    <PopUpBtn>
+                                        <img width="210" height="200" src={tokenData.perks[0].image || ''} alt={tokenData.perks[0].title}/>
+                                    </PopUpBtn>
+                                </Popconfirm>
                             </div>
 
                             <div className="grid-second">
                                 <div>
-                                    <PopUpBtn onClick={(e) => {handleClick(e,1)}}>
-                                        <img width="210" height="200" src={tokenData.perks[1].image || ''} alt={tokenData.perks[1].title}/>
-                                    </PopUpBtn>
+                                    <Popconfirm
+                                        placement="left"
+                                        title={tokenData.perks[1].title}
+                                        description={tokenData.perks[1].content}
+                                        showCancel={false}
+                                        icon={false}
+                                        showConfirm={false}
+                                    >
+                                        <PopUpBtn>
+                                            <img width="210" height="200" src={tokenData.perks[1].image || ''} alt={tokenData.perks[1].title}/>
+                                        </PopUpBtn>
+                                    </Popconfirm>
                                 </div>
                                 <div>
-                                    <PopUpBtn onClick={(e) => {handleClick(e,2)}}>
-                                        <img width="210" height="200" src={tokenData.perks[2].image || ''} alt={tokenData.perks[2].title}/>
-                                    </PopUpBtn>
+                                    <Popconfirm
+                                        placement="left"
+                                        title={tokenData.perks[2].title}
+                                        description={tokenData.perks[2].content}
+                                        showCancel={false}
+                                        icon={false}
+                                        showConfirm={false}
+                                    >
+                                        <PopUpBtn>
+                                            <img width="210" height="200" src={tokenData.perks[2].image || ''} alt={tokenData.perks[2].title}/>
+                                        </PopUpBtn>
+                                    </Popconfirm>
                                 </div>
                             </div>
 
@@ -106,22 +118,49 @@ export default function DefiToken({ background, tokenData}) {
 
                             <div className="grid-main">
                                 <div>
-                                    <PopUpBtn onClick={(e) => {handleClick(e,5)}}>
-                                        <img width="210" height="200" src={tokenData.perks[5].image || ''} alt={tokenData.perks[5].title}/>
-                                    </PopUpBtn>
+                                    <Popconfirm
+                                        placement="left"
+                                        title={tokenData.perks[5].title}
+                                        description={tokenData.perks[5].content}
+                                        showCancel={false}
+                                        icon={false}
+                                        showConfirm={false}
+                                    >
+                                        <PopUpBtn>
+                                            <img width="210" height="200" src={tokenData.perks[5].image || ''} alt={tokenData.perks[5].title}/>
+                                        </PopUpBtn>
+                                    </Popconfirm>
                                 </div>
                                 <div>
-                                    <PopUpBtn  onClick={(e) => {handleClick(e,4)}}>
-                                        <img width="210" height="200" src={tokenData.perks[4].image || ''} alt={tokenData.perks[4].title}/>
-                                    </PopUpBtn>
+                                    <Popconfirm
+                                        placement="left"
+                                        title={tokenData.perks[4].title}
+                                        description={tokenData.perks[4].content}
+                                        showCancel={false}
+                                        icon={false}
+                                        showConfirm={false}
+                                    >
+                                        <PopUpBtn>
+                                            <img width="210" height="200" src={tokenData.perks[4].image || ''} alt={tokenData.perks[4].title}/>
+                                        </PopUpBtn>
+                                    </Popconfirm>
                                 </div>
 
                             </div>
 
                             <div className="grid-bottom">
-                                <PopUpBtn onClick={(e) => {handleClick(e,3)}}>
-                                    <img width="210" height="200" src={tokenData.perks[3].image || ''} alt={tokenData.perks[3].title}/>
-                                </PopUpBtn>
+                                <Popconfirm
+                                    placement="left"
+                                    title={tokenData.perks[3].title}
+                                    description={tokenData.perks[3].content}
+                                    showCancel={false}
+                                    icon={false}
+                                    showConfirm={false}
+                                >
+                                    <PopUpBtn>
+                                        <img width="210" height="200" src={tokenData.perks[3].image || ''} alt={tokenData.perks[3].title}/>
+                                    </PopUpBtn>
+                                </Popconfirm>
                             </div>
                         </div>
 

@@ -4,7 +4,7 @@ export  default function ScanQrCode ({showModal, setShowModal}) {
     return (
         <>
             {showModal ?
-                <div style={{display: "flex"}}  className="section-scanpopup wf-section">
+                <div style={{display: "flex"}}>
                     <div>
                         <div className="modal-scan-wrapper">
                             <div className="padding-small">
