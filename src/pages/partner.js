@@ -12,6 +12,7 @@ import PerksSlide from "../components/Perks/PerksSlide";
 import Features from "../components/Features/Features";
 import Layout from "../components/Layout/Layout";
 import Seo from "../components/SEO/Seo";
+import Contact from "../components/Contact/Contact";
 
 const PartnerPage = () => {
     return (
@@ -21,6 +22,11 @@ const PartnerPage = () => {
             <Features
                 background={"background-color-off-pink"}
                 content={featureContent}
+            />
+            <Contact
+                content={becomeAPartner}
+                formContent={becomeAPartnerForm}
+                background={"becomePartner"}
             />
         </Layout>
     )

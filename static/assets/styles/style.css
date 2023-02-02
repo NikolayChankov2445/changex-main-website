@@ -544,14 +544,26 @@ span.background-color-blue:hover {
 }
 
 .formInput {
-    align-items: center;
-    width: 584px;
-    background: rgba(235, 232, 252, 0.16);
-    border-radius: 16px;
+    align-items: center !important;
+    width: 584px !important;
+    background: rgba(235, 232, 252, 0.16) !important;
+    border-radius: 16px !important;
+    border: none !important;
+    outline: none;
+    height: 4rem;
+    color: var(--white) !important;
 }
 
 .formPartner {
     margin-top: 2rem !important;
+}
+
+.formInputMultiLine {
+    height: 200px !important;
+}
+
+.form-check-label {
+    color: var(--white);
 }
 
 .formPartner > label > span {
