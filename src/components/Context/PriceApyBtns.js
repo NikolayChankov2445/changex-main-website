@@ -14,22 +14,22 @@ const BorderSpan = styled.span`
 const dropDownObj = [
     {
         link: 'https://app.uniswap.org/#/swap?inputCurrency=&outputCurrency=0x7051faed0775f664a0286af4f75ef5ed74e02754',
-        image: '/images/social/uniswapImg.png',
+        image: '/assets/images/social/uniswapImg.png',
         title: 'Uniswap'
     },
     {
         link: 'https://otc.mexc.com/en-US/fastTransaction',
-        image: '/images/social/mexcImage.png',
+        image: '/assets/images/social/mexcImage.png',
         title: 'Mexc'
     },
     {
         link: 'https://hydradex.org/#/swap',
-        image: '/images/social/hydraImg.png',
+        image: '/assets/images/social/hydraImg.png',
         title: 'Hydra Dex'
     }
 ]
 
-export default function PriceApyBtns() {
+export default function PriceApyBtns({ withDropdown }) {
 
     return (
         <div className="infoInnerWrapper grid-2">
@@ -38,7 +38,9 @@ export default function PriceApyBtns() {
                 <BorderSpan className="borderSpan"/>
                 <Apy />
             </div>
-            <DropdownBtn dropDownData={dropDownObj} />
+            {withDropdown &&
+                <DropdownBtn dropDownData={dropDownObj} />
+            }
         </div>
     )
 }

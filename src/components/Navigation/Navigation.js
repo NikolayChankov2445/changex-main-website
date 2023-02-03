@@ -1,17 +1,27 @@
 import * as React from "react";
-import { useEffect, useState, useContext } from "react";
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import {useEffect, useState, useContext, useMemo} from "react";
+import { Nav, Navbar } from "rsuite";
 import { Link } from "gatsby";
 import Modal from 'react-bootstrap/Modal';
 import { iconItems, menuItems, mobileIcon } from "./navItems";
 import ScanQrCode from "../QrCode/ScanQrCode";
+import styled from "styled-components";
 import ChangeXLogoColor from "../../../static/assets/images/common/Logo_navigation.svg";
 import QRBlack from "../../../static/assets/images/common/icn-qr-black.svg";
 import MenuIcon from "../../../static/assets/images/common/Menu-Icon_1Menu Icon.png";
 import ExternalLink from "../../../static/assets/images/common/external_link.svg";
 import {PricesContext} from "../Context/PriceContext";
 import {ApyContext} from "../Context/ApyContext";
+import 'rsuite/dist/rsuite.min.css';
+import PriceApyBtns from "../Context/PriceApyBtns";
+
+
+const NavMobile = styled.div`
+  left: 0;
+  right: 0;
+  width: 100%;
+  position: fixed;
+`
 
 export default function Navigation() {
     const [apy, setApy] = useState("");
@@ -66,41 +76,40 @@ export default function Navigation() {
                     <div className="is-nav navHeight">
                         <div className="nav_full-wrapper">
                             <Navbar className="nav_menu-links w-nav-menu navbar-main">
-                                    <Navbar.Brand href="/" className="nav_left-wrapper">
-                                        <div className="nav_brandlink margin-right w-nav-brand">
-                                            <Link to="/">
-                                                <img
-                                                    src={ChangeXLogoColor  || ''}
-                                                    loading="lazy"
-                                                    alt="ChangeX Logo"
-                                                    className="nav_logo"
-                                                ></img>
-                                            </Link>
-                                        </div>
-                                    </Navbar.Brand>
-                                    <Nav activeKey={activeKey} className={"hide-mobile-landscape"}>
-                                        <>
-                                          {menuItems.map((menu, index) => {
-                                                return (
-                                                    <div
-                                                        key={index}
-                                                        className={`nav_menu-links navDisplay ${
-                                                            menu.hasLine ? "navItemBorder" : ""
-                                                        }`}
-                                                        id={menu.id}
-                                                    >
-                                                        <Nav.Item as="li" >
-                                                            <Link onClick={()=> {setActiveKey(menu.id )}}  to={menu.url  || ''} eventkey={index.toString()}>
-                                                                {menu.title}
-                                                            </Link>
-                                                        </Nav.Item>
-                                                    </div>
-                                                );
-                                            })}
-                                        </>
-                                    </Nav>
+                                <Navbar.Brand href="/" className="nav_left-wrapper">
+                                    <div className="nav_brandlink margin-right w-nav-brand">
+                                        <Link to="/">
+                                            <img
+                                                src={ChangeXLogoColor}
+                                                loading="lazy"
+                                                alt="ChangeX Logo"
+                                                className="nav_logo"
+                                            ></img>
+                                        </Link>
+                                    </div>
+                                </Navbar.Brand>
+                                <Nav activeKey={activeKey} className={"hide-mobile-landscape"}>
+                                    <>
+                                        {menuItems.map((menu, index) => {
+                                            return (
+                                                <div
+                                                    key={index}
+                                                    className={`nav_menu-links navDisplay ${
+                                                        menu.hasLine ? "navItemBorder" : ""
+                                                    }`}
+                                                    id={index.toString()}
+                                                >
+                                                    <Nav.Item className={`${activeKey === menu.id ? 'active' : ''}`}>
+                                                        <Link activeClassName="activeLink" onClick={()=> {setActiveKey(menu.id )}} to={menu.url} eventkey={index.toString()}>
+                                                            {menu.title}
+                                                        </Link>
+                                                    </Nav.Item>
+                                                </div>
+                                            );
+                                        })}
+                                    </>
+                                </Nav>
                             </Navbar>
-
 
                             <div className="nav_right-wrapper">
                                 <div className="nav_stats-wrapper">
@@ -177,8 +186,10 @@ export default function Navigation() {
                                     aria-controls="w-nav-overlay-0"
                                     aria-haspopup="menu"
                                 >
-                                    <button id="changex_qr"
-                                            onClick={openNavDropDown}>
+                                    <button
+                                        id="changex_qr"
+                                        onClick={openNavDropDown}
+                                        className="transparent">
                                         <img
                                             src={MenuIcon || ''}
                                             width="20"
@@ -192,7 +203,7 @@ export default function Navigation() {
                         </div>
                     </div>
                 </div>
-                <div className={`${openNav ? "" : "hide"} w_nav-overlay fixed`}>
+                <NavMobile className={`${openNav ? "" : "hide"} w_nav-overlay fixed`}>
                     <nav
                         role="navigation"
                         className="nav_menu-links-mobile"
@@ -219,6 +230,11 @@ export default function Navigation() {
                                 </>
                             </Nav>
                         </Navbar>
+                        <div className="infoWrapper">
+                            <div className="flex margin-small">
+                                <PriceApyBtns withDropdown={false} />
+                            </div>
+                        </div>
                         <div className="infotainment">
                             <div className="nav_right-wrapper margin-top margin-huge">
                                 <div className="button-group centered-items margin-top margin-large spread max-width-full-mobile-landscape">
@@ -246,14 +262,15 @@ export default function Navigation() {
                             </div>
                         </div>
                     </nav>
-                </div>
-                <Modal id="Changex_modal" show={showModal} onHide={handleClose} centered={true} animation={true}>
+                </NavMobile>
+                <Modal id="Changex_modal" show={showModal} centered={true} onHide={handleClose} animation={true}>
                     <>
                         <ScanQrCode
+                            className=""
                             showModal={showModal}
                             setShowModal={setShowModal}
-                            aria-labelledby="modal-modal-title"
-                            aria-describedby="modal-modal-description">
+                            aria-labelledby="Changex Qr Code Download"
+                            aria-describedby="Changex Qr Code">
                         </ScanQrCode>
                     </>
                 </Modal>

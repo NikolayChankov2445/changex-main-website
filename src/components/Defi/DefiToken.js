@@ -120,7 +120,7 @@ export default function DefiToken({ background, tokenData}) {
                             <div className="grid-main">
                                 <div  key={5}>
                                     <Popconfirm
-                                        placement="left"
+                                        placement="right"
                                         title={tokenData.perks[5].title}
                                         description={tokenData.perks[5].content}
                                         showCancel={false}
@@ -134,7 +134,7 @@ export default function DefiToken({ background, tokenData}) {
                                 </div>
                                 <div  key={4}>
                                     <Popconfirm
-                                        placement="left"
+                                        placement="right"
                                         title={tokenData.perks[4].title}
                                         description={tokenData.perks[4].content}
                                         showCancel={false}

@@ -12,6 +12,15 @@ module.exports = {
     options: {
       "trackingId": "UA-221374557-1"
     }
+  },{
+    resolve: 'gatsby-plugin-google-gtag',
+    options: {
+      trackingIds: [
+        "UA-221374557-1",
+        "", // Google Ads / Adwords / AW
+        "", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+      ],
+    }
   },
     {
       resolve: `gatsby-source-filesystem`,
@@ -38,7 +47,7 @@ module.exports = {
     },{
       resolve: `gatsby-plugin-manifest`,
       options: {
-        "icon": `${__dirname}/static/assets/images/icon.png`,
+        "icon": `${__dirname}/src/assets/images/icon.png`,
       }
     }]
 };

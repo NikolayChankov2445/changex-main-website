@@ -187,7 +187,7 @@ export const tokenPageDeFiData = {
             image: '/assets/images/token/icn-growwealth.svg'
         },
     ],
-    centerIcon: '/images/token/defi_circle.svg',
+    centerIcon: '/assets/images/token/defi_circle.svg',
     learnMore: [
         {
             img: '/assets/images/social/logo-coinmarketcap-white.svg',

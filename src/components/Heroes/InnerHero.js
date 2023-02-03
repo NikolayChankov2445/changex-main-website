@@ -85,8 +85,8 @@ export default function InnerHero( { heroObj } ){
                                     </button>
                                 </div>
                                 <div className={`${heroObj.scrollBtnText && heroObj.class === "tokenPage" ? '' : "hide"} infoWrapper`}>
-                                    <div className="infoInnerWrapper grid-2">
-                                        <PriceApyBtns />
+                                    <div className="flex">
+                                        <PriceApyBtns withDropdown={true} />
                                     </div>
                                 </div>
                                 <div className={`${heroObj.scrollBtnText && heroObj.class !== "tokenPage" ? '' : 'hide'} tabs-menu goToLink w-tab-menu`}>

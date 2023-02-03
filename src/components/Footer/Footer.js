@@ -9,7 +9,11 @@ import DownloadApple from "../../../static/assets/images/common/DW-Apple.svg";
 import DownloadGoogle from "../../../static/assets/images/common/DW-Google.svg";
 import QRBlack from "../../../static/assets/images/common/icn-qr-black.svg";
 import Modal from "react-bootstrap/Modal";
+import styled from "styled-components";
 
+const ImageSocial = styled.img`
+  object-fit: cover;
+`
 
 export default function Footer() {
     const [showModal, setShowModal] = useState(false);
@@ -163,11 +167,12 @@ export default function Footer() {
                                                     href={item.url}
                                                     className={item.className}
                                                 >
-                                                    <img
+                                                    <ImageSocial
+                                                        className=""
                                                         src={item.src  || ''}
                                                         alt={`${item.id} changex`}
                                                         loading="lazy"
-                                                    ></img>
+                                                    ></ImageSocial>
                                                 </a>
                                             )
                                         })}

@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -554,16 +555,13 @@ span.background-color-blue:hover {
     color: var(--white) !important;
 }
 
+.form-control:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 1px #1976D2 !important;
+}
+
 .formPartner {
     margin-top: 2rem !important;
-}
-
-.formInputMultiLine {
-    height: 200px !important;
-}
-
-.form-check-label {
-    color: var(--white);
 }
 
 .formPartner > label > span {
@@ -645,6 +643,14 @@ input:focus {
     border: 1px solid var(--purpleBackgroundColor) !important;
     /*    width: 25px;
         height: 25px;*/
+}
+
+.formInputMultiLine {
+    height: 200px !important;
+}
+
+.form-check-label {
+    color: var(--white);
 }
 
 .message > div {
@@ -1469,7 +1475,7 @@ input:focus {
 }
 
 .is-qr-footer {
-    padding: 12px !important;
+    padding: 10px !important;
     border-style: solid;
     border-width: 1px;
     display: block;
@@ -1690,7 +1696,6 @@ a:hover {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
-    justify-content: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -1902,6 +1907,10 @@ a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex !important;
+}
+
+.fixed {
+    position: fixed !important;
 }
 
 .nav_bar {
@@ -2458,13 +2467,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 24px;
     background: #FFFFFF;
     border: 1px solid #3418D8;
     border-radius: 24px !important;
-
     /* Inside auto layout */
-
     flex: none;
     order: 2;
     flex-grow: 1;
@@ -3137,7 +3143,7 @@ a:hover {
 }
 
 .bankStick .carousel-indicators {
-    position: absolute;
+    position: absolute !important;
     bottom: -20% !important;
 }
 
@@ -3321,6 +3327,11 @@ a:hover {
 
 .spacer-small {
     height: 1rem;
+}
+
+#dropdown-basic-button {
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .spacer-middle {
@@ -4028,7 +4039,7 @@ a:hover {
 
 @media screen and (max-width: 1024px) {
     .bankStick .carousel-indicators {
-            bottom: -13% !important;
+        bottom: -13% !important;
     }
 
     .margin-top-large {
@@ -4861,20 +4872,20 @@ a:hover {
         align-self: flex-start;
     }
 
-     .button-group.centered-items.margin-top.margin-large.spread {
-         grid-column-gap: 0.4rem;
-     }
+    .button-group.centered-items.margin-top.margin-large.spread {
+        grid-column-gap: 0.4rem;
+    }
 
-     .button-group.centered-items.margin-top.margin-large.spread.max-width-full-tablet {
-         grid-row-gap: 0.4rem;
-     }
+    .button-group.centered-items.margin-top.margin-large.spread.max-width-full-tablet {
+        grid-row-gap: 0.4rem;
+    }
 
-     .button-group.centered-items.margin-top.margin-large.spread.align-left {
-         -webkit-box-pack: start;
-         -webkit-justify-content: flex-start;
-         -ms-flex-pack: start;
-         justify-content: flex-start;
-     }
+    .button-group.centered-items.margin-top.margin-large.spread.align-left {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
 
     .padding-section-medium {
         padding-top: 3rem;
@@ -5190,15 +5201,6 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-
-    .bankStick .carousel-control-next {
-        top: 6% !important;
-    }
-
-    .bankStick .carousel-control-prev {
-        top: 6% !important;
-    }
-
     .bannerLogos {
         display: grid !important;
     }
@@ -5305,6 +5307,7 @@ a:hover {
     .bankStick .carousel-control-prev {
         top: 6% !important;
     }
+
 
     .is-qr-footer {
         display: none;
@@ -6115,17 +6118,13 @@ a:hover {
 
 .infotainment {
     margin-bottom: 1.3rem;
-    padding: 0 1rem;
     display: flex;
+    padding: 0 1rem;
 }
 
 .infotainment .nav_right-wrapper {
     display: block;
     margin: auto;
-}
-
-.fixed {
-    position: fixed !important;
 }
 
 .mobileNavBtns a {
@@ -6817,18 +6816,18 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem;
-    width: 410px;
+    padding: 3rem 1rem;
+    width: 400px;
     bottom: 15%;
     left: 0;
-    height: 450px;
+    height: 325px;
     right: 0;
     position: absolute !important;
     border: 1px solid var(--themeBlueBackgroundColor);
 }
 
 .bankStick .carousel {
-    position: absolute !important;
+    position: absolute;
     height: 95%;
 }
 
@@ -6917,6 +6916,8 @@ a:hover {
 
 .bankStick .carousel-indicators > button {
     margin: 1rem 1rem 0 1rem !important;
+    background-color: var(--offWhite);
+    border: 1px solid var(--white);
 }
 
 .infoWrapper {
@@ -6968,11 +6969,11 @@ a:hover {
     height: 71px;
 }
 
-.showMoreBtn {
+/*.showMoreBtn {
     border: 1px solid var(--themeBlueBackgroundColor);
     border-radius: 40px;
     color: var(--themeBlueBackgroundColor);
-}
+}*/
 
 .max-height-card {
     height: 370px;
@@ -7136,7 +7137,6 @@ canvas {
     font-size: 20px;
     border-bottom: 1px solid #303D48 !important;
     vertical-align: middle;
-    text-align: right !important;
 }
 
 .tableCellIcon {
@@ -7224,7 +7224,6 @@ canvas {
     display: none !important;
 }
 
-#dropdown-basic-button {
-    font-size: 24px;
-    font-weight: 600;
+.activeLink {
+    color: var(--themeBlueBackgroundColor) !important;
 }
