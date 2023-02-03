@@ -7227,3 +7227,7 @@ canvas {
 .activeLink {
     color: var(--themeBlueBackgroundColor) !important;
 }
+
+.ant-popover-arrow:before {
+    background: #303D48 !important;
+}

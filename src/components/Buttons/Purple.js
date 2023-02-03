@@ -6,6 +6,7 @@ export const ReactPurpleButton = styled('button')({
     padding: "13px 32px",
     borderRadius: "8px",
     textTransform: 'none',
+    color: '#FFF',
     fontSize: 20,
     fontWeight: 600,
     lineHeight: 1.5,
