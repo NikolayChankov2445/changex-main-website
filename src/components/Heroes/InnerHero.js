@@ -47,7 +47,7 @@ export default function InnerHero( { heroObj } ){
                                         {heroObj.titleObj.h3}
                                     </div>
                                 </div>
-                                <div className={`${heroObj.appBtnsVisible ? '' : 'hide'} button-group margin-top margin-large spread max-width-full-mobile-landscape`}>
+                                <div className={`${heroObj.appBtnsVisible ? '' : 'hide'} button-group margin-top margin-xxlarge spread max-width-full-mobile-landscape`}>
                                     <button
                                         className="button-store background-color-black"
                                     ><a

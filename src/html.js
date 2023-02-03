@@ -20,6 +20,10 @@ export default function HTML(props) {
           <meta name="twitter:image" content={'https://changex.io/images/Changex-OG.jpeg'}/>
           <meta name="twitter:image:src" content={'https://changex.io/images/Changex-OG.jpeg'}/>
           <meta name="twitter:site" content={'@ChangeXapp'}/>
+          <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="true" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+          <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"/>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

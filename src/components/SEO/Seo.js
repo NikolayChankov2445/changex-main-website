@@ -9,10 +9,6 @@ const SEO = ({ title, description, imageAlt }) => (
         <meta name="twitter:image:alt" content={imageAlt}/>
         <meta name="twitter:title" content={title}/>
         <meta name="twitter:description" content={description}/>
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="true" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"/>
     </>
 )
 
