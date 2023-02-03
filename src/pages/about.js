@@ -33,8 +33,8 @@ const AboutPage = () => {
             </div>
             <section id="about">
                 <ThoughtWall thoughtObj={ thoughtObj }/>
-                <Team titleObj={titleExpertsObj} teamData={teamExpertsData}/>
-                <Team titleObj={titleAdvisorsObj} teamData={teamAdvisorsData}/>
+                <Team titleObj={titleExpertsObj} teamData={teamExpertsData} paddingClass={'padding-global'}/>
+                <Team titleObj={titleAdvisorsObj} teamData={teamAdvisorsData} paddingClass={'padding-global-bottom-sides'}/>
                 <Roadmap background={'background-color-black'} roadmapData={roadMapAboutData}/>
                 <SectionCta />
             </section>

@@ -832,6 +832,10 @@ input:focus {
     padding: 5rem 2rem 0 2rem;
 }
 
+.padding-global-bottom-sides {
+    padding: 0 2rem 5rem 2rem;
+}
+
 .padding-global.background-color-grey {
     background-color: transparent;
 }
@@ -2394,7 +2398,7 @@ a:hover {
 }
 
 .card-text {
-    font-size: 1.125rem !important;
+    font-size: 1rem !important;
 }
 
 .box-container {
@@ -4023,6 +4027,10 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+    .bankStick .carousel-indicators {
+            bottom: -13% !important;
+    }
+
     .margin-top-large {
         margin-top: 6rem !important;
     }
@@ -5291,11 +5299,11 @@ a:hover {
 @media screen and (max-width: 600px) {
 
     .bankStick .carousel-control-next {
-        top: 0 !important;
+        top: 6% !important;
     }
 
     .bankStick .carousel-control-prev {
-        top: 0 !important;
+        top: 6% !important;
     }
 
     .is-qr-footer {
@@ -5349,10 +5357,6 @@ a:hover {
 
     .slider-header-text {
         font-size: 28px !important;
-    }
-
-    .aboutCardWrapper {
-        padding: 12px !important;
     }
 
     #advantages {
@@ -5423,6 +5427,14 @@ a:hover {
 }
 
 @media screen and (max-width: 479px) {
+
+    .bankStick .carousel-control-next {
+        top: 0 !important;
+    }
+
+    .bankStick .carousel-control-prev {
+        top: 0 !important;
+    }
 
     .bank_wrapper-left.form {
         margin-top: 6rem;
@@ -5851,7 +5863,7 @@ a:hover {
 @media screen and (max-width: 376px) {
     .section_hero {
         padding-top: 0 !important;
-        height: 125vh !important;
+        height: 135vh !important;
     }
 
     .container-hero {
@@ -6846,6 +6858,7 @@ a:hover {
 .slider-content {
     margin: 1rem;
     font-size: 1.3rem;
+    max-height: 200px;
 }
 
 .slider-header-text {
@@ -6962,7 +6975,8 @@ a:hover {
 }
 
 .max-height-card {
-    height: 395px;
+    height: 370px;
+    padding: 0 !important;
     animation-name: card-closed;
     animation-duration: 2s;
     animation-direction: reverse;
@@ -7122,7 +7136,7 @@ canvas {
     font-size: 20px;
     border-bottom: 1px solid #303D48 !important;
     vertical-align: middle;
-    text-align: right;
+    text-align: right !important;
 }
 
 .tableCellIcon {
@@ -7208,4 +7222,9 @@ canvas {
 
 .ant-popconfirm-buttons {
     display: none !important;
+}
+
+#dropdown-basic-button {
+    font-size: 24px;
+    font-weight: 600;
 }

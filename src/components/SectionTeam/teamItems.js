@@ -90,8 +90,8 @@ export const teamAdvisorsData = [
     {
         name: 'Dimiter Gurdjilov',
         role: 'Advisory board member',
-        about: 'Dimitar is an experienced and versatile copywriter and marketing professional. He joined Changex at the beginning of the ICO and hasn’t stopped writing since. Dimitar handles UI and UX copy and our blog, crafts press releases, and comes up with fresh branding ideas.',
-        about2: 'He holds a BA in Arabic studies from Sofia University. As an M&A Banker at JPMorgan, he executed transactions with value in excess of $80bn. As an investment principal at Bedminster and NBGI PE, led investments in numerous transactions with cumulative IRR in excess of 75% and 50%, respectively. Dimiter holds an MBA in International Finance from University of Miami and a BA in Business Administration & Economics from the American University in Bulgaria.',
+        about: 'Dimitar is an experienced and versatile copywriter and marketing professional. He joined Changex at the beginning of the ICO and hasn’t stopped writing since. Dimitar handles UI and UX copy and our blog, crafts press releases, and comes up with fresh branding ideas. He holds a BA in Arabic studies from Sofia University.As an M&A Banker at JPMorgan, he executed transactions',
+        about2: 'with value in excess of $80bn. As an investment principal at Bedminster and NBGI PE,led investments in numerous transactions with cumulative IRR in excess of 75% and 50%, respectively. Dimiter holds an MBA in International Finance from University of Miami and a BA in Business Administration & Economics from the American University in Bulgaria.',
         src: '/assets/images/team/img-Dimiter_Gurdjilov.png',
         social: 'https://www.linkedin.com/in/dimitergurdjilov/',
         showMore: true
@@ -99,8 +99,8 @@ export const teamAdvisorsData = [
     {
         name: 'Stefan Ivanov',
         role: 'Advisory board member',
-        about: 'Senior Banker with 25+ years of experience with Citibank, Banque Paribas and Challenger Capital Management.  Served as CEO of Citibank in Bulgaria bringing the bank to #1 position. Held senior roles with Citi in London, Sao Paulo, Seoul and Tunisia.',
-        about2: 'Traded derivatives at Banque Paribas in New York and on the floor of the American Stock Exchange in New York. Chairman of the Audit Committee of UBB - KBC Group in Bulgaria. Stefan is an alum of Harvard Business School and holds an MBA in Financial Engineering from Cornell University and a BA in Business Administration from the American University in Bulgaria.  What is more, in 2020, Stefan and his son crossed the Atlantic on a self-made boat, entirely on their own, with the mission to raise awareness for an organ transplant program!.',
+        about: 'Senior Banker with 25+ years of experience with Citibank, Banque Paribas and Challenger Capital Management.  Served as CEO of Citibank in Bulgaria bringing the bank to #1 position. Held senior roles with Citi in London, Sao Paulo, Seoul and Tunisia. Senior Banker with 25+ years of experience with Citibank, Banque Paribas and Challenger Capital Management. ',
+        about2: 'Served as CEO of Citibank in Bulgaria bringing the bank to #1 position. Held senior roles with Citi in London,Sao Paulo, Seoul and Tunisia. Chairman of the Audit Committee of UBB - KBC Group in Bulgaria. Stefan is an alum of Harvard Business School and holds an MBA in Financial Engineering from Cornell University and a BA in Business Administration from the American University in Bulgaria.  What is more, in 2020, Stefan and his son crossed the Atlantic on a self-made boat, entirely on their own, with the mission to raise awareness for an organ transplant program!.',
         src: '/assets/images/team/img-Stefan_Ivanov.png',
         social: 'https://www.linkedin.com/in/stefan-ivanov-301a138/',
         showMore: true
@@ -108,10 +108,11 @@ export const teamAdvisorsData = [
     {
         name: 'Neil Cunha-Gomes',
         role: 'Advisory board member',
-        about: 'Over the past 5 years, Neil has led a number of high-profile investments globally at the SoftBank Vision Fund, which has over $100 billion AUM, where he focuses on Growth Equity and Crypto investing. His crypto investments include Consensys.',
-        about2: 'His 10+ years of investing experience is a perfect addition to the ChangeX advisory board.',
+        about: 'Over the past 5 years, Neil has led a number of high-profile investments globally at the SoftBank Vision Fund, which has over $100 billion AUM, where he focuses on Growth Equity and Crypto investing. His crypto investments include Consensys (one of the most reputable brands in the industry, behind flagship projects such as MetaMask) and Elliptic',
+        about2: '(one of the most trusted crypto compliance solutions providers).  His 10+ years of investing experience is a perfect addition to the ChangeX advisory board.',
         src: '/assets/images/team/img-Neil_Cunha-Gomes.png',
         social: 'https://www.linkedin.com/in/neil-cunha-gomes-89998a14/',
         showMore: true
     }
 ]
+
