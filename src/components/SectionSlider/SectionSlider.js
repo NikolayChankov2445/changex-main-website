@@ -1,10 +1,9 @@
 import * as React from "react";
 import { useState } from "react";
 
-import CardSlider from "../Slider/cardSlider";
-import "react-multi-carousel/lib/styles.css";
 import {LimeButton} from "../Buttons/Lime";
-
+import CardSlider from "../Slider/CardSlider";
+import "react-multi-carousel/lib/styles.css";
 
 let carouselRef2;
 
