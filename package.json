@@ -29,7 +29,6 @@
     "gatsby-plugin-google-gtag": "^5.5.0",
     "gatsby-plugin-layout": "^4.5.0",
     "gatsby-plugin-manifest": "^5.5.0",
-    "gatsby-plugin-page-transitions": "^1.0.8",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^5.5.0",
     "gatsby-transformer-remark": "^6.5.0",

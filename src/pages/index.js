@@ -1,7 +1,6 @@
 import * as React from "react"
 import {lazy} from "react";
 
-
 import Home from "../components/Home/Home";
 import Seo from "../components/SEO/Seo";
 
