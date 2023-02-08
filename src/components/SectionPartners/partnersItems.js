@@ -115,7 +115,8 @@ export const featureContent = {
             offerText: 'Unique offer until 31.03.2023',
             bottomText: 'Please note that the special promo will last until 31 March 2023 so make sure to get in touch and claim your spot in Changex.'
         }
-    ]
+    ],
+    info: "Please note that the special promo will last until 31 March 2023 so make sure to get in touch and claim your spot in Changex."
 }
 
 export const becomeAPartner = {

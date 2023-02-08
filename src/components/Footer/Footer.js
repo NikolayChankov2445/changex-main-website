@@ -12,7 +12,7 @@ import Modal from "react-bootstrap/Modal";
 import styled from "styled-components";
 
 const ImageSocial = styled.img`
-  object-fit: cover;
+  object-fit: cover !important;
 `
 
 export default function Footer() {
@@ -37,6 +37,14 @@ export default function Footer() {
                                     <br /> All trademarks and copyrights belong to their
                                     respective owners.
                                 </div>
+                                <a
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    href="https://token.changex.io/"
+                                    className="transparent button portal w-inline-block"
+                                >
+                                    <div>Investor&#x27;s Portal</div>
+                                </a>
                             </div>
                             <div className="button-group footer-group">
                                 {menuItemsFooter.map((menu,index) => {
@@ -54,7 +62,7 @@ export default function Footer() {
                             <div className="button-group footer-group">
                                 {menuItemsFooter2.map((item, index) => {
                                     return (
-                                        item.link === true ?
+                                        item.link === true && item.title ?
                                             <Link
                                                 id={item.title}
                                                 key={index}
@@ -76,14 +84,6 @@ export default function Footer() {
                                             </a>
                                     )
                                 })}
-                                <a
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    href="https://token.changex.io/"
-                                    className="button is-secondary portal w-inline-block"
-                                >
-                                    <div>Investor&#x27;s Portal</div>
-                                </a>
                             </div>
                             <div className="button-group-store-footer centered-items margin-top spread align-left social">
                                 <button

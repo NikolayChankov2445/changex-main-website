@@ -6,13 +6,6 @@ import {Popconfirm } from 'antd';
 import {BiChevronLeft, BiChevronRight} from "react-icons/bi";
 import styled from "styled-components";
 
-const TypographySubTitle = styled.p`
-  padding: 5px 0 0 0;
-  font-size: medium;
-  width: fit-content;
-  color: #ffffff;
-`
-
 const TypographySubTitleSlider = styled.p`
   padding: 5px 0 0 0;
   font-size: medium;
@@ -199,7 +192,7 @@ export default function DefiToken({ background, tokenData}) {
                             onClick={(e) => {
                                 LeftBtnClick(e);
                             }}
-                            className="button-arrows"
+                            className="slide-arrows slide-arrow-left"
                         >
                             <BiChevronLeft />
                         </button>
@@ -208,7 +201,7 @@ export default function DefiToken({ background, tokenData}) {
                             onClick={(e) => {
                                 RightBtnClick(e);
                             }}
-                            className="button-arrows"
+                            className="slide-arrows slide-arrow-right"
                         >
                             <BiChevronRight />
                         </button>

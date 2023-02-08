@@ -34,10 +34,39 @@ export const ReactPurpleButton = styled('button')({
     },
 });
 
+export const Link = styled('a')({
+    outline: "none",
+    textDecoration: "none",
+    color: '#FFF',
+    fontFamily: [
+        'Source Sans Pro'
+    ].join(','),
+    '&:hover': {
+        boxShadow: 'none',
+        color: '#FFF',
+        outline: 'none',
+        textDecoration: 'none',
+        border: 'none'
+    },
+    '&:active': {
+        boxShadow: 'none',
+        color: '#FFF',
+        outline: 'none',
+        textDecoration: 'none',
+    },
+    '&:focus': {
+        boxShadow: 'none',
+        color: '#FFF',
+        outline: 'none',
+        textDecoration: 'none',
+    },
+});
+
+
 export function PurpleButton({text,url}) {
     return (
         <ReactPurpleButton href={url} variant="contained" size="large">
-            {text}
+            <Link href={url} target="_blank">{text}</Link>
         </ReactPurpleButton>
     );
 }

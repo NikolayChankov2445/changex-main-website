@@ -2,17 +2,20 @@ export const bankItems = [
     {
         src: '/assets/images/bank/Banking.svg',
         title: 'Banking in the Wallet',
-        text: 'Simplify life with the world’s first true bank account integrated into a DeFi wallet.'
+        text: 'Simplify life with the world’s first true bank account integrated into a DeFi wallet.',
+        id: 'changex_Banking'
     },
     {
         src: '/assets/images/bank/SEPA.svg',
         title: 'Easy SEPA transactions',
-        text: 'Receive your salary, send money to your family, or transact in 36 countries across Europe.'
+        text: 'Receive your salary, send money to your family, or transact in 36 countries across Europe.',
+        id: 'changex_SEPA'
     },
     {
         src: '/assets/images/bank/Safety.svg',
         title: 'Security first',
-        text: 'Changex will act as a licensed agent of one of the best Electronic Money Institutions in the space.'
+        text: 'Changex will act as a licensed agent of one of the best Electronic Money Institutions in the space.',
+        id: 'changex_safety'
     }
 ]
 
@@ -33,7 +36,7 @@ export const heroObj = {
     text: "",
     appBtnsVisible: false,
     scrollBtnText: "Discover Bank",
-    scrollToID: "bank",
+    scrollToID: "changex_wall",
     backgroundImage: '/assets/images/bank/bank-hero-bg.png',
     class: 'bankPage',
     perksArray: [

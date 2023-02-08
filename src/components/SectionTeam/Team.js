@@ -1,109 +1,50 @@
 import * as React from "react";
-import {Card} from "react-bootstrap";
-import { useState } from "react";
-import { BsDashCircle } from "react-icons/bs";
-import styled from "styled-components";
+import { Avatar } from "rsuite";
 
-const Grid = styled.div`
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
-  @media only screen and (max-width: 1025px) {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-  @media only screen and (max-width: 600px) {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-`
+import LinkedinLogo from "../../../static/assets/images/social/linkedIn.svg";
+import {styled} from "@mui/material/styles";
 
-const Wrapper = styled.div`
-  display: flex;
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 3.5rem;
-  width: max-content;
-`
+import Card from "@mui/material/Card";
+import {CardActions, CardHeader, Collapse} from "@mui/material";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import RemoveIcon from "@mui/icons-material/Remove";
+import ExpandableItem from "../Common/ExpandableItem";
 
-const HeadarSubHeader = styled.div`
-  margin: auto;
-`
+const TypographyTitle = styled(Typography)({
+    fontWeight: 600,
+    fontSize: "22px !important",
+    fontFamily: [
+        'Lexend'
+    ]
+});
 
-const TypographyTitles = styled.h3`
-  font-weight: 600;
-  font-size: large;
-  font-family: Lexend, sans-serif;
-  margin-bottom: 0.7rem;
-`
+const TypographySubTItle = styled(Typography)({
+    backgroundColor: '#8366F4',
+    borderRadius: 100,
+    padding: "5px 10px ",
+    width: "fit-content",
+    color: "#ffffff"
+});
 
-const TypographyAbout = styled.p`
-  height: 150px;
-  font-size: 0.9rem;
-  font-family: Source Sans Pro, sans-serif;
-  @media only screen and (max-width: 600px) {
-    height: 175px !important;
-  }
-`
+const ImageMore = styled('img')({
+    fontSize: 25,
+    color: '#f5f5fa',
+    border: 'none',
+    '&:hover': {
+        outline: "none",
+    },
+    '&:focus': {
+        outline: "none",
+    },
+})
 
-const TypographyAbout2 = styled.p`
-  text-align: center;
-  font-size: 0.9rem;
-  font-family: Source Sans Pro, sans-serif;
-`
-const TypographySubTitle = styled.div`
-  background-color: #8366F4;
-  border-radius: 100px;
-  padding: 5px 10px;
-  width: fit-content;
-  &&{
-    color: #ffffff !important;
-  }
-  
-`
-const AvatarImg = styled.img`
-  border-radius: 45px !important;
-  width: 90px;
-  height: 90px;
-`
 
-const Image = styled.img`
-  border-radius: 45px !important;
-  width: 45px;
-  height: 45px;
-  &:hover {
-    outline: none;
-  },
- &:focus {
-  outline: none;
-}
-`
+export default function Team({ titleObj, teamData }) {
 
-const ImageMore = styled.img`
-  font-size: 25px;
-  color: blue;
-  border: none;
-  &:hover {
-    outline: none;
-  },
-  &:focus {
-  outline: none;
-  }
-`
-
-const ExpandableItem = props => {
-    const [open, setOpen] = useState(false);
-    return props.render({ open, setOpen });
-};
-
-export default function Team({ titleObj, teamData, paddingClass }) {
     return (
-        <div id="section_team">
-            <div className={paddingClass}>
+        <div id="changex_team">
+            <div className="padding-global">
                 <div className="container-large ">
                     <h5 className="heading-style-h7 margin-vertical margin-large blue">
                         {titleObj.head2}
@@ -114,7 +55,7 @@ export default function Team({ titleObj, teamData, paddingClass }) {
                     <p className="margin-vertical margin-large">
                         <strong>{titleObj.paragraph}</strong>
                     </p>
-                    <Grid>
+                    <div className="w-layout-grid grid-3">
                         {teamData.map((item, index) => {
                             return (
                                 <ExpandableItem
@@ -122,90 +63,83 @@ export default function Team({ titleObj, teamData, paddingClass }) {
                                     className="margin-large"
                                     render={(props) => (
                                         <>
-                                            <Card className={`${
-                                                props.open ? "" : "max-height-card"
-                                            } aboutCardWrapper`}
+                                            <Card
+                                                className={`${
+                                                    props.open ? "" : "max-height-card"
+                                                } aboutCardWrapper`}
                                             >
-                                                <Card.Body  style={{padding: "24px"}}>
-                                                    <Card.Title>
-                                                        <Wrapper>
-                                                            <AvatarImg
-                                                                className="teamAvatar"
-                                                                aria-label="avatar"
-                                                                alt={item.name} src={item.src} />
-                                                            <HeadarSubHeader >
-                                                                <TypographyTitles>{item.name}</TypographyTitles>
-                                                                <Card.Subtitle>
-                                                                    <TypographySubTitle
-                                                                        className="mb-2 text-muted">
-                                                                        {item.role}
-                                                                    </TypographySubTitle>
-                                                                </Card.Subtitle>
-                                                            </HeadarSubHeader>
-                                                        </Wrapper>
+                                                <CardHeader
+                                                    className="cardHeader"
+                                                    avatar={
+                                                        <Avatar className="teamAvatar" aria-label="avatar">
+                                                            <img alt={item.name} src={item.src} />
+                                                        </Avatar>
+                                                    }
+                                                    title={<TypographyTitle>{item.name}</TypographyTitle>}
+                                                    titleTypographyProps={{variant:'h5'}}
 
-                                                    </Card.Title>
-
-                                                    <Card.Text>
-                                                        <TypographyAbout
-                                                            className={`${
-                                                                !props.open && item.showMore
-                                                                    ? "cardContentTxt"
-                                                                    : ""
-                                                            }`}>
-                                                            {item.about}
-                                                        </TypographyAbout>
-                                                        <TypographyAbout2>
-                                                            <div
-                                                                className={`${props.open === true ? '' : 'hide'}`}>
-                                                                <p className="text-align-left">
-                                                                    {item.about2}
-                                                                </p>
-                                                            </div>
-                                                            {props.open ? (
-
-                                                                <BsDashCircle
-                                                                    size={25}
-                                                                    color={'#3418D8'}
-                                                                    className={`${
-                                                                        item.showMore ? "" : "hide"
-                                                                    } showMoreBtn`}
-                                                                    onClick={() => props.setOpen(!props.open)}>
-                                                                </BsDashCircle>
-                                                            ) : (
-                                                                <ImageMore
-                                                                    src={'/assets/images/social/show_more.svg'}
-                                                                    className={`${
-                                                                        item.showMore ? "" : "hide"
-                                                                    }`}
-                                                                    onClick={() => props.setOpen(!props.open)}
-                                                                ></ImageMore>
-                                                            )}
-                                                        </TypographyAbout2>
-                                                    </Card.Text>
-                                                    <Card.Link
+                                                    subheader={<TypographySubTItle className="text-size-small">{item.role}</TypographySubTItle>}
+                                                />
+                                                <CardContent className="cardContent ">
+                                                    <Typography
+                                                        variant="body2"
+                                                        className={`${
+                                                            !props.open && item.showMore
+                                                                ? "cardContentTxt"
+                                                                : ""
+                                                        } font-paragraph`}
+                                                    >
+                                                        {item.about}
+                                                    </Typography>
+                                                    <Typography variant="body2" className="text-align-center font-paragraph">
+                                                        <Collapse
+                                                            in={props.open === true}
+                                                            timeout="auto"
+                                                            unmountOnExit
+                                                        >
+                                                            <p className="text-align-left">
+                                                                {item.about2}
+                                                            </p>
+                                                        </Collapse>
+                                                        {props.open ? (
+                                                            <RemoveIcon
+                                                                className={`${
+                                                                    item.showMore ? "" : "hide"
+                                                                } showMoreBtn`}
+                                                                onClick={() => props.setOpen(!props.open)}
+                                                            ></RemoveIcon>
+                                                        ) : (
+                                                            <ImageMore
+                                                                src={'/assets/images/social/show_more.svg'}
+                                                                className={`${
+                                                                    item.showMore ? "" : "hide"
+                                                                }`}
+                                                                onClick={() => props.setOpen(!props.open)}
+                                                            ></ImageMore>
+                                                        )}
+                                                    </Typography>
+                                                </CardContent>
+                                                <CardActions>
+                                                    <a
                                                         target="_blank"
                                                         rel="noreferrer"
                                                         href={item.social}
-                                                        className="margin-top-small
-                                                        button social-link w-inline-block button-lime"
+                                                        className="button social-link w-inline-block button-lime"
                                                     >
-                                                        <>
-                                                            <img
-                                                                src={"/assets/images/social/linkedin_lime.svg"}
-                                                                alt="changex linkedin"
-                                                                loading="lazy"
-                                                            ></img>
-                                                        </>
-                                                    </Card.Link>
-                                                </Card.Body>
+                                                        <img
+                                                            src={LinkedinLogo}
+                                                            alt="changex linkedin"
+                                                            loading="lazy"
+                                                        ></img>
+                                                    </a>
+                                                </CardActions>
                                             </Card>
                                         </>
                                     )}
                                 />
                             );
                         })}
-                    </Grid>
+                    </div>
                 </div>
             </div>
         </div>

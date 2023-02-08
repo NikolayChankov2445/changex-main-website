@@ -1,8 +1,13 @@
 import * as React from "react"
+import {lazy} from "react";
 
 import InnerHero from "../components/Heroes/InnerHero";
 import SectionAdvantages from "../components/SectionAdvantages/SectionAdvantages";
+import SwapCrypto from "../components/SwapCrypto/SwapCrypto";
 import SliderSection from "../components/SectionSlider/SectionSlider";
+import SectionCard from "../components/SectionCard/SectionCard";
+import Faq from "../components/Faq/SectionFaq";
+import Seo from "../components/SEO/Seo";
 
 import {
     heroObj,
@@ -12,11 +17,10 @@ import {
     textData,
     cardContent
 } from "../components/SectionWallet/walletItems";
-import SectionCard from "../components/SectionCard/SectionCard";
-import Layout from "../components/Layout/Layout";
-import Seo from "../components/SEO/Seo";
-import SwapCrypto from "../components/SwapCrypto/SwapCrypto";
 
+import {faqWalletContent} from "../components/Faq/faqItems";
+
+const Layout = lazy(() => import('../components/Layout/Layout'));
 const swapCryptoTitleObj = {
     titleObj: {
         h1: "",
@@ -43,7 +47,7 @@ const WalletPage = () => {
                     title={"The DeFi Wallet That Changes Everything"}
                     advantages={advantages}
                 />
-                <SwapCrypto titleObj={swapCryptoTitleObj} />
+                <SwapCrypto titleObj={swapCryptoTitleObj} background={'background-color-off-white'} />
                 <SliderSection
                     textData={textData}
                     sliderData={sliderDataWalletPage}
@@ -51,6 +55,11 @@ const WalletPage = () => {
                     menuTabs={null}
                 />
                 <SectionCard cardContent={ cardContent }  />
+                <Faq
+                    background={"background-color-black"}
+                    title={"Wallet FAQ"}
+                    faqContent={faqWalletContent}
+                />
             </section>
         </Layout>
     )

@@ -2,8 +2,8 @@ import * as React from "react";
 
 export default function SectionAdvantages({ pageClass, classGrid, title, advantages }) {
     return (
-        <div id="advantages" className="">
-            <div className={`${pageClass === 'walletPage' ? 'padding-global' : ''}`}>
+        <div id="advantages">
+            <div className={`${pageClass === 'walletPage' ? 'padding-global' : 'padding-global-bottom-sides'}`}>
                 <div className="container-large">
                     <div className="main-container-block">
                         {classGrid === "card-grid-wallet" && (

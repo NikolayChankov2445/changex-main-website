@@ -69,7 +69,7 @@ export default function CardSlider({
                         key={index}
                         className="card-slide"
                         id={index.toString()}
-                        style={{ maxWidth: 345, margin: "30px 30px" }}
+                        style={{ maxWidth: 360, margin: "30px 30px" }}
                     >
                         <>
                             <img
@@ -95,9 +95,17 @@ export default function CardSlider({
                                 <CardActionsWrapper>
                                     {item.url && (
                                         <div className="card-link">
-                                            <a onClick={() => scrollTo(item.url)}>
-                                                {item.linkText} <FaAngleRight />
-                                            </a>
+                                            {item.route && (
+                                                <a href="#" onClick={() => scrollTo(item.url)}>
+                                                    {item.linkText} <FaAngleRight />
+                                                </a>
+                                            )}
+
+                                            {item.route === false && (
+                                                <a href={item.url} target="_blank"  rel="noreferrer">
+                                                    {item.linkText} <FaAngleRight />
+                                                </a>
+                                            )}
                                         </div>
                                     )}
                                 </CardActionsWrapper>

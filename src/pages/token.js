@@ -1,15 +1,20 @@
 import * as React from "react"
-import InnerHero from "../components/Heroes/InnerHero";
+import {lazy} from "react";
 
-import { faqBankContent } from "../components/Faq/faqItems";
+import InnerHero from "../components/Heroes/InnerHero";
+import DefiToken from "../components/Defi/DefiToken";
+import Tokenomics from "../components/SectionToken/Tokenomics";
+import Seo from "../components/SEO/Seo";
+import Faq from "../components/Faq/SectionFaq";
+
+
+import {faqTokenContent} from "../components/Faq/faqItems";
 import {
     heroObj, tokenPageDeFiData,
     tokenPageTokenomicsData,
 } from "../components/SectionToken/tokenItems";
-import DefiToken from "../components/Defi/DefiToken";
-import Tokenomics from "../components/SectionToken/Tokenomics";
-import Layout from "../components/Layout/Layout";
-import Seo from "../components/SEO/Seo";
+
+const Layout = lazy(() => import('../components/Layout/Layout'));
 
 const TokenPage = () => {
     return (
@@ -21,7 +26,11 @@ const TokenPage = () => {
                 tokenData={tokenPageTokenomicsData}
             />
             <section id="token-page">
-
+                <Faq
+                    background={"background-color-off-white"}
+                    title={"FAQ"}
+                    faqContent={faqTokenContent}
+                />
             </section>
         </Layout>
     )

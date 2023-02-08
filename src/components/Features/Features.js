@@ -42,11 +42,11 @@ export default function Features({ background, content }) {
                                                     <p
                                                         className={`${
                                                             item.commingSoon ? "" : "text-color-grey"
-                                                        } text-size-large `}
+                                                        } text-size-xlarge `}
                                                     >
                                                         {item.h3}
                                                     </p>
-                                                    <p className="text-size-large text-color-grey margin-bottom-small">
+                                                    <p className="text-size-xlarge text-color-grey margin-bottom-small">
                                                         {item.h4}
                                                     </p>
                                                 </div>

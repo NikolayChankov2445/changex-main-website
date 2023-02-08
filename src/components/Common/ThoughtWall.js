@@ -8,37 +8,27 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 export default function ThoughtWall({ thoughtObj }) {
 
+    const [imageIndex, setImageIndex] = useState(0);
     const carouselRef = useRef();
 
     useEffect(() => {
         if (window && typeof window !== undefined) {
             window.addEventListener("resize", handleWindowResize);
         }
-    },[])
 
-    const [imageIndex, setImageIndex] = useState(0);
-
-    function handleWindowResize() {
-        if (typeof window !== undefined) {
-            if (window.innerWidth <= 600) {
-                $(".bankThought").attr(
-                    "src",
-                    `/assets/images/bank/bank_${imageIndex}_mobile.png`
-                );
-            } else {
-                $(".bankThought").attr("src", `/assets/images/bank/bank_${imageIndex}.png`);
+        function handleWindowResize() {
+            if (typeof window !== undefined) {
+                if (window.innerWidth <= 600) {
+                    $(".bankThought").attr(
+                        "src",
+                        `/assets/images/bank/bank_${imageIndex}_mobile.png`
+                    );
+                } else {
+                    $(".bankThought").attr("src", `/assets/images/bank/bank_${imageIndex}.png`);
+                }
             }
         }
-    }
-
-    function RightBtnClick() {
-        carouselRef.current.next();
-    }
-
-    function LeftBtnClick() {
-        carouselRef.current.prev();
-    }
-
+    },[imageIndex])
 
     function onSelect(eventKey, event) {
         setImageIndex(eventKey);
@@ -56,7 +46,9 @@ export default function ThoughtWall({ thoughtObj }) {
     }
 
     return (
-        <section id="thought-wall">
+
+
+        <section id="changex_wall">
             <div>
                 <div className="about">
                     <img

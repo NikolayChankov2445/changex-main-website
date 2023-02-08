@@ -1,6 +1,6 @@
 import * as React from "react";
-import {useEffect, useState, useContext, useMemo} from "react";
-import { Nav, Navbar } from "rsuite";
+import {useEffect, useState, useContext} from "react";
+import {Nav, Navbar} from "rsuite";
 import { Link } from "gatsby";
 import Modal from 'react-bootstrap/Modal';
 import { iconItems, menuItems, mobileIcon } from "./navItems";
@@ -15,7 +15,6 @@ import {ApyContext} from "../Context/ApyContext";
 import 'rsuite/dist/rsuite.min.css';
 import PriceApyBtns from "../Context/PriceApyBtns";
 
-
 const NavMobile = styled.div`
   left: 0;
   right: 0;
@@ -24,9 +23,8 @@ const NavMobile = styled.div`
 `
 
 export default function Navigation() {
-    const [apy, setApy] = useState("");
     const [openNav, setIsNavOpen] = useState(false);
-    const [price, setPrice] = useState(null);
+    const [price, setPrice] = useState('0.0000');
     const [showModal, setShowModal] = useState(false);
     const [activeKey, setActiveKey] = useState('');
     const coinsContextPrices = useContext(PricesContext);
@@ -43,8 +41,7 @@ export default function Navigation() {
             setPrice(changePrice[0].current_price.toFixed(4));
         }
 
-        setApy(apyContext);
-    },[coinsContextPrices, apyContext])
+    },[coinsContextPrices])
 
     function handleWindowResize() {
         if (typeof window !== undefined) {
@@ -99,11 +96,40 @@ export default function Navigation() {
                                                     }`}
                                                     id={index.toString()}
                                                 >
-                                                    <Nav.Item className={`${activeKey === menu.id ? 'active' : ''}`}>
-                                                        <Link activeClassName="activeLink" onClick={()=> {setActiveKey(menu.id )}} to={menu.url} eventkey={index.toString()}>
-                                                            {menu.title}
-                                                        </Link>
-                                                    </Nav.Item>
+                                                    {menu.submenu.length > 0 ?
+                                                        <Nav.Menu title={menu.title} className={`${activeKey === menu.id ? 'active' : ''} nav-dropdown`}>
+                                                            {menu.submenu.map((item, index)=> {
+                                                            return (
+                                                                    <Nav.Item>
+                                                                        {item.link === false ?
+                                                                            <Link activeClassName="activeLink" onClick={()=> {setActiveKey(menu.id )}} to={item.url} key={index.toString()}>
+                                                                                {item.title}
+                                                                            </Link>
+                                                                        :
+                                                                            <>
+                                                                                <a  rel="noreferrer" href={item.url}  target="_blank" key={index.toString()}>
+                                                                                    {item.title}
+                                                                                </a>
+                                                                                <img
+                                                                                    alt="changex coingecko"
+                                                                                    className="coingecko"
+                                                                                    src={ExternalLink}
+                                                                                />
+                                                                            </>
+                                                                        }
+
+                                                                    </Nav.Item>
+
+                                                            )
+                                                        })}
+                                                        </Nav.Menu>
+                                                        :
+                                                        <Nav.Item className={`${activeKey === menu.id ? 'active' : ''}`}>
+                                                            <Link activeClassName="activeLink" onClick={()=> {setActiveKey(menu.id )}} to={menu.url} key={index.toString()}>
+                                                                {menu.title}
+                                                            </Link>
+                                                        </Nav.Item>
+                                                    }
                                                 </div>
                                             );
                                         })}
@@ -145,7 +171,7 @@ export default function Navigation() {
                                             className="text-size-tiny text-color-black changexapy"
                                         >
                                             <span>APY:</span>
-                                            <strong> {apy}%</strong>
+                                            <strong> {apyContext}%</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -203,7 +229,7 @@ export default function Navigation() {
                         </div>
                     </div>
                 </div>
-                <NavMobile className={`${openNav ? "" : "hide"} w_nav-overlay fixed`}>
+                <NavMobile className={`${openNav ? "" : "hide"} fixed`}>
                     <nav
                         role="navigation"
                         className="nav_menu-links-mobile"
@@ -216,14 +242,44 @@ export default function Navigation() {
                                         return (
                                             <div
                                                 key={index}
-                                                className="mobileNavBtns navDisplay"
-                                                id={menu.id}
+                                                className="nav_menu-links navDisplay"
+                                                id={`changex_nav_${index.toString()}`}
                                             >
-                                                <Nav.Item  className={`${activeKey === menu.id ? 'active' : ''}`} onClick={openNavDropDown}>
-                                                    <Link  onClick={()=> {setActiveKey(menu.id )}} to={menu.url  || ''} eventKey={index.toString()}>
-                                                        {menu.title}
-                                                    </Link>
-                                                </Nav.Item>
+                                                {menu.submenu.length > 0 ?
+                                                    <Nav.Menu placement={"rightStart"} title={menu.title} className={`${activeKey === menu.id ? 'active' : ''} nav-dropdown`}>
+                                                        {menu.submenu.map((item, index)=> {
+                                                            return (
+
+                                                                <Nav.Item>
+                                                                    {item.link === false ?
+                                                                        <Link activeClassName="activeLink" onClick={()=> {setActiveKey(menu.id )}} to={item.url} key={index.toString()}>
+                                                                            {item.title}
+                                                                        </Link>
+                                                                        :
+                                                                        <>
+                                                                            <a  rel="noreferrer" href={item.url}  target="_blank" key={index.toString()}>
+                                                                                {item.title}
+                                                                            </a>
+                                                                            <img
+                                                                                alt="changex coingecko"
+                                                                                className="coingecko"
+                                                                                src={ExternalLink}
+                                                                            />
+                                                                        </>
+                                                                    }
+
+                                                                </Nav.Item>
+
+                                                            )
+                                                        })}
+                                                    </Nav.Menu>
+                                                    :
+                                                    <Nav.Item className={`${activeKey === menu.id ? 'active' : ''}`}>
+                                                        <Link activeClassName="activeLink" onClick={()=> {setActiveKey(menu.id )}} to={menu.url} key={index.toString()}>
+                                                            {menu.title}
+                                                        </Link>
+                                                    </Nav.Item>
+                                                }
                                             </div>
                                         );
                                     })}

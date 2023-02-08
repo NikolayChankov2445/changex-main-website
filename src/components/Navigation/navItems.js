@@ -35,19 +35,38 @@ export const menuItems = [
     },
     {
         title: 'CHANGE token',
-        url: '/token',
+        url: '#',
         id: 'token-page',
         className: 'nav_menu-links w-nav-menu',
-        hasLine: true,
+        hasLine: false,
         footer: true,
-        submenu: []
+        submenu: [
+            {
+                title: 'Info',
+                url: '/token',
+                id: "changex_token",
+                link: false
+            },
+            {
+                title: 'Stake CHANGE',
+                url: 'https://hydradex.org/#/stake/changex',
+                id: "changex_token_stake",
+                link: true
+            },
+            {
+                title: 'Stake HYDRA',
+                url: 'https://hydra-staking.changex.io/',
+                id: "changex_hdyra_stake",
+                link: true
+            }
+        ]
     },
     {
         title: 'About',
         url: '/about',
         id: 'about',
         className: 'nav_menu-links w-nav-menu',
-        hasLine: false,
+        hasLine: true,
         submenu: []
     }
 ];
@@ -75,14 +94,14 @@ export const mobileIcon = [
         href: 'https://apps.apple.com/bg/app/changex-wallet/id1613309180' ,
         class: 'nav_download-btn w-inline-block',
         parentClass: 'nav_download-item',
-        id: 'apple'
+        id: 'changex_apple'
     },
     {
         src: GoogleIcon,
         href: 'https://play.google.com/store/apps/details?id=io.changex.app',
         class: 'nav_download-btn w-inline-block',
         parentClass: 'nav_download-item',
-        id: 'google'
+        id: 'changex_google'
     }
 ]
 
@@ -91,7 +110,7 @@ export const menuItemsFooter = [
     {
         title: 'Wallet',
         url: '/wallet',
-        id: 'wallet',
+        id: 'changex_wallet',
         className: 'nav_menu-links w-nav-menu',
         dropdown: true,
         footer: true
@@ -99,7 +118,7 @@ export const menuItemsFooter = [
     {
         title: 'Bank',
         url: '/bank',
-        id: 'bank',
+        id: 'changex_bank',
         className: 'nav_menu-links w-nav-menu',
         dropdown: true,
         hasLine: false,
@@ -108,7 +127,7 @@ export const menuItemsFooter = [
     {
         title: 'Wealth',
         url: '/wealth',
-        id: 'wealth',
+        id: 'changex_wealth',
         className: 'nav_menu-links w-nav-menu',
         dropdown: true,
         hasLine: false,
@@ -117,7 +136,7 @@ export const menuItemsFooter = [
     {
         title: 'CHANGE token',
         url: '/token',
-        id: 'token-page',
+        id: 'changex_token-page',
         className: 'nav_menu-links w-nav-menu',
         hasLine: true,
         footer: true,
@@ -126,19 +145,11 @@ export const menuItemsFooter = [
     {
         title: 'Suppported Tokens',
         url: '/supported',
-        id: 'supported-tokens',
+        id: 'changex_supported-tokens',
         className: 'nav_menu-links w-nav-menu',
         hasLine: false,
         footer: true
-    },
-    {
-        title: 'Become A Partner',
-        url: '/partner',
-        id: 'partner',
-        className: 'nav_menu-links w-nav-menu',
-        hasLine: false,
-        footer: true
-    },
+    }
 
 ];
 
@@ -146,15 +157,39 @@ export const menuItemsFooter2 = [
     {
         title: 'About',
         url: '/about',
-        id: 'about',
+        id: 'changex_about',
         className: 'button footer-links w-inline-block',
         hasLine: false,
         link: true
     },
     {
+        title: 'HYDRA Staking',
+        url: 'https://hydra-staking.changex.io/',
+        id: 'changex_hydra_staking',
+        className: 'button footer-links w-inline-block',
+        hasLine: false,
+        link: false
+    },
+    {
+        title: 'Become A Partner',
+        url: '/partner',
+        id: 'changex_partner',
+        className: 'button footer-links w-inline-block',
+        hasLine: false,
+        link: true
+    },
+    {
+        title: '',
+        url: '',
+        id: '',
+        className: 'button footer-links w-inline-block',
+        hasLine: false,
+        link: false
+    },
+    {
         title: 'Whitepaper',
         url: 'https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530',
-        id: 'whitepaper',
+        id: 'changex_whitepaper',
         className: 'button footer-links w-inline-block',
         hasLine: false,
         link: false
@@ -162,11 +197,11 @@ export const menuItemsFooter2 = [
     {
         title: 'ICO Information',
         url: "https://legacy.changex.io/",
-        id: 'ico',
+        id: 'changex_ico',
         className: 'button footer-links w-inline-block',
         hasLine: false,
         link: false
-    }
+    },
 ];
 
 export const menuItemsFooterSocial = [

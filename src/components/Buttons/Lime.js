@@ -39,11 +39,38 @@ export const ReactLimeButton = styled('button')({
     },
 });
 
+export const Link = styled('a')({
+    outline: "none",
+    textDecoration: "none",
+    color: '#3418D8',
+    fontFamily: [
+        'Source Sans Pro'
+    ].join(','),
+    '&:hover': {
+        boxShadow: 'none',
+        color: '#3418D8',
+        outline: 'none',
+        textDecoration: 'none',
+        border: 'none'
+    },
+    '&:active': {
+        boxShadow: 'none',
+        color: '#3418D8',
+        outline: 'none',
+        textDecoration: 'none',
+    },
+    '&:focus': {
+        boxShadow: 'none',
+        color: '#3418D8',
+        outline: 'none',
+        textDecoration: 'none',
+    },
+});
 
 export function LimeButton({text, url, size}) {
     return (
-        <ReactLimeButton href={url} variant="contained" size={size}>
-            {text}
+        <ReactLimeButton variant="contained" size={size}>
+            <Link href={url} target="_blank" >{text}</Link>
         </ReactLimeButton>
     );
 }

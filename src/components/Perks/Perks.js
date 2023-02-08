@@ -11,7 +11,7 @@ export default function Perks({ perksArray, component }) {
                 >
                     {perksArray.map((item) => {
                         return (
-                            <div key={item.id} id={item.title} className="box-container-bank">
+                            <div eventkey={item.id} key={item.id} id={item.title} className="box-container-bank">
                                 <div className="padding-medium">
                                     <div className="icon-wrapper icon-card margin-bottom margin-large">
                                         <img

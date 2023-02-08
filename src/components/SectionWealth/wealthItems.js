@@ -53,7 +53,8 @@ export const sliderDataLandingPage = [
         alt: "Investment Slider image for stake",
         text: "Staking any Proof-of-Stake asset in Changex boosts your CHANGE staking APR. Stake more assets to stack your boost and retain access to the tokens with liquid staking.",
         linkText: "Stake Now",
-        url: "hero"
+        route: true,
+        url: "https://hydra-staking.changex.io/"
     },
     {
         id: "Tab2",
@@ -62,6 +63,7 @@ export const sliderDataLandingPage = [
         alt: "Investment Slider image for double your APY",
         text: "Use Changex's unique Leveraged staking product to amplify the staking rewards of any Proof-of-Stake asset by 1.2-2x and earn like never before.",
         linkText: "Coming Soon",
+        route: true,
         url: "hero"
     },
     {
@@ -71,6 +73,7 @@ export const sliderDataLandingPage = [
         alt: "Investment Slider image for lend stablecoins",
         text: "Lend your stablecoins for 5-9.5% APR and power the Leveraged staking economy. Everything is completely decentralized.",
         linkText: "Coming Soon",
+        route: true,
         url: "hero"
     }
 ]
@@ -83,6 +86,7 @@ export const sliderDataWealthPage = [
         alt: "Flexible Stakind And Spending",
         text: "Stake assets and maintain immediate access to them without interrupting the flow of rewards. This is a unique way to use your crypto in various ways while earning on it constantly.",
         linkText: "",
+        route: true,
         url: ""
     },
     {
@@ -91,8 +95,9 @@ export const sliderDataWealthPage = [
         head: "Delegated HYDRA Staking",
         alt: "Delegated HYDRA Staking",
         text: "Stake HYDRA offline and enjoy the full benefits of the HydraChain economy by delegating your coins to a staker. Rewards equal to 5 HYDRA or more are paid out daily.",
-        linkText: "",
-        url: ""
+        linkText: "Stake HYDRA",
+        route: false,
+        url: "https://hydra-staking.changex.io/"
     },
     {
         id: "card3",
@@ -101,6 +106,7 @@ export const sliderDataWealthPage = [
         alt: "Earn Bonus CHANGE",
         text: "Whenever you stake an asset in Changex, the APR for your staked CHANGE goes up, and the bonuses stack. Without CHANGE, this mechanism is not possible.",
         linkText: "",
+        route: true,
         url: ""
     }
 ]
@@ -173,9 +179,9 @@ export const heroObj = {
     text: "",
     appBtnsVisible: false,
     scrollBtnText: "Discover Wealth",
-    scrollToID: "wealth",
+    scrollToID: "changex_slider",
     backgroundImage: "",
-    class: "wealthPage",
+    class: "wealthPage"
 };
 
 export const textData = {
@@ -245,6 +251,7 @@ export const featureContent2 = {
             bottomText: "",
         },
     ],
+    info: "The savings mechanism automatically distributes the deposited funds into DeFi products that offer appealing liquidity mining and inflationary mechanisms for stimulating growth."
 };
 
 export const textDataWealthSection = {

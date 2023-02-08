@@ -1,12 +1,10 @@
 import * as React from "react";
-
-import { PrimaryButtonRoute } from "../Buttons/PrimaryRoute";
 import TokensCrawl from "../Crawl/TokensCrawl";
 
-export default function SwapCrypto({ titleObj }) {
+export default function SwapCrypto({ titleObj, background}) {
     return (
-        <div id="swap_crypto" className="swap_crypto">
-            <div className="padding-global">
+        <div id="changex_swap_crypto" className={`${background} swap_crypto`}>
+            <div className="padding-global-top-sides">
                 <div className="container-large">
                     <div className="hero_content-wrapper padding-vertical padding-large">
                         <div className="title_wrapper_hero max-width-large">
@@ -30,7 +28,7 @@ export default function SwapCrypto({ titleObj }) {
                                             : "hide"
                                     } tabs-menu goToLink w-tab-menu`}
                                 >
-                                    <PrimaryButtonRoute text={titleObj.scrollBtnText} url={titleObj.buttonUrl}/>
+                                   {/* <PrimaryButtonRoute text={titleObj.scrollBtnText} url={titleObj.buttonUrl}/>*/}
                                 </div>
                             </div>
                         </div>

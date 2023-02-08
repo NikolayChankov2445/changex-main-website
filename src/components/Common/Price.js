@@ -17,7 +17,7 @@ const PriceBtn = styled.div`
 `
 
 export default function Price() {
-    const [price, setPrice] = useState('');
+    const [price, setPrice] = useState('0.0000');
     const coinsContext = useContext(PricesContext);
 
     useEffect(()=> {

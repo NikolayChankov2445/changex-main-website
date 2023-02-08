@@ -1,9 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
-import { cardItems } from "./sectionCardItems";
 import { waitlistItems } from "../SectionWaitlist/waitlistItems";
 import {GATSBY_SENDGRID_TOKEN, GATSBY_SENDGRID_URL} from "../../constants/config";
-import SectionAdvantages from "../SectionAdvantages/SectionAdvantages";
 
 export default function SectionCard({ cardContent }) {
     const [isShown, setIsShown] = useState(true);
@@ -47,7 +45,7 @@ export default function SectionCard({ cardContent }) {
 
     return (
         <section
-            id="card"
+            id="changex_card"
             className={`${
                 cardContent.page === "Wallet" ? "section_card_wallet" : "section_card"
             } overflow-hidden`}
@@ -78,11 +76,11 @@ export default function SectionCard({ cardContent }) {
                                 className="bank_wrapper-left form z-index-1 margin-vertical margin-large padding-horizontal padding-medium"
                             >
                                 <div className="max-width-large text-left">
-                                    <h2 className="heading-style-h2 margin-bottom">
+                                    <h2 className="heading-style-h2 margin-bottom width-max">
                                         {cardContent.head1}
                                         <br /> {cardContent.head2} <br />
                                     </h2>
-                                    <h2 className="heading-style-h2 debitCard">
+                                    <h2 className="heading-style-h2 debitCard width-max">
                                         {" "}
                                         {cardContent.head3}{" "}
                                     </h2>
@@ -150,19 +148,7 @@ export default function SectionCard({ cardContent }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="margin-large"></div>
-                        <div
-                            className={`${
-                                cardContent.page === "Home" ? "" : "hide"
-                            } margin-top-large`}
-                        >
-                            <SectionAdvantages
-                                pageClass={'cardPage'}
-                                classGrid={"card-grid"}
-                                title={"More Than A card - It’s Freedom"}
-                                advantages={cardItems}
-                            />
-                        </div>
+                       {/* <div className="margin-large"></div>*/}
                     </div>
                 </div>
             </div>

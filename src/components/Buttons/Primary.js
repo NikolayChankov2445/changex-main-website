@@ -31,11 +31,38 @@ export const ReactPrimaryButton = styled('button')({
         outline: 'none'
     },
 });
+export const Link = styled('a')({
+    outline: "none",
+    textDecoration: "none",
+    color: '#fff',
+    fontFamily: [
+        'Source Sans Pro'
+    ].join(','),
+    '&:hover': {
+        boxShadow: 'none',
+        outline: 'none',
+        color: '#fff',
+        textDecoration: 'none',
+        border: 'none'
+    },
+    '&:active': {
+        boxShadow: 'none',
+        outline: 'none',
+        color: '#fff',
+        textDecoration: 'none',
+    },
+    '&:focus': {
+        boxShadow: 'none',
+        color: '#fff',
+        outline: 'none',
+        textDecoration: 'none',
+    },
+});
 
 export function PrimaryButton({text,url, icon}) {
     return (
         <ReactPrimaryButton href={url} variant="contained" size="large" endIcon={icon}>
-            {text}
+            <Link href={url} target="_blank">{text}</Link>
         </ReactPrimaryButton>
     );
 }

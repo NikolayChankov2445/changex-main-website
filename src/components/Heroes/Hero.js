@@ -9,7 +9,7 @@ export default function Hero({ heroObj }) {
                 <div className="container-hero">
                     <TitleHero contentObj={heroObj} />
                     <video className="videoTag" autoPlay loop muted>
-                        <source src="/assets/images/common/Hero_Video_color.mp4" type="video/mp4" />
+                        <source src="/assets/images/common/Hero_Video_2023.mp4" type="video/mp4" />
                     </video>
                     <div className="hero_text-wrapper">
                         <p
@@ -20,9 +20,9 @@ export default function Hero({ heroObj }) {
 
                         >
                             {heroObj.titleObj.h4}&nbsp;
-                            <a  onClick={() => scrollTo('#card')} className="text-style-link">
+                            <button onClick={() => scrollTo('#card')} className="transparent text-style-link">
                                 {heroObj.titleObj.titleWithLink}
-                            </a>
+                            </button>
                         </p>
                         <div className="button is-qr w-inline-block">
                             <img

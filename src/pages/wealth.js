@@ -1,8 +1,12 @@
 import * as React from "react"
+import {lazy} from "react";
 
 import InnerHero from "../components/Heroes/InnerHero";
 import SliderSection from "../components/SectionSlider/SectionSlider";
 import Features from "../components/Features/Features";
+import Faq from "../components/Faq/SectionFaq";
+import Seo from "../components/SEO/Seo";
+
 
 import {
     responsiveSliderData,
@@ -12,14 +16,16 @@ import {
     featureContent,
     featureContent2
 } from "../components/SectionWealth/wealthItems";
-import Layout from "../components/Layout/Layout";
-import Seo from "../components/SEO/Seo";
+
+import {faqWealthContent} from "../components/Faq/faqItems";
+import CommingSoon from "../components/Features/CommingSoon";
+const Layout = lazy(() => import('../components/Layout/Layout'));
 
 const WealthPage = () => {
     return (
         <Layout>
             <InnerHero heroObj={heroObj} />
-            <section id="wealth" className="section_invest">
+            <section className="section_invest">
                 <SliderSection
                     textData={textData}
                     sliderData={sliderDataWealthPage}
@@ -30,9 +36,14 @@ const WealthPage = () => {
                     background={"background-color-blue"}
                     content={featureContent}
                 />
-                <Features
+                <CommingSoon
                     background={"background-color-off-pink"}
                     content={featureContent2}
+                />
+                <Faq
+                    background={"background-color-off-white"}
+                    title={"Wealth FAQ"}
+                    faqContent={faqWealthContent}
                 />
             </section>
         </Layout>

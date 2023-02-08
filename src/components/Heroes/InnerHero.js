@@ -1,17 +1,16 @@
 import * as React from "react";
 import { useState } from "react";
-
+import { Link } from "react-scroll";
 import { advantages } from "../SectionToken/tokenItems";
-import scrollTo from 'gatsby-plugin-smoothscroll';
 import { BsArrowDown } from "react-icons/bs";
 import QRWhite from "../../../static/assets/images/common/icn-qr-white.svg";
 import PriceApyBtns from "../Context/PriceApyBtns";
-import {PrimaryButton} from "../Buttons/Primary";
 import SectionAdvantages from "../SectionAdvantages/SectionAdvantages";
 import DownloadApple from "../../../static/assets/images/common/DW-Apple.svg";
 import DownloadGoogle from "../../../static/assets/images/common/DW-Google.svg";
 import Modal from 'react-bootstrap/Modal';
 import ScanQrCode from "../QrCode/ScanQrCode";
+import {PrimaryGoToButton} from "../Buttons/PrimaryGoTo";
 
 export default function InnerHero( { heroObj } ){
 
@@ -90,9 +89,9 @@ export default function InnerHero( { heroObj } ){
                                     </div>
                                 </div>
                                 <div className={`${heroObj.scrollBtnText && heroObj.class !== "tokenPage" ? '' : 'hide'} tabs-menu goToLink w-tab-menu`}>
-                                    <div onClick={()=> {scrollTo(heroObj.scrollToID) }} >
-                                        <PrimaryButton text={heroObj.scrollBtnText} url={''} icon={<BsArrowDown/>} />
-                                    </div>
+                                    <Link to={heroObj.scrollToID} smooth={true}>
+                                        <PrimaryGoToButton text={heroObj.scrollBtnText} url={heroObj.scrollToID} icon={<BsArrowDown/>} />
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +100,7 @@ export default function InnerHero( { heroObj } ){
                         </div>
                     </div>
                 </div>
-                <div className={`${heroObj.class} absolute`}></div>
+                <div id="bank" className={`${heroObj.class} absolute`}></div>
             </div>
             <Modal id="Changex_modal" show={showModal} onHide={handleClose} animation={true}>
                 <>

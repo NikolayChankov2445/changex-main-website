@@ -37,10 +37,39 @@ export const ReactPinkSmallButton = styled('button')({
     },
 });
 
+export const Link = styled('a')({
+    outline: "none",
+    textDecoration: "none",
+    color: '#3418D8',
+    fontFamily: [
+        'Source Sans Pro'
+    ].join(','),
+    '&:hover': {
+        boxShadow: 'none',
+        outline: 'none',
+        color: '#3418D8',
+        textDecoration: 'none',
+        border: 'none'
+    },
+    '&:active': {
+        boxShadow: 'none',
+        color: '#3418D8',
+        outline: 'none',
+        textDecoration: 'none',
+    },
+    '&:focus': {
+        boxShadow: 'none',
+        color: '#3418D8',
+        outline: 'none',
+        textDecoration: 'none',
+    },
+});
+
+
 export function PinkSmallButton({text, url, size}) {
     return (
         <ReactPinkSmallButton href={url} variant="contained" size={size}>
-            {text}
+            <Link href={url} target="_blank">{text}</Link>
         </ReactPinkSmallButton>
     );
 }

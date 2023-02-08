@@ -38,7 +38,7 @@ export default function SectionSlider({
     }
 
     return (
-        <div id="slider" className={textData.background}>
+        <div id="changex_slider" className={textData.background}>
             <div className="padding-global">
                 <div className="container-large">
                     <div className="main-container">
@@ -56,7 +56,7 @@ export default function SectionSlider({
                                         {textData.h1}
                                         <span className="highlight is-green"> {textData.h2}</span>
                                     </h2>
-                                    <p className="text-size-large text-color-grey">
+                                    <p className="text-size-xlarge text-color-grey">
                                         {textData.h3}
                                     </p>
                                 </div>

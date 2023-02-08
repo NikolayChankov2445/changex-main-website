@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Timeline } from "antd";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 export default function Roadmap({ background, roadmapData }) {
     return (
@@ -7,19 +8,21 @@ export default function Roadmap({ background, roadmapData }) {
             <div className="padding-global">
                 <div className="container-large ">
                     <div className="margin-bottom-large">
-                        <h5 className="heading-style-h7 is-lime font-paragraph">{roadmapData.head2}</h5>
+                        <h5 className="heading-style-h7 is-lime roadmap-text">{roadmapData.head2}</h5>
                         <h3 className="heading-style-h3 margin-bottom-large white font-paragraph">
                             {roadmapData.head}
                         </h3>
                     </div>
-                    <Timeline mode={"alternate"}>
+                    <VerticalTimeline
+                        lineColor={'#8366F4'}>
                         {roadmapData.data.map((step, index) => {
                             return (
-                                <Timeline.Item
-                                    key={index}
-                                    color={"#8366F4"}
-                                    label={step.date}
-                                    className="roadmap-timeline font-paragraph"
+                                <VerticalTimelineElement
+                                    className=""
+                                    contentArrowStyle={{display: 'none'}}
+                                    contentStyle={{ background: '#8366F4', color: '#fff' }}
+                                    date={step.date}
+                                    iconClassName="timeline-icon"
                                 >
                                     <div
                                         id={step.date}
@@ -28,7 +31,7 @@ export default function Roadmap({ background, roadmapData }) {
                                         <div>
                                             {step.goals.map((goal, index) => {
                                                 return (
-                                                    <p key={index} className="roadmap-text font-paragraph" id={goal}>
+                                                    <p key={index} className="roadmap-text roadmap-text" id={goal}>
                                                         {goal}
                                                     </p>
                                                 );
@@ -38,12 +41,12 @@ export default function Roadmap({ background, roadmapData }) {
                                             {step.dates.map((date, index) => {
                                                 return (
                                                     <div key={index} id={date} className="roadmap-date">
-                                                        <h6 className="heading-style-h6">{date.date}</h6>
+                                                        <h6 className="roadmap-text">{date.date}</h6>
                                                         {date.text.map((t, index) => {
                                                             return (
                                                                 <p
                                                                     key={index}
-                                                                    className="roadmap-text font-paragraph"
+                                                                    className="roadmap-text roadmap-text"
                                                                     id={index.toString()}
                                                                 >
                                                                     {t}
@@ -55,10 +58,9 @@ export default function Roadmap({ background, roadmapData }) {
                                             })}
                                         </div>
                                     </div>
-                                </Timeline.Item>
-                            );
-                        })}
-                    </Timeline>
+                                </VerticalTimelineElement>
+                            )})}
+                    </VerticalTimeline>
                 </div>
             </div>
         </section>

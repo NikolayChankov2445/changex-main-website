@@ -1,10 +1,13 @@
 import * as React from "react"
+import {lazy} from "react";
+
 
 import SupportedTokensTable from "../components/SectionToken/SupportedTokensTable";
 import {titleObj, tokenPageDeFiData} from "../components/SectionToken/tokenItems";
 import {PurpleButtonRoute} from "../components/Buttons/PurpleRoute";
-import Layout from "../components/Layout/Layout";
 import Seo from "../components/SEO/Seo";
+
+const Layout = lazy(() => import('../components/Layout/Layout'));
 
 const Supported = () => {
     return (

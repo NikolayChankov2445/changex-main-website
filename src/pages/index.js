@@ -1,7 +1,11 @@
 import * as React from "react"
-import Layout from "../components/Layout/Layout";
+import {lazy} from "react";
+
+
 import Home from "../components/Home/Home";
 import Seo from "../components/SEO/Seo";
+
+const Layout = lazy(() => import('../components/Layout/Layout'));
 
 const IndexPage = () => {
   return (

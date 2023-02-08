@@ -79,7 +79,7 @@ export default function SectionWallet() {
                                                     onClick={(e) => {
                                                         LeftBtnClick(e);
                                                     }}
-                                                    className="button-arrows"
+                                                    className="slide-arrows left-slide-arrow"
                                                 >
                                                     <BiChevronLeft />
                                                 </button>
@@ -87,7 +87,7 @@ export default function SectionWallet() {
                                                     onClick={(e) => {
                                                         RightBtnClick(e);
                                                     }}
-                                                    className="button-arrows"
+                                                    className="slide-arrows right-slide-arrow"
                                                 >
                                                     <BiChevronRight />
                                                 </button>

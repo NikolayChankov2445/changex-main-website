@@ -81,6 +81,27 @@ export const faqBankContent = [
     }
 ]
 
+export const faqTokenContent = [
+    {
+        title: 'How does the card waitlist and ranking work?',
+        content: 'Joining the waitlist gives you a chance to be one of the first users to receive their card. The waitlist automatically puts you in the queue of users who have already entered, and you can climb the ladder by participating in community games and activities. These can be anything from sharing information about Changex, following us on social media, and going on treasure hunts, among others. We will provide additional information soon.',
+        img: '/assets/images/common/plus.svg'
+    },
+    {
+        title: 'When are cards expected to rollout?',
+        content: 'We expect to begin shipping out the first crypto debit cards to customers in the first months of 2023.',
+        img: '/assets/images/common/plus.svg'
+    },
+    {
+        title: 'What is a SEPA IBAN?',
+        content: 'SEPA, short for the Single European Payment Area, is an EU-wide system that enables fast, secure, and cashless payments to anywhere in the European Union and in several non-EU countries. SEPA transactions occur just like regular national payments, eliminating the difference between cross-border payments and domestic ones. These payments are reliable, efficient, and secure, and the legal framework they are based on comes from the European Central Bank. Transactions are nearly instantaneous and can be relied on around the clock. The system consists of 36 countries in total, and any two parties in SEPA can order transactions to one another.'
+    },
+    {
+        title: 'Which countries are included in SEPA?',
+        content: 'The Single European Payment Area consists of the following jurisdictions: Austria, Belgium, Bulgaria, Cyprus, Croatia, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Republic of Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovenia, Slovakia, Spain and Sweden, the 3 EEA countries of Norway, Liechtenstein, Iceland. Switzerland, Great Britain, Andorra, Monaco, San Marino, and the Vatican City State complete the list.',
+        img: '/assets/images/common/plus.svg'
+    }
+]
 
 export const faqWealthContent = [
     {

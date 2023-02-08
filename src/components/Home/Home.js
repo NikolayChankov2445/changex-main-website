@@ -9,6 +9,8 @@ import SectionCard from "../SectionCard/SectionCard";
 import SectionCta from "../SectionCta/SectionCta";
 import SectionPress from "../SectionPress/SectionPress";
 import SectionWealth from "../SectionWealth/SectionWealth";
+import SectionAdvantages from "../SectionAdvantages/SectionAdvantages";
+import {cardItems} from "../SectionCard/sectionCardItems";
 
 const heroObj = {
     titleObj: {
@@ -41,6 +43,12 @@ export default function Home() {
            <CryptoBank />
            <SectionPartners />
            <SectionCard cardContent={ cardContent }  />
+           <SectionAdvantages
+               pageClass={'cardPage'}
+               classGrid={"card-grid"}
+               title={"More Than A card - It’s Freedom"}
+               advantages={cardItems}
+           />
            <SectionWealth />
            <SectionCta />
            <SectionPress />

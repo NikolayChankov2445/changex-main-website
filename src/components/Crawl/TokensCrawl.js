@@ -21,7 +21,7 @@ export default function TokensCrawl({ crawlDirection }) {
                                     <h6 className="heading-style-h7">Price:</h6>
                                     <div className="flex">
                                         <span className="text-size-large font-black">
-                                            {item.current_price} $ &nbsp;
+                                            {item.current_price.toFixed(4)} $ &nbsp;
                                         </span>
                                         <span  className={`${
                                             item.price_change_percentage_24h < 0

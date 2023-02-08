@@ -1,4 +1,5 @@
 import * as React from "react"
+import {lazy} from "react";
 
 import AboutHero from "../components/Heroes/AboutHero";
 import Perks from "../components/Perks/Perks";
@@ -6,11 +7,13 @@ import ThoughtWall from "../components/Common/ThoughtWall";
 import Team from "../components/SectionTeam/Team";
 import Roadmap from "../components/SectionRoadmap/Roadmap";
 import SectionCta from "../components/SectionCta/SectionCta";
+import Seo from "../components/SEO/Seo";
 
 import { heroObj, roadMapAboutData } from "../components/Common/aboutItems";
+
 import { teamAdvisorsData, teamExpertsData, titleAdvisorsObj, titleExpertsObj } from "../components/SectionTeam/teamItems";
-import Layout from "../components/Layout/Layout";
-import Seo from "../components/SEO/Seo";
+
+const Layout = lazy(() => import('../components/Layout/Layout'));
 
 const thoughtObj = {
     page: 'About',
@@ -31,7 +34,7 @@ const AboutPage = () => {
                     <Perks perksArray={heroObj.perks}/>
                 </div>
             </div>
-            <section id="about">
+            <section id="changex_about">
                 <ThoughtWall thoughtObj={ thoughtObj }/>
                 <Team titleObj={titleExpertsObj} teamData={teamExpertsData} paddingClass={'padding-global'}/>
                 <Team titleObj={titleAdvisorsObj} teamData={teamAdvisorsData} paddingClass={'padding-global-bottom-sides'}/>
