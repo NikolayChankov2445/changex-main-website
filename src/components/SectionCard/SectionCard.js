@@ -57,8 +57,8 @@ export default function SectionCard({ cardContent }) {
                         : "padding-global"
                 }`}
             >
-                <div className="container-large">
-                    <div>
+                <div className="container-large table">
+                    <div className="table-align-center">
                         <div className="card_wrapper">
                             <div className="card_wrapper-right">
                                 <div className="image-holder card-image">

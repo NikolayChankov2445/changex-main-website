@@ -27,6 +27,11 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
+      <link rel="stylesheet" href="/assets/styles/style.css" />
+      <link rel="stylesheet" href="/assets/styles/slider.css"/>
+      <script src={'/assets/bootstrap.min.js'} type="application/javascript" />
+      <script src={'/assets/email.min.js'} type="application/javascript" />
+      <script src={'/assets/sg-widget-v2.js'} type="application/javascript" />
         {props.preBodyComponents}
         <div
           key={`body`}
@@ -34,12 +39,6 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <link rel="stylesheet" href="/assets/styles/style.css" />
-        <link rel="stylesheet" href="/assets/styles/slider.css"/>
-        <link rel="stylesheet" href="/assets/styles/bootstrap.min.css"/>
-        <script src={'/assets/bootstrap.min.js'} type="application/javascript" />
-        <script src={'/assets/email.min.js'} type="application/javascript" />
-        <script src={'/assets/sg-widget-v2.js'} type="application/javascript" />
       </body>
     </html>
   )

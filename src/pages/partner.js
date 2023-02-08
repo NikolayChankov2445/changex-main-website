@@ -38,7 +38,7 @@ export default PartnerPage
 export const Head = () => (
     <>
         <Seo description={heroPartnerObj.titleObj.h3}
-             title={heroPartnerObj.titleObj.h2}
+             title={heroPartnerObj.titleObj.h1}
              imageAlt="Changex- Become a Partner"/>
     </>
 )

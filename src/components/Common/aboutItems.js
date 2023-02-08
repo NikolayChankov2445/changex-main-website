@@ -1,7 +1,7 @@
 export const heroObj = {
     titleObj: {
         h1: "About Changex",
-        h2: "We Simplify DeFi",
+        h2: "Changex | We Simplify DeFi",
         h3: "The rise of blockchain has introduced a financial revolution, but the gate to this new reality remains very narrow. DeFi tends to be inaccessible, needlessly technological, and sometimes off-puttingly complicated in the eyes of inexperienced users. This probably explains why only ~4% of the world’s population use cryptocurrencies.",
         h4: "At Changex, we believe that everyone must have access to better personal finance, more investment opportunities, and independence in their money matters.",
     },

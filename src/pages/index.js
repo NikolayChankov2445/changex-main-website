@@ -19,7 +19,7 @@ export default IndexPage
 export const Head = () => (
     <>
         <Seo  description={'Money matters → Made Simple'}
-              title={'Decentralized Personal Finance For All'}
+              title={'Changex | Decentralized Personal Finance For All'}
               imageAlt="Changexio Personal Finance"/>
     </>
 )
