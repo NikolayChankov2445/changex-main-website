@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 export const ReactPinkSmallButton = styled('button')({
     boxShadow: 'none',
-    padding: "13px 32px",
-    borderRadius: "8px",
+    padding: "0.813rem 2rem",
+    borderRadius: "1rem",
     textTransform: 'none',
     fontSize: 18,
     fontWeight: 600,

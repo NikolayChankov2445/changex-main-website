@@ -33,7 +33,7 @@ export default function Footer() {
                         <div className="w-layout-grid footer-grid">
                             <div className="copyright">
                                 <div className="text-size-small text-color-darkgrey">
-                                    Copyright © 2023, Olympus Capital JSC,
+                                    Copyright © 2023, Olympus Capital JSC.
                                     <br /> All trademarks and copyrights belong to their
                                     respective owners.
                                 </div>
@@ -87,7 +87,7 @@ export default function Footer() {
                             </div>
                             <div className="button-group-store-footer centered-items margin-top spread align-left social">
                                 <button
-                                    className="button-store-footer background-color-black"
+                                    className="button-store-footer"
                                 ><a
                                     target="_blank"
                                     rel="noreferrer"
@@ -104,7 +104,7 @@ export default function Footer() {
                                 </a>
                                 </button>
                                 <button
-                                    className="button-store-footer background-color-black"
+                                    className="button-store-footer"
                                 ><a
                                     target="_blank"
                                     rel="noreferrer"

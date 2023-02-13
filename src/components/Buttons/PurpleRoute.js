@@ -4,8 +4,8 @@ import { Link } from "gatsby";
 
 export const PurpleButtonRoutes = styled('button')({
     boxShadow: 'none',
-    borderRadius: "8px",
-    padding: "13px 32px",
+    borderRadius: "1rem",
+    padding: "0.813rem 2rem",
     textTransform: 'none',
     fontSize: 24,
     fontWeight: 600,

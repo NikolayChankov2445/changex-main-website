@@ -1,8 +1,13 @@
 import * as React from "react";
+import styled from "styled-components";
+
+const AdvantageWrapper = styled.div`
+    position: relative;
+`
 
 export default function SectionAdvantages({ pageClass, classGrid, title, advantages }) {
     return (
-        <div id="advantages">
+        <AdvantageWrapper id="advantages">
             <div className={`${pageClass === 'walletPage' ? 'padding-global' : 'padding-global-bottom-sides'}`}>
                 <div className="container-large">
                     <div className="main-container-block">
@@ -33,8 +38,7 @@ export default function SectionAdvantages({ pageClass, classGrid, title, advanta
                                                 </div>
                                                 <h5 className="headingTextSize">{card.title}</h5>
                                                 <p
-                                                    style={{ fontSize: "15px" }}
-                                                    className="card-text font-paragraph margin-top margin-large"
+                                                    className="card-text paragraph18 font-paragraph margin-top margin-large"
                                                 >
                                                     {card.text}
                                                 </p>
@@ -47,6 +51,6 @@ export default function SectionAdvantages({ pageClass, classGrid, title, advanta
                     </div>
                 </div>
             </div>
-        </div>
+        </AdvantageWrapper>
     );
 }

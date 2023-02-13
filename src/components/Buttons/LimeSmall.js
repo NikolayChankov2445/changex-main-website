@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 export const ReactLimeSmallButton = styled('button')({
     boxShadow: 'none',
-    padding: "13px 32px",
-    borderRadius: "8px",
-    marginBottom: "16px",
+    padding: "0.813rem 2rem",
+    borderRadius: "0.5rem",
+    marginBottom: "1rem",
     textTransform: 'none',
-    fontSize: "18px",
+    fontSize: "1.125rem",
     fontWeight: 600,
     lineHeight: 1.5,
     backgroundColor: '#E0FB92',

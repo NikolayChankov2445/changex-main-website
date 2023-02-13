@@ -14,13 +14,22 @@ const ApyBtn = styled.div`
     font-size: large;
 `
 
+const ApySpan = styled.span`
+  font-weight: bold;
+  font-size: 18px;
+  font-family: var(--font-paragraph);
+  color: var(--themeBlueBackgroundColor);
+  text-decoration: none;
+  margin-left: 3px;
+`
+
 export default function Apy() {
     const apyContext = useContext(ApyContext);
 
     return (
         <Wrapper className="priceApyWrapper">
             <ApyBtn id="changexApy">
-                APY: {apyContext}%
+                <strong>APY:</strong> <ApySpan>{apyContext}%</ApySpan>
             </ApyBtn>
         </Wrapper>
     )

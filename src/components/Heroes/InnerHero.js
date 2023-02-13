@@ -28,11 +28,13 @@ export default function InnerHero( { heroObj } ){
                 <div className="container-large ">
                     <div id="inner-hero-title" className="hero_content-wrapper padding-vertical padding-large">
                         <div className={`${heroObj.class === 'walletPage' ? 'title_wrapper_hero-wallet' : 'title_wrapper_hero'} max-width-large`} >
-                            <div className="center-content z-index-1">
+                            <div className={`${heroObj.class === 'walletPage' || heroObj.class === "bankPage" ?
+                                'margin-auto-top' :
+                                'margin-auto'} center-content z-index-1`}>
                                 <div className="">
-                                    <h6 className="heading-style-h6 text-desktop-mobile text-color-primary text-left-mobile">
+                                    <h5 className="heading-style-h5 text-desktop-mobile text-color-primary text-left-mobile">
                                         {heroObj.titleObj.h1}
-                                    </h6>
+                                    </h5>
                                 </div>
                                 <div className="margin-vertical margin-small ">
                                     <div className="">

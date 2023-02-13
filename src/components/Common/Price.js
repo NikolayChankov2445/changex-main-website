@@ -16,6 +16,15 @@ const PriceBtn = styled.div`
     font-size: large;
 `
 
+const PriceSpan = styled.span`
+  font-weight: bold;
+  font-size: 18px;
+  font-family: var(--font-paragraph);
+  color: var(--themeBlueBackgroundColor);
+  text-decoration: none;
+  margin-left: 3px;
+`
+
 export default function Price() {
     const [price, setPrice] = useState('0.0000');
     const coinsContext = useContext(PricesContext);
@@ -30,8 +39,8 @@ export default function Price() {
 
     return (
         <Wrapper className="priceApyWrapper">
-            <PriceBtn id="changexPrice">
-                Price: ${price}
+            <PriceBtn id="">
+                <strong>Price:</strong> <PriceSpan>${price}</PriceSpan>
             </PriceBtn>
         </Wrapper>
     )

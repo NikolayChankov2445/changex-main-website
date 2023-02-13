@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ReactButtonSubmit = styled('button')({
     boxShadow: 'none',
-    padding: "13px 32px",
+    padding: "0.813rem 2rem",
     borderRadius: "8px",
     textTransform: 'none',
     color: '#FFF',

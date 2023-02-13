@@ -49,5 +49,5 @@ module.exports = {
       options: {
         "icon": `${__dirname}/src/assets/images/icon.png`
       }
-    },'gatsby-plugin-netlify']
+    },'gatsby-plugin-netlify','babel-plugin-styled-components']
 };

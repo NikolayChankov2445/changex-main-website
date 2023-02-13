@@ -28,7 +28,7 @@ const heroObj = {
 
 const cardContent = {
     head1: "Meet The",
-    head2: "ChangeX",
+    head2: "Changex",
     head3: "Debit Card",
     paragraph: "",
     page: "Home",

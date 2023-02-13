@@ -1,8 +1,12 @@
 import React from "react";
-import Navigation from "../Navigation/Navigation";
-import Footer from "../Footer/Footer";
+import {lazy} from "react";
+
 import ApyContextProvider from "../Context/ApyContext";
 import PricesContextProvider from "../Context/PriceContext";
+
+const Navigation = lazy(() => import('../Navigation/Navigation'));
+const Footer = lazy(() => import('../Footer/Footer'));
+
 
 export default function Layout({ children }) {
     return (

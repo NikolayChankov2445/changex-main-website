@@ -62,12 +62,25 @@ export const menuItems = [
         ]
     },
     {
-        title: 'About',
-        url: '/about',
-        id: 'about',
+        title: 'Learn',
+        url: '#',
+        id: 'changex_learn',
         className: 'nav_menu-links w-nav-menu',
         hasLine: true,
-        submenu: []
+        submenu: [
+            {
+                title: 'About',
+                url: '/about',
+                id: "changex_about",
+                link: false
+            },
+            {
+                title: 'Changex Blog',
+                url: 'https://hydradex.org/#/stake/changex',
+                id: "changex_blog",
+                link: true
+            },
+        ]
     }
 ];
 
@@ -155,7 +168,7 @@ export const menuItemsFooter = [
 
 export const menuItemsFooter2 = [
     {
-        title: 'About',
+        title: 'Learn',
         url: '/about',
         id: 'changex_about',
         className: 'button footer-links w-inline-block',
@@ -177,14 +190,6 @@ export const menuItemsFooter2 = [
         className: 'button footer-links w-inline-block',
         hasLine: false,
         link: true
-    },
-    {
-        title: '',
-        url: '',
-        id: '',
-        className: 'button footer-links w-inline-block',
-        hasLine: false,
-        link: false
     },
     {
         title: 'Whitepaper',

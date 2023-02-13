@@ -97,7 +97,7 @@ export const responsiveSliderData =  {
                 min: 1024,
             },
             items: 1,
-            partialVisibilityGutter: 40,
+            partialVisibilityGutter: 30,
         },
         tablet: {
             breakpoint: {
@@ -255,7 +255,7 @@ export const textData = {
 
 export const cardContent = {
     head1: "Meet The",
-    head2: "ChangeX",
+    head2: "Changex",
     head3: "Debit Card",
     paragraph: "",
     page: "Wallet",

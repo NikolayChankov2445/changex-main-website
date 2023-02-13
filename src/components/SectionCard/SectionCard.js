@@ -133,7 +133,7 @@ export default function SectionCard({ cardContent }) {
                                         )}
                                     </div>
                                     <div className="text-size-small">
-                                        By subscribing you agree to ChangeX&nbsp;
+                                        By subscribing you agree to Changex&nbsp;
                                         <a
                                             target="_blank"
                                             rel="noreferrer"

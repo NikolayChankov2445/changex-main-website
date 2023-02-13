@@ -256,7 +256,7 @@ export const featureContent2 = {
 
 export const textDataWealthSection = {
     background: "background-color-black",
-    head: "",
+    head: "Invest.",
     h1: "Money That",
     h2: "Never Sleeps",
     h3: "Earn passive income in the easiest possible way with DeFi’s most powerful investment tools.",

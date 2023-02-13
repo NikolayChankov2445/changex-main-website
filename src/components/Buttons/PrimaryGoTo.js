@@ -4,8 +4,8 @@ import {BsArrowDown} from "react-icons/bs";
 
 export const ReactPrimaryGoToButton = styled('button')({
     boxShadow: 'none',
-    borderRadius: "8px",
-    padding: "13px 32px",
+    borderRadius: "1rem",
+    padding: "0.813rem 2rem",
     textTransform: 'none',
     fontSize: 24,
     fontWeight: 600,

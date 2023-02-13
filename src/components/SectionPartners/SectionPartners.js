@@ -6,8 +6,8 @@ export default function SectionPartners() {
         <section className="section_partners">
             <div className="padding-global">
                 <div className="container-large">
-                    <div>
-                        <h3 className="heading-style-h6 text-color-black margin-bottom margin-medium text-align-center">
+                    <div className="grid-1">
+                        <h3 className="heading-style-h5 text-color-black margin-bottom margin-medium text-align-center">
                             Revolutionizing Personal Finance One Community At A Time.
                         </h3>
                         <div className="logo-group r-marquee">

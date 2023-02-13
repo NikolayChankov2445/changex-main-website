@@ -7,7 +7,7 @@ export default function HTML(props) {
       <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <meta name="author" content="ChangeX"/>
+          <meta name="author" content="Changex"/>
           <meta
               name="viewport"
               content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -27,18 +27,19 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
-      <link rel="stylesheet" href="/assets/styles/style.css" />
-      <link rel="stylesheet" href="/assets/styles/slider.css"/>
-      <script src={'/assets/bootstrap.min.js'} type="application/javascript" />
-      <script src={'/assets/email.min.js'} type="application/javascript" />
-      <script src={'/assets/sg-widget-v2.js'} type="application/javascript" />
-        {props.preBodyComponents}
-        <div
-          key={`body`}
-          id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
-        />
-        {props.postBodyComponents}
+          <link rel="stylesheet" href="/assets/styles/slider.css"/>
+          <link rel="stylesheet" href="/assets/styles/bootstrap.min.css"/>
+          <link rel="stylesheet" href="/assets/styles/style.css" />
+          <script src={'/assets/bootstrap.min.js'} type="application/javascript" />
+          <script src={'/assets/email.min.js'} type="application/javascript" />
+          <script src={'/assets/sg-widget-v2.js'} type="application/javascript" />
+            {props.preBodyComponents}
+            <div
+              key={`body`}
+              id="___gatsby"
+              dangerouslySetInnerHTML={{ __html: props.body }}
+            />
+            {props.postBodyComponents}
       </body>
     </html>
   )

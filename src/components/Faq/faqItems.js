@@ -16,7 +16,7 @@ export const faqContent = [
         title: 'What is the CHANGE token?',
         content: 'CHANGE is the native' +
             'multi-chain token of the Changex app. CHANGE is burned with every ' +
-            'fiat-crypto and crypto-crypto transaction in ChangeX: supply decreases and ' +
+            'fiat-crypto and crypto-crypto transaction in Changx: supply decreases and ' +
             'the token appreciates. If you are staking CHANGE, staking any other PoS ' +
             'asset boosts your CHANGE APR via commissions applied to their staking pools. ' +
             'As CHANGE is burned, the value of the rewards increases: the rewards become ' +
@@ -47,7 +47,7 @@ export const faqContent = [
         img: '/assets/images/common/plus.svg'
     },
     {
-        title: 'Will ChangeX banking expand beyond Europe?',
+        title: 'Will Changex banking expand beyond Europe?',
         content: 'Banking and card services are expected to have a global coverage. After the launch in the EU in the' +
             'beginning of 2023, we are planning to add more supported regions in North America and Asia in late 2023.',
         img: '/assets/images/common/plus.svg'
