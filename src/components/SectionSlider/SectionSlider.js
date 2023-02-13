@@ -1,9 +1,9 @@
 import * as React from "react";
 import { useState } from "react";
 
-import CardSlider from "../Slider/cardSlider";
 
 import {LimeButton} from "../Buttons/Lime";
+import CardSlider from "../Slider/CardSlider";
 
 
 let carouselRef2;
