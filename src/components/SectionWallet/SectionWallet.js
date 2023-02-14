@@ -50,7 +50,6 @@ export default function SectionWallet() {
                                     touch={true}
                                     ref={carouselRef}
                                     id="walletCarousel"
-                                    height="500"
                                 >
                                     {slideImages.map((item, index) => {
                                         return (

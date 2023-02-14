@@ -31,12 +31,11 @@ export default function SectionCta() {
                                 </p>
                             </div>
                             <div className="button-group-hero centered-items margin-top margin-large spread align-left">
-                                <button
+                                <div
                                     className="button-store is-lime-background"
                                 ><a
                                     target="_blank"
                                     rel="noreferrer"
-                                    alt="Changex Apple Store"
                                     href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
 
                                 >
@@ -46,8 +45,8 @@ export default function SectionCta() {
                                         loading="lazy"
                                     ></img>
                                 </a>
-                                </button>
-                                <button
+                                </div>
+                                <div
                                     className="button-store is-lime-background"
                                 ><a
                                     target="_blank"
@@ -60,7 +59,7 @@ export default function SectionCta() {
                                         loading="lazy"
                                     ></img>
                                 </a>
-                                </button>
+                                </div>
                             </div>
                         </div>
                         <div className="cta-image">

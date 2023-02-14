@@ -12,10 +12,9 @@ import styled from "styled-components";
 import ChangeXLogoColor from "../../../static/assets/images/common/Logo_navigation.svg";
 import QRBlack from "../../../static/assets/images/common/icn-qr-black.svg";
 import MenuIcon from "../../../static/assets/images/common/Menu-Icon_1Menu Icon.png";
-import ExternalLink from "../../../static/assets/images/common/external_link.svg";
 import {PricesContext} from "../Context/PriceContext";
 import {ApyContext} from "../Context/ApyContext";
-import 'rsuite/dist/rsuite.min.css';
+
 import PriceApyBtns from "../Context/PriceApyBtns";
 
 const NavFullWrapper = styled.div`
@@ -69,6 +68,8 @@ const ApyWrapper = styled.div`
 
 const PriecWrapper = styled.div`
   align-self: center;
+  @media (max-width: 320px) {
+    display: none;
 `
 
 const Price = styled.span`
@@ -150,9 +151,9 @@ export default function Navigation() {
                 <div className={"container-large-nav"}>
                     <div className="is-nav navHeight">
                         <NavFullWrapper id="changex_navigation_wrapper">
-                            <Navbar className="nav_menu-links w-nav-menu">
+                            <Navbar className="nav_menu-links nav-menu">
                                 <Container>
-                                <div href="/" className="nav_left-wrapper">
+                                <div className="nav_left-wrapper">
                                     <div className="nav_brandlink margin-right w-nav-brand">
                                         <Link to="/">
                                             <img
@@ -176,19 +177,17 @@ export default function Navigation() {
                                                                 return (
                                                                     <div>
                                                                         {item.link === false ?
-                                                                            <Link className="nav-link-dropdown" activeClassName="activeLink" onClick={()=> {setActiveKey(menu.id )}} to={item.url} key={index.toString()}>
+                                                                            <Link className="nav-link" activeClassName="activeLink" onClick={()=> {setActiveKey(menu.id )}} to={item.url} key={index.toString()}>
                                                                                 {item.title}
                                                                             </Link>
                                                                             :
                                                                             <>
-                                                                                <a className="nav-link"  rel="noreferrer" href={item.url}  target="_blank" key={index.toString()}>
+                                                                                <a className="nav-link"
+                                                                                   rel="noreferrer"
+                                                                                   href={item.url}
+                                                                                   target="_blank" key={index.toString()}>
                                                                                     {item.title}
                                                                                 </a>
-                                                                                {/*<img
-                                                                                    alt="changex coingecko"
-                                                                                    className="coingecko"
-                                                                                    src={ExternalLink}
-                                                                                />*/}
                                                                             </>
                                                                         }
 
@@ -225,7 +224,7 @@ export default function Navigation() {
                                     <ApyWrapper className="nav_stats-wrapper">
                                         <div className="padding-small">
                                             <div
-                                                id="changexApy"
+                                                id="changex_apy"
                                                 className="text-size-tiny text-color-black changexapy"
                                             >
                                                 <span><strong>APY:</strong></span>
@@ -237,7 +236,11 @@ export default function Navigation() {
                                         {iconItems.map((icon, index) => {
                                             return (
                                                 <li key={icon.id} id={icon.id} className="nav_download-item">
-                                                    <a href={icon.href} className={icon.class}>
+                                                    <a
+                                                        href={icon.href}
+                                                        target="_blank"
+                                                        className={icon.class}
+                                                        rel="noreferrer">
                                                         <img
                                                             src={icon.src  || ''}
                                                             alt="changex icon"
@@ -248,26 +251,24 @@ export default function Navigation() {
                                                 </li>
                                             );
                                         })}
-                                        <button
-                                            onClick={openModal}
-                                            id="qrcode"
-                                            className="nav_download-item transparent"
-                                        >
-                                            <img
-                                                src={QRBlack  || ''}
-                                                className={"nav_download-btn w-inline-block"}
-                                                alt="changex qr"
-                                                loading="lazy"
-                                                width="21"
-                                            ></img>
-                                        </button>
+
                                     </ul>
+                                    <button
+                                        onClick={openModal}
+                                        id="qrcode"
+                                        className="nav_download-item transparent"
+                                    >
+                                        <img
+                                            src={QRBlack  || ''}
+                                            className={"nav_download-btn w-inline-block"}
+                                            alt="changex qr"
+                                            loading="lazy"
+                                            width="21"
+                                        ></img>
+                                    </button>
                                     <div
                                         className="menu-button w-nav-button"
                                         aria-label="menu"
-                                        role="button"
-                                        tabIndex="0"
-                                        aria-controls="w-nav-overlay-0"
                                         aria-haspopup="menu"
                                     >
                                         <button
@@ -281,7 +282,6 @@ export default function Navigation() {
                                                 className="menu-icon"
                                             ></img>
                                         </button>
-
                                     </div>
                                 </div>
                             </Navbar>
@@ -290,11 +290,10 @@ export default function Navigation() {
                 </div>
                 <NavMobile className={`${openNav ? "" : "hide"} fixed`}>
                     <nav
-                        role="navigation"
                         className="nav_menu-links-mobile"
                         data-nav-menu-open=""
                     >
-                        <Navbar className="w-nav-menu">
+                        <Navbar className="nav-menu">
                             <Nav activeKey={activeKey} className="rs-navbar-mobile navbar-mobile">
                                 <>
                                     {menuItems.map((menu, index) => {
@@ -315,14 +314,13 @@ export default function Navigation() {
                                                                         </Link>
                                                                         :
                                                                         <>
-                                                                            <a className="nav-link-dropdown" rel="noreferrer" href={item.url}  target="_blank" key={index.toString()}>
+                                                                            <a className="nav-link"
+                                                                               rel="noreferrer"
+                                                                               href={item.url}
+                                                                               target="_blank"
+                                                                               key={index.toString()}>
                                                                                 {item.title}
                                                                             </a>
-                                                                            <img
-                                                                                alt="changex coingecko"
-                                                                                className="coingecko"
-                                                                                src={ExternalLink}
-                                                                            />
                                                                         </>
                                                                     }
 
@@ -353,7 +351,7 @@ export default function Navigation() {
                                     {mobileIcon.map((icon, index) => {
                                         return (
                                             <>
-                                                <button
+                                                <div
                                                     className="button-store background-color-black"
                                                     key={index}>
                                                     <a
@@ -366,7 +364,7 @@ export default function Navigation() {
                                                             loading="lazy">
                                                         </img>
                                                     </a>
-                                                </button>
+                                                </div>
                                             </>
                                         );
                                     })}

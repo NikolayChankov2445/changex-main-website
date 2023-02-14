@@ -1,9 +1,8 @@
 import * as React from "react";
 import { useState } from "react";
 
-
-import {LimeButton} from "../Buttons/Lime";
 import CardSlider from "../Slider/CardSlider";
+import {LimeButton} from "../Buttons/Lime";
 
 
 let carouselRef2;
@@ -77,7 +76,7 @@ export default function SectionSlider({
                                                             : "tab-link w-inline-block"
                                                     }
                                                 >
-                                                    <div>{item.title}</div>
+                                                    <span>{item.title}</span>
                                                 </button>
                                             );
                                         })}

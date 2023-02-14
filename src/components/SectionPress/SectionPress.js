@@ -17,7 +17,7 @@ export default function SectionPress() {
                                         <a
                                             key={index}
                                             href={logo.href}
-                                            id={logo.name}
+                                            id={logo.id}
                                             className="logo-link w-inline-block"
                                         >
                                             <img
@@ -38,7 +38,7 @@ export default function SectionPress() {
                                             key={index}
                                             href={logo.href}
                                             target="_blank"
-                                            id={logo.name}
+                                            id={`changex_${logo.id}`}
                                             className="logo-link w-inline-block"
                                         >
                                             <img

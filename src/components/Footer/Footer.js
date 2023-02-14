@@ -64,7 +64,7 @@ export default function Footer() {
                                     return (
                                         item.link === true && item.title ?
                                             <Link
-                                                id={item.title}
+                                                id={item.id}
                                                 key={index}
                                                 target="_blank"
                                                 rel="noreferrer"
@@ -74,7 +74,7 @@ export default function Footer() {
                                                 <div className="text-color-black">{item.title}</div>
                                             </Link>
                                             :
-                                            <a id={item.title}
+                                            <a id={`changex_${item.id}`}
                                                key={index}
                                                target="_blank"
                                                rel="noreferrer"
@@ -86,7 +86,7 @@ export default function Footer() {
                                 })}
                             </div>
                             <div className="button-group-store-footer centered-items margin-top spread align-left social">
-                                <button
+                                <div
                                     className="button-store-footer"
                                 ><a
                                     target="_blank"
@@ -102,8 +102,8 @@ export default function Footer() {
                                         loading="lazy"
                                     ></img>
                                 </a>
-                                </button>
-                                <button
+                                </div>
+                                <div
                                     className="button-store-footer"
                                 ><a
                                     target="_blank"
@@ -118,7 +118,7 @@ export default function Footer() {
                                         loading="lazy"
                                     ></img>
                                 </a>
-                                </button>
+                                </div>
 
                                 <button
                                     onClick={openModal}

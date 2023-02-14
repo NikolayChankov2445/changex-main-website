@@ -39,7 +39,7 @@ export default function Price() {
 
     return (
         <Wrapper className="priceApyWrapper">
-            <PriceBtn id="">
+            <PriceBtn>
                 <strong>Price:</strong> <PriceSpan>${price}</PriceSpan>
             </PriceBtn>
         </Wrapper>

@@ -17,10 +17,10 @@ export default function TitleHero({ contentObj }) {
                         <div className="text-cut-off">
                             <h1 className="heading-style-h1 text-left-mobile">
                                 {contentObj.titleObj.h2} <br />
-                                <p className="text-color-primary heading-style-h1">
-                                    {contentObj.titleObj.h3}
-                                </p>
                             </h1>
+                            <p className="text-color-primary heading-style-h1">
+                                {contentObj.titleObj.h3}
+                            </p>
                         </div>
                     </div>
                     <div
@@ -28,7 +28,7 @@ export default function TitleHero({ contentObj }) {
                             contentObj.appBtnsVisible ? "" : "hide"
                         }  button-group-hero  margin-top margin-large spread max-width-full-mobile-landscape`}
                     >
-                        <button
+                        <div
                             className="button-store background-color-black"
                         ><a
                             target="_blank"
@@ -42,8 +42,8 @@ export default function TitleHero({ contentObj }) {
                                 loading="lazy"
                             ></img>
                         </a>
-                        </button>
-                        <button
+                        </div>
+                        <div
                             className="button-store background-color-black"
                         ><a
                             target="_blank"
@@ -56,7 +56,7 @@ export default function TitleHero({ contentObj }) {
                                 loading="lazy"
                             ></img>
                         </a>
-                        </button>
+                        </div>
                     </div>
                 </div>
             </div>

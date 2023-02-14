@@ -2,36 +2,44 @@ import * as React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 
-export const PrimaryButtonRoutes = styled('button')({
-    boxShadow: 'none',
-    borderRadius: "1rem",
-    padding: "0.813rem 2rem",
-    textTransform: 'none',
-    fontSize: 24,
-    fontWeight: 600,
-    lineHeight: 1.5,
-    color: '#ffffff',
-    backgroundColor: '#3418D8',
-    fontFamily: [
-        'Source Sans Pro'
-    ].join(','),
-    '&:hover': {
-        backgroundColor: '#7D6BE6',
-        boxShadow: 'none',
-        color: "#ffffff",
-        border: 'none'
-    },
+export const PrimaryButtonRoutes = styled.div`
+  box-shadow: none;
+  padding: 0.813rem 2rem;
+  border-radius: 16px;
+  text-transform: none;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  background-color: #3418D8;
+  color: #ffffff;
+  width: fit-content;
+  font-family: 'Source Sans Pro', sans-serif;
+      '&:hover': {
+        background-color: #7D6BE6;
+        box-shadow: none;
+        outline: none;
+        text-decoration: none;
+        color: #ffffff;
+        border: none;
+      },
     '&:active': {
-        boxShadow: 'none',
-        backgroundColor: '#26129D',
-        outline: 'none',
-        color: "#ffffff",
+      background-color: #26129D;
+      box-shadow: none;
+      outline: none;
+      text-decoration: none;
+      color: #ffffff;
+      border: none;
     },
     '&:focus': {
-        boxShadow: 'none',
-        outline: 'none'
+      background-color: #3418D8;
+      box-shadow: none;
+      outline: none;
+      text-decoration: none;
+      color: #ffffff;
+      border: none;
     },
-});
+`
 
 export function PrimaryButtonRoute({text,url}) {
     return (

@@ -48,7 +48,7 @@ export default function Faq({ background, title, faqContent }) {
                                                 </AccordionSummary>
                                                 <AccordionDetails>
                                                     <Typography
-                                                        className={`heading-style-h6 margin-null ${
+                                                        className={`paragraph18 margin-null ${
                                                             background === "background-color-off-white"
                                                                 ? "text-color-black"
                                                                 : "text-color-white"

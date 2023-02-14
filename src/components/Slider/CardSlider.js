@@ -96,13 +96,16 @@ export default function CardSlider({
                                     {item.url && (
                                         <div className="card-link">
                                             {item.route && (
-                                                <button href="#" onClick={() => scrollTo(item.url)}>
+                                                <button onClick={() => scrollTo(item.url)}>
                                                     {item.linkText} <FaAngleRight />
                                                 </button>
                                             )}
 
                                             {item.route === false && (
-                                                <a href={item.url} target="_blank"  rel="noreferrer">
+                                                <a
+                                                    href={item.url}
+                                                    target="_blank"
+                                                    rel="noreferrer">
                                                     {item.linkText} <FaAngleRight />
                                                 </a>
                                             )}

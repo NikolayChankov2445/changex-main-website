@@ -17,7 +17,7 @@ export default function SectionPartners() {
                                         <a
                                             key={index}
                                             href={logo.href}
-                                            id={index.toString()}
+                                            id={`changex_${logo.id}`}
                                             className="logo-link w-inline-block"
                                         >
                                             <img
@@ -34,7 +34,11 @@ export default function SectionPartners() {
                             <div className="logos-wrapper r-marquee-wrapper-left">
                                 {logosParners.map((logo, index) => {
                                     return (
-                                        <a key={index} id={logo.name} href={logo.href} className="logo-link w-inline-block">
+                                        <a
+                                            key={index}
+                                            id={logo.id}
+                                            href={logo.href}
+                                            className="logo-link w-inline-block">
                                             <img
                                                 src={logo.src || ''}
                                                 loading="lazy"

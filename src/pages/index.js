@@ -4,6 +4,10 @@ import {lazy} from "react";
 import Home from "../components/Home/Home";
 import Seo from "../components/SEO/Seo";
 
+import 'rsuite/dist/rsuite.min.css';
+import "react-multi-carousel/lib/styles.css";
+import 'react-vertical-timeline-component/style.min.css';
+
 const Layout = lazy(() => import('../components/Layout/Layout'));
 
 const IndexPage = () => {

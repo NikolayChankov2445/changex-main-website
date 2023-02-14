@@ -216,7 +216,7 @@ export default function Contact({ content, formContent, background }) {
                                                         label={formContent.checkbox}
                                                     />
                                                     <br/>
-                                                    <ButtonSubmit text={formContent.buttonTxt} background={'#8366F4'} color={'#fff'}  size={'large'}/>
+                                                    <ButtonSubmit text={formContent.buttonTxt} background={'#8366F4'} url={'#'} color={'#fff'}  size={'large'}/>
                                                     <Typography
                                                         className={`${isSent ? "" : "hide"} formLabel`}
                                                     >

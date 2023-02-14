@@ -184,7 +184,7 @@ label {
 .w-nav-button {
     position: relative;
     float: right;
-    padding: 1.125rem;
+    padding: 1.125rem 0;
     font-size: 1.5rem;
     display: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -2479,8 +2479,15 @@ a:focus {
 }
 
 .card-text {
-    padding-top: 1rem;
     font-size: var(--paragraph18) !important;
+}
+
+.card-text-middle {
+    font-size: var(--paragraph18) !important;
+}
+
+.mobile-flex {
+    display: grid;
 }
 
 .box-container {
@@ -4022,7 +4029,6 @@ a:focus {
     .icon-wrapper {
         width: 11.5rem;
         height: 11.5rem;
-        padding: 0.5rem;
     }
 
     .videoTag {
@@ -4197,6 +4203,14 @@ a:focus {
 }
 
 @media screen and (max-width: 1024px) {
+
+    .mobile-flex {
+        display: flex !important;
+    }
+
+    .card-text-middle {
+        margin: auto !important;
+    }
 
     .timelineIcon {
         margin: 0 0 0 17px !important
@@ -4557,7 +4571,7 @@ a:focus {
     }
 
     .nav_logo {
-        max-width: 102px;
+        vertical-align: middle;
     }
 
     .nav-link {
@@ -4762,6 +4776,11 @@ a:focus {
     }
 
     .w-nav-menu {
+        float: left !important;
+        height: auto !important;
+    }
+
+    .nav-menu {
         float: left !important;
         height: auto !important;
     }
@@ -6427,6 +6446,7 @@ a:focus {
 .navbar-main {
     background: transparent !important;
     height: 3.5625rem;
+    margin-left: 2rem;
 }
 
 .navbar-mobile {
@@ -6577,6 +6597,11 @@ a:focus {
     border-radius: 0.375rem;
 }
 
+.container {
+    margin-left: 0 !important;
+    width: fit-content;
+}
+
 .rsis-container {
     background-color: var(--backgroundColorBlack);
 }
@@ -6707,6 +6732,15 @@ a:focus {
 .card-link > a {
     font-size: 0.875rem !important;
     color: var(--labelLime) !important;
+    background: transparent;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.card-link > button {
+    font-size: 0.875rem !important;
+    color: var(--labelLime) !important;
+    background: transparent;
     text-decoration: none !important;
     cursor: pointer;
 }
@@ -6996,6 +7030,15 @@ a:focus {
     cursor: pointer;
 }
 
+.nav-menu {
+    position: relative;
+    float: right;
+    font-weight: 600;
+    font-size: 1.0rem;
+    align-self: center;
+    width: 100%;
+}
+
 .w-nav-menu {
     position: relative;
     float: right;
@@ -7194,7 +7237,7 @@ a:focus {
     font-size:1.25rem;
     right: 2%;
     margin-left: 1rem;
-    top: 15%;
+    top: 7%;
 }
 
 #walletCarousel {
@@ -7208,7 +7251,7 @@ a:focus {
     right: 11%;
     left: auto;
     margin-right: 1rem;
-    top: 15%;
+    top: 7%;
 }
 
 .carouselIcon {

@@ -8,27 +8,32 @@ export const logosParners = [
     {
         href: 'https://hydrachain.org/',
         src: hydrachain,
-        name: 'cointelegraph logo'
+        name: 'hydrachain',
+        id: 'hydrachain'
     },
     {
         href: 'https://locktrip.com/',
         src: locktrip,
-        name: 'bloomberg logo'
+        name: 'locktrip',
+        id: 'hydrachain'
     },
     {
         href: 'https://bitcoingold.org/',
         src: bitcoingold,
-        name: 'cryptoslate logo'
+        name: 'bitcoingold',
+        id: 'hydrachain'
     },
     {
         href: 'https://unifarm.co/',
         src: unifarm,
-        name: 'cryptopotato logo'
+        name: 'unifarm',
+        id: 'hydrachain'
     },
     {
         href: 'https://www.stakingrewards.com/',
         src: stakingrewards,
-        name: 'cryptopotato logo'
+        name: 'stakingrewards',
+        id: 'hydrachain'
     }
 ]
 
@@ -55,10 +60,12 @@ export const heroPartnerObj = {
         perksTitle: "Benefits Of Integrating",
         perksBtns: [
             {
-                text: "For Your Business"
+                text: "For Your Business",
+                id: "for_your_business"
             },
             {
-                text: "For Your Customers"
+                text: "For Your Customers",
+                id: "for_your_customers"
             }
         ],
         perks0: [
@@ -127,7 +134,7 @@ export const becomeAPartner = {
             h3: "Fill out the form and apply to become our Partner - we'll get in touch with you to take it from there.",
             h4: "",
             buttonTxt: "",
-            buttonUrl: "",
+            buttonUrl: "#",
             buttonClass: "",
             imageUrl: "/assets/images/partners/superhero-backgroundfull_1920-1311.png",
             imageClass: "",
