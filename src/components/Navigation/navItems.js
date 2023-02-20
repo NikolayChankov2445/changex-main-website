@@ -35,52 +35,20 @@ export const menuItems = [
     },
     {
         title: 'CHANGE token',
-        url: '#',
+        url: '/token',
         id: 'token-page',
         className: 'nav_menu-links w-nav-menu',
-        hasLine: false,
+        hasLine: true,
         footer: true,
-        submenu: [
-            {
-                title: 'Info',
-                url: '/token',
-                id: "changex_token",
-                link: false
-            },
-            {
-                title: 'Stake CHANGE',
-                url: 'https://hydradex.org/#/stake/changex',
-                id: "changex_token_stake",
-                link: true
-            },
-            {
-                title: 'Stake HYDRA',
-                url: 'https://hydra-staking.changex.io/',
-                id: "changex_hdyra_stake",
-                link: true
-            }
-        ]
+        submenu: []
     },
     {
-        title: 'Learn',
-        url: '#',
-        id: 'changex_learn',
+        title: 'About',
+        url: '/about',
+        id: 'about',
         className: 'nav_menu-links w-nav-menu',
-        hasLine: true,
-        submenu: [
-            {
-                title: 'About',
-                url: '/about',
-                id: "changex_about",
-                link: false
-            },
-            {
-                title: 'Changex Blog',
-                url: 'https://hydradex.org/#/stake/changex',
-                id: "changex_blog",
-                link: true
-            },
-        ]
+        hasLine: false,
+        submenu: []
     }
 ];
 
@@ -168,25 +136,9 @@ export const menuItemsFooter = [
 
 export const menuItemsFooter2 = [
     {
-        title: 'Learn',
+        title: 'About',
         url: '/about',
         id: 'changex_about',
-        className: 'button footer-links w-inline-block',
-        hasLine: false,
-        link: true
-    },
-    {
-        title: 'HYDRA Staking',
-        url: 'https://hydra-staking.changex.io/',
-        id: 'changex_hydra_staking',
-        className: 'button footer-links w-inline-block',
-        hasLine: false,
-        link: false
-    },
-    {
-        title: 'Become A Partner',
-        url: '/partner',
-        id: 'changex_partner',
         className: 'button footer-links w-inline-block',
         hasLine: false,
         link: true
@@ -207,6 +159,14 @@ export const menuItemsFooter2 = [
         hasLine: false,
         link: false
     },
+    {
+        title: 'Become A Partner',
+        url: '/partner',
+        id: 'changex_partner',
+        className: 'button footer-links w-inline-block',
+        hasLine: false,
+        link: false
+    }
 ];
 
 export const menuItemsFooterSocial = [

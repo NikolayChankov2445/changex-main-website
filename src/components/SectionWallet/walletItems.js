@@ -97,7 +97,7 @@ export const responsiveSliderData =  {
                 min: 1024,
             },
             items: 1,
-            partialVisibilityGutter: 30,
+            partialVisibilityGutter: 40,
         },
         tablet: {
             breakpoint: {
@@ -137,26 +137,22 @@ export const advantages = [
     {
         src: '/assets/images/card/Mini/2.0/decentralized.svg',
         text: 'Explore the world of DeFi from a non-custodial crypto wallet. Access decentralized exchanges and a myriad of investment opportunities.',
-        title: 'Decentralized',
-        id: 'decentralized'
+        title: 'Decentralized'
     },
     {
         src: '/assets/images/card/Mini/2.0/cedefi.svg',
         text: 'Buy coins and tokens with Euro directly in the wallet via advanced fiat/crypto synergies - decentralization with the added comfort and simplicity of CeFi.',
-        title: 'Hybrid CeDeFi',
-        id: 'hybrid_heDeFi'
+        title: 'Hybrid CeDeFi'
     },
     {
         src: '/assets/images/card/Mini/2.0/multi_chain.svg',
         text: 'Hold tokens on multiple blockchains in your DeFi non-custodial wallet. Swap and stake tokens without unnecessary complications.',
-        title: 'Multi-Chain',
-        id: 'multi_chain'
+        title: 'Multi-Chain'
     },
     {
         src: '/assets/images/card/Mini/2.0/secure.svg',
         text: 'Changex has zero access to your data and assets - everything is safely stored on your device only, and our number one priority is your safety.',
-        title: 'Secure',
-        id: 'secure'
+        title: 'Secure'
     }
 ]
 
@@ -259,7 +255,7 @@ export const textData = {
 
 export const cardContent = {
     head1: "Meet The",
-    head2: "Changex",
+    head2: "ChangeX",
     head3: "Debit Card",
     paragraph: "",
     page: "Wallet",

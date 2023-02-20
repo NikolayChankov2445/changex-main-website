@@ -9,14 +9,14 @@ export default function TokenomicsTable() {
             <thead></thead>
             <tbody>
             {tokenPageTokenomicsData.chart.map((item, index) => (
-                <tr key={`changex_chart_${index}`} className="tableRow">
+                <tr className="tableRow">
                     <td className="tableTokenomicsCellIcon">
                         <BsFillCircleFill style={{ color: `${item.color}` }} />{" "}
                     </td>
-                    <td className="tableType">
+                    <td className="tableType" key={index}>
                         {item.type}
                     </td>
-                    <td className="tableValue" >{item.value} {item.type === "Public Sale" ? "($2.4M)" : "M"}
+                    <td className="tableValue" key={index}>{item.value} {item.type === "Public Sale" ? "($2.4M)" : "M"}
                     </td>
                 </tr>
             ))}

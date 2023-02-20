@@ -47,7 +47,8 @@ module.exports = {
     },{
       resolve: `gatsby-plugin-manifest`,
       options: {
-        "icon": `${__dirname}/src/assets/images/icon.png`
+        "icon": `${__dirname}/src/assets/images/icon.png`,
+        "purpose": `any maskable`
       }
-    },'gatsby-plugin-netlify','babel-plugin-styled-components']
+    },'gatsby-plugin-page-transitions']
 };

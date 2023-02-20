@@ -1,16 +1,8 @@
-import * as React from "react";
+/*import * as React from "react";
+import Layout from "./src/components/Layout/Layout"
 
-export const shouldUpdateScroll = ({
-                                  routerProps: { location },
-                                  getSavedScrollPosition,
-                              }) => {
-    const { pathname } = location
-    // list of routes for the scroll-to-top-hook
-    const scrollToTopRoutes = [`/wallet`, `/wealth`, `/bank`, `/token`, `/partner`, `/supported`]
-    // if the new route is part of the list above, scroll to top (0, 0)
-    if (scrollToTopRoutes.indexOf(pathname) !== -1) {
-        window.scrollTo(0, 0)
-    }
-
-    return false
-}
+export const wrapPageElement = ({ element, props }) => {
+    // props provide same data to Layout as Page element will get
+    // including location, data, etc - you don't need to pass it
+    return <Layout {...props}>{element}</Layout>
+}*/

@@ -1,7 +1,8 @@
 import * as React from "react";
 import { useState } from "react";
 
-import CardSlider from "../Slider/CardSlider";
+import CardSlider from "../Slider/cardSlider";
+import "react-multi-carousel/lib/styles.css";
 import {LimeButton} from "../Buttons/Lime";
 
 
@@ -37,10 +38,10 @@ export default function SectionSlider({
     }
 
     return (
-        <div id="changex_slider" className={`${textData.background} vh`}>
+        <div id="changex_slider" className={textData.background}>
             <div className="padding-global">
-                <div className="container-large grid-1">
-                    <div className="main-container margin-auto">
+                <div className="container-large">
+                    <div className="main-container">
                         <div
                             data-current="Tabs"
                             data-easing="ease-out"
@@ -55,7 +56,7 @@ export default function SectionSlider({
                                         {textData.h1}
                                         <span className="highlight is-green"> {textData.h2}</span>
                                     </h2>
-                                    <p className="text-align-left paragraph24 text-color-grey">
+                                    <p className="text-size-xlarge text-color-grey">
                                         {textData.h3}
                                     </p>
                                 </div>
@@ -76,7 +77,7 @@ export default function SectionSlider({
                                                             : "tab-link w-inline-block"
                                                     }
                                                 >
-                                                    <span>{item.title}</span>
+                                                    <div>{item.title}</div>
                                                 </button>
                                             );
                                         })}

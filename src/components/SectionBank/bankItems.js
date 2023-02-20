@@ -22,7 +22,7 @@ export const bankItems = [
 export const bankContent = {
     head2: 'Mobile Banking In A DeFi Wallet',
     head3: 'Crypto-friendly banking for the new age.',
-    paragraph: 'Send, receive, and spend Euro in 36 countries from your SEPA bank account, while keeping your crypto close. Pay for services. Shop. Changex removes the clutter while you focus on life.',
+    paragraph: 'Send, receive, and spend Euro in 36 countries from your SEPA bank account, while keeping your crypto close. Pay for services. Shop. ChangeX removes the clutter while you focus on life.',
     firebasePage: "https://firebasestorage.googleapis.com/v0/b/changex-io.appspot.com/o/changex-whitepaper-v4.pdf?alt=media&amp;token=85d7033d-ce62-4fd2-aefd-b50f2a758530",
     component: "bank"
 }
@@ -60,7 +60,7 @@ export const heroObj = {
 
 export const sliderTextData = {
     background: 'background-color-blue',
-    head: 'COMING SOON',
+    head: '',
     h1: "Discover Better Fiat With Changex Banking",
     h2: "",
     h3: "Opening a bank account with Changex happens in seconds and gives you access to a suite of financial services and perks for an easier life.",

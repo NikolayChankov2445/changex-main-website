@@ -1,9 +1,11 @@
 import * as React from "react";
 import { useState } from "react";
 import { FormControlLabel, TextField } from "@mui/material";
-import { Checkbox } from "rsuite";
+import { Button, Checkbox } from "rsuite";
 import Typography from "@mui/material/Typography";
 import isURL from "validator/es/lib/isURL";
+import {LimeButton} from "../Buttons/Lime";
+import {PurpleButton} from "../Buttons/Purple";
 import {ButtonSubmit} from "../Buttons/ButtonSubmit";
 
 export default function Contact({ content, formContent, background }) {
@@ -216,7 +218,7 @@ export default function Contact({ content, formContent, background }) {
                                                         label={formContent.checkbox}
                                                     />
                                                     <br/>
-                                                    <ButtonSubmit text={formContent.buttonTxt} background={'#8366F4'} url={'#'} color={'#fff'}  size={'large'}/>
+                                                    <ButtonSubmit text={formContent.buttonTxt} background={'#8366F4'} color={'#fff'}  size={'large'}/>
                                                     <Typography
                                                         className={`${isSent ? "" : "hide"} formLabel`}
                                                     >

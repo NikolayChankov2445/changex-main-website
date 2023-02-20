@@ -14,9 +14,9 @@ export default function AboutHero({ heroObj }) {
                         <div className="title_wrapper_hero_about max-width-slarge">
                             <div className="z-index-1">
                                 <div className="">
-                                    <h5 className="heading-style-h5  text-color-primary text-left-mobile">
+                                    <h6 className="heading-style-h6  text-color-primary text-left-mobile">
                                         {heroObj.titleObj.h1}
-                                    </h5>
+                                    </h6>
                                 </div>
                                 <div className="margin-vertical margin-small ">
                                     <div className="">

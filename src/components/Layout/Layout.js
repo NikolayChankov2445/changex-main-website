@@ -1,12 +1,9 @@
 import React from "react";
-import {lazy} from "react";
-
+import PageTransition from 'gatsby-plugin-page-transitions';
+import Navigation from "../Navigation/Navigation";
+import Footer from "../Footer/Footer";
 import ApyContextProvider from "../Context/ApyContext";
 import PricesContextProvider from "../Context/PriceContext";
-
-const Navigation = lazy(() => import('../Navigation/Navigation'));
-const Footer = lazy(() => import('../Footer/Footer'));
-
 
 export default function Layout({ children }) {
     return (
@@ -14,7 +11,9 @@ export default function Layout({ children }) {
             <ApyContextProvider>
                 <PricesContextProvider>
                     <Navigation />
+                    <PageTransition>
                         <main className="pages">{children}</main>
+                    </PageTransition>
                     <Footer />
                 </PricesContextProvider>
             </ApyContextProvider>

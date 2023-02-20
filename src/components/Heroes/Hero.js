@@ -15,10 +15,12 @@ export default function Hero({ heroObj }) {
                         <p
                             className="
                             max-width-large
-                            align-center paragraph24"
+                            text-desktop-mobile
+                            align-center text-size-large"
+
                         >
                             {heroObj.titleObj.h4}&nbsp;
-                            <button onClick={() => scrollTo('#card')} className="transparent text-style-link paragraph24">
+                            <button onClick={() => scrollTo('#card')} className="transparent text-style-link">
                                 {heroObj.titleObj.titleWithLink}
                             </button>
                         </p>

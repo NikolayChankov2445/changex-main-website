@@ -170,11 +170,11 @@ export const roadMapAboutData = {
             dates: [
                 {
                     date: 'May',
-                    text: ['Open Beta of Changex wallet']
+                    text: ['Open Beta of ChangeX wallet']
                 },
                 {
                     date: 'Jun',
-                    text: ['Official release of Changex v1 wallet']
+                    text: ['Official release of ChangeX v1 wallet']
                 },
                 {
                     date: 'Jun 1 - Jun 30',
@@ -193,7 +193,7 @@ export const roadMapAboutData = {
         },
         {
             date: 'Q4 2022',
-            goals: ['Changex Crypto Visa Card', 'Support for additional chains and tokens', 'Fiat Trading', 'Third-party fiat on-ramp with direct fiat purchases'],
+            goals: ['ChangeX Crypto Visa Card', 'Support for additional chains and tokens', 'Fiat Trading', 'Third-party fiat on-ramp with direct fiat purchases'],
             dates: []
         },
         {

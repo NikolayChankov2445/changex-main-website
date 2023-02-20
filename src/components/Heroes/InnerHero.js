@@ -28,13 +28,11 @@ export default function InnerHero( { heroObj } ){
                 <div className="container-large ">
                     <div id="inner-hero-title" className="hero_content-wrapper padding-vertical padding-large">
                         <div className={`${heroObj.class === 'walletPage' ? 'title_wrapper_hero-wallet' : 'title_wrapper_hero'} max-width-large`} >
-                            <div className={`${heroObj.class === 'walletPage' || heroObj.class === "bankPage" ?
-                                'margin-auto-top' :
-                                'margin-auto'} center-content z-index-1`}>
+                            <div className="center-content z-index-1">
                                 <div className="">
-                                    <h5 className="heading-style-h5 text-desktop-mobile text-color-primary text-left-mobile">
+                                    <h6 className="heading-style-h6 text-desktop-mobile text-color-primary text-left-mobile">
                                         {heroObj.titleObj.h1}
-                                    </h5>
+                                    </h6>
                                 </div>
                                 <div className="margin-vertical margin-small ">
                                     <div className="">
@@ -49,7 +47,7 @@ export default function InnerHero( { heroObj } ){
                                     </div>
                                 </div>
                                 <div className={`${heroObj.appBtnsVisible ? '' : 'hide'} button-group margin-top margin-xxlarge spread max-width-full-mobile-landscape`}>
-                                    <div
+                                    <button
                                         className="button-store background-color-black"
                                     ><a
                                         target="_blank"
@@ -62,8 +60,8 @@ export default function InnerHero( { heroObj } ){
                                             loading="lazy"
                                         ></img>
                                     </a>
-                                    </div>
-                                    <div
+                                    </button>
+                                    <button
                                         className="button-store background-color-black"
                                     ><a
                                         target="_blank"
@@ -76,7 +74,7 @@ export default function InnerHero( { heroObj } ){
                                             loading="lazy"
                                         ></img>
                                     </a>
-                                    </div>
+                                    </button>
                                     <button onClick={openModal}
                                             className={`${heroObj.appBtnsVisible && heroObj.class === "walletPage" ? "" : "hide"} button is-qr-hero w-inline-block`}>
                                         <img src={QRWhite} loading="lazy" width="75"

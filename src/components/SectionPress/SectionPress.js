@@ -6,8 +6,8 @@ export default function SectionPress() {
         <section className="section_press ">
             <div className="padding-global">
                 <div className="container-large">
-                    <div className="slide-from-bottom grid-1">
-                        <h3 className="heading-style-h5 text-color-black margin-bottom text-align-center margin-medium">
+                    <div className="slide-from-bottom">
+                        <h3 className="heading-style-h6 text-color-black margin-bottom text-align-center margin-medium">
                             As seen on
                         </h3>
                         <div className="logo-group r-marquee">
@@ -17,7 +17,7 @@ export default function SectionPress() {
                                         <a
                                             key={index}
                                             href={logo.href}
-                                            id={logo.id}
+                                            id={logo.name}
                                             className="logo-link w-inline-block"
                                         >
                                             <img
@@ -37,8 +37,7 @@ export default function SectionPress() {
                                         <a
                                             key={index}
                                             href={logo.href}
-                                            target="_blank"
-                                            id={`changex_${logo.id}`}
+                                            id={logo.name}
                                             className="logo-link w-inline-block"
                                         >
                                             <img

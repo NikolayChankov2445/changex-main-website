@@ -1,6 +1,7 @@
 import * as React from "react"
 import {lazy} from "react";
 
+
 import InnerHero from "../components/Heroes/InnerHero";
 import SectionSlider from "../components/SectionSlider/SectionSlider";
 import SectionCard from "../components/SectionCard/SectionCard";

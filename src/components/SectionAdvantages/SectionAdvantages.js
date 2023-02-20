@@ -1,14 +1,9 @@
 import * as React from "react";
-import styled from "styled-components";
-
-const AdvantageWrapper = styled.div`
-    position: relative;
-`
 
 export default function SectionAdvantages({ pageClass, classGrid, title, advantages }) {
     return (
-        <AdvantageWrapper id="advantages">
-            <div className={`${pageClass === 'walletPage' ? 'padding-global' : 'padding-global-bottom-sides'}`}>
+        <div id="advantages" className="">
+            <div className={`${pageClass === 'walletPage' ? 'padding-global' : ''}`}>
                 <div className="container-large">
                     <div className="main-container-block">
                         {classGrid === "card-grid-wallet" && (
@@ -25,9 +20,9 @@ export default function SectionAdvantages({ pageClass, classGrid, title, advanta
                             <div className="w-layout-grid grid-4">
                                 {advantages.map((card, index) => {
                                     return (
-                                        <div id={card.id} key={index} className="box-container">
-                                            <div className={`${card.title ? '' : 'mobile-flex'} card-icon`}>
-                                                <div className="icon-wrapper margin-medium">
+                                        <div id={card.title} key={index} className="box-container">
+                                            <div className="card-icon ">
+                                                <div className="icon-wrapper margin-bottom margin-medium">
                                                     <img
                                                         src={card.src || ''}
                                                         loading="lazy"
@@ -38,7 +33,8 @@ export default function SectionAdvantages({ pageClass, classGrid, title, advanta
                                                 </div>
                                                 <h5 className="headingTextSize">{card.title}</h5>
                                                 <p
-                                                    className={`${card.title ? 'card-text' : 'card-text-middle'} card-text paragraph18 font-paragraph margin-top margin-large`}
+                                                    style={{ fontSize: "15px" }}
+                                                    className="card-text font-paragraph margin-top margin-large"
                                                 >
                                                     {card.text}
                                                 </p>
@@ -51,6 +47,6 @@ export default function SectionAdvantages({ pageClass, classGrid, title, advanta
                     </div>
                 </div>
             </div>
-        </AdvantageWrapper>
+        </div>
     );
 }

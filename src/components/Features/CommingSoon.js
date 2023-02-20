@@ -3,6 +3,24 @@ import { LimeButton } from "../Buttons/Lime";
 import { PrimaryButton } from "../Buttons/Primary";
 import styled from "styled-components";
 
+
+const WrapperText = styled.div`
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+      "head"
+      "bottom";
+  display: inline-grid;
+  max-width: var(--containerLargeWidth);
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    border: none;
+    font-size: 18px;
+    padding: 0;
+`
+
 const WrapperImage = styled.div`
   z-index: 0;
   width: 100%;
@@ -89,7 +107,7 @@ export default function CommingSoon({ background, content }) {
                                                     <p
                                                         className={`${
                                                             item.commingSoon ? "" : "text-color-grey"
-                                                        } text-size-large `}
+                                                        } text-size-xlarge `}
                                                     >
                                                         {item.h3}
                                                     </p>

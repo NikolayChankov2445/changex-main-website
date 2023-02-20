@@ -1,6 +1,5 @@
 import * as React from "react";
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-
+import { Timeline } from "antd";
 
 export default function Roadmap({ background, roadmapData }) {
     return (
@@ -13,16 +12,14 @@ export default function Roadmap({ background, roadmapData }) {
                             {roadmapData.head}
                         </h3>
                     </div>
-                    <VerticalTimeline
-                        lineColor={'#8366F4'}>
+                    <Timeline mode={"alternate"}>
                         {roadmapData.data.map((step, index) => {
                             return (
-                                <VerticalTimelineElement
-                                    className=""
-                                    contentArrowStyle={{display: 'none'}}
-                                    contentStyle={{ background: '#8366F4', color: '#fff' }}
-                                    date={step.date}
-                                    iconClassName="timeline-icon"
+                                <Timeline.Item
+                                    key={index}
+                                    color={"#8366F4"}
+                                    label={step.date}
+                                    className="roadmap-timeline roadmap-text"
                                 >
                                     <div
                                         id={step.date}
@@ -41,7 +38,7 @@ export default function Roadmap({ background, roadmapData }) {
                                             {step.dates.map((date, index) => {
                                                 return (
                                                     <div key={index} id={date} className="roadmap-date">
-                                                        <h6 className="roadmap-text">{date.date}</h6>
+                                                        <h6 className="heading-style-h6">{date.date}</h6>
                                                         {date.text.map((t, index) => {
                                                             return (
                                                                 <p
@@ -58,9 +55,10 @@ export default function Roadmap({ background, roadmapData }) {
                                             })}
                                         </div>
                                     </div>
-                                </VerticalTimelineElement>
-                            )})}
-                    </VerticalTimeline>
+                                </Timeline.Item>
+                            );
+                        })}
+                    </Timeline>
                 </div>
             </div>
         </section>

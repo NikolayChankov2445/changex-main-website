@@ -12,7 +12,7 @@ import Modal from "react-bootstrap/Modal";
 import styled from "styled-components";
 
 const ImageSocial = styled.img`
-  object-fit: cover !important;
+  object-fit: cover;
 `
 
 export default function Footer() {
@@ -33,18 +33,10 @@ export default function Footer() {
                         <div className="w-layout-grid footer-grid">
                             <div className="copyright">
                                 <div className="text-size-small text-color-darkgrey">
-                                    Copyright © 2023, Olympus Capital JSC.
+                                    Copyright © 2023, Olympus Capital JSC,
                                     <br /> All trademarks and copyrights belong to their
                                     respective owners.
                                 </div>
-                                <a
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    href="https://token.changex.io/"
-                                    className="transparent button portal w-inline-block"
-                                >
-                                    <div>Investor&#x27;s Portal</div>
-                                </a>
                             </div>
                             <div className="button-group footer-group">
                                 {menuItemsFooter.map((menu,index) => {
@@ -62,9 +54,9 @@ export default function Footer() {
                             <div className="button-group footer-group">
                                 {menuItemsFooter2.map((item, index) => {
                                     return (
-                                        item.link === true && item.title ?
+                                        item.link === true ?
                                             <Link
-                                                id={item.id}
+                                                id={item.title}
                                                 key={index}
                                                 target="_blank"
                                                 rel="noreferrer"
@@ -74,7 +66,7 @@ export default function Footer() {
                                                 <div className="text-color-black">{item.title}</div>
                                             </Link>
                                             :
-                                            <a id={`changex_${item.id}`}
+                                            <a id={item.title}
                                                key={index}
                                                target="_blank"
                                                rel="noreferrer"
@@ -84,10 +76,18 @@ export default function Footer() {
                                             </a>
                                     )
                                 })}
+                                <a
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    href="https://token.changex.io/"
+                                    className="transparent button portal w-inline-block"
+                                >
+                                    <div>Investor&#x27;s Portal</div>
+                                </a>
                             </div>
                             <div className="button-group-store-footer centered-items margin-top spread align-left social">
-                                <div
-                                    className="button-store-footer"
+                                <button
+                                    className="button-store-footer background-color-black"
                                 ><a
                                     target="_blank"
                                     rel="noreferrer"
@@ -102,9 +102,9 @@ export default function Footer() {
                                         loading="lazy"
                                     ></img>
                                 </a>
-                                </div>
-                                <div
-                                    className="button-store-footer"
+                                </button>
+                                <button
+                                    className="button-store-footer background-color-black"
                                 ><a
                                     target="_blank"
                                     rel="noreferrer"
@@ -118,7 +118,7 @@ export default function Footer() {
                                         loading="lazy"
                                     ></img>
                                 </a>
-                                </div>
+                                </button>
 
                                 <button
                                     onClick={openModal}

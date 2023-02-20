@@ -26,16 +26,17 @@ export default function SectionCta() {
                                 <h2 className="heading-style-h2 highlight text-color-grey">
                                     Take Control Of Your Money
                                 </h2>
-                                <p className="text-color-grey paragraph24 text-align-left margin-vertical margin-large">
+                                <p className="text-color-grey text-size-xlarge margin-vertical margin-large">
                                     Changex’s non-custodial wallet provides you with a fiat-crypto on-ramp, an ever-growing list of assets, and passive income like never before. Your keys, your crypto - always.
                                 </p>
                             </div>
                             <div className="button-group-hero centered-items margin-top margin-large spread align-left">
-                                <div
+                                <button
                                     className="button-store is-lime-background"
                                 ><a
                                     target="_blank"
                                     rel="noreferrer"
+                                    alt="Changex Apple Store"
                                     href="https://apps.apple.com/bg/app/changex-wallet/id1613309180"
 
                                 >
@@ -45,8 +46,8 @@ export default function SectionCta() {
                                         loading="lazy"
                                     ></img>
                                 </a>
-                                </div>
-                                <div
+                                </button>
+                                <button
                                     className="button-store is-lime-background"
                                 ><a
                                     target="_blank"
@@ -59,7 +60,7 @@ export default function SectionCta() {
                                         loading="lazy"
                                     ></img>
                                 </a>
-                                </div>
+                                </button>
                             </div>
                         </div>
                         <div className="cta-image">

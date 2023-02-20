@@ -11,7 +11,7 @@ export const titleObj = {
     },
     text: "",
     appBtnsVisible: false,
-    buttonUrl: "#",
+    buttonUrl: "",
     scrollBtnText: "",
     backgroundImage: "",
     class: "supportedTokensPage",
@@ -41,30 +41,27 @@ export const textData = {
 
 }
 
+
 export const advantages = [
     {
         src: '/assets/images/card/Mini/2.0/stack.svg',
         text: 'CHANGE has a fixed supply of 425 million tokens that favors growth: every transaction in Changex serves to reduce total supply and protect the price.',
-        title: 'Burn',
-        id: 'burn'
+        title: 'Burn'
     },
     {
         src: '/assets/images/card/Mini/2.0/cashback.svg',
         text: 'Earn on your tokens with staking and power-up your CHANGE: every staked asset in Changex increases your CHANGE rewards. Bonuses stack.',
-        title: 'Earn More',
-        id: 'earn_More'
+        title: 'Earn More'
     },
     {
         src: '/assets/images/card/Mini/2.0/Boost_APY.svg',
         text: 'Stake or simply trade: CHANGE lets you jump between blockchains with ease - Hydra and Ethereum are yours to explore, with BSC and more to come.\n',
-        title: 'Explore',
-        id: 'explore'
+        title: 'Explore'
     },
     {
         src: '/assets/images/card/Mini/2.0/yourMoney.svg',
         text: 'Unlock exclusive app features by holding and/or staking CHANGE in Changex: higher cashback, higher stablecoin APR, and more.\n',
-        title: 'Get Benefits',
-        id: 'get_benefits'
+        title: 'Get Benefits'
     }
 ]
 

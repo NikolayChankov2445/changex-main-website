@@ -5,12 +5,7 @@ import {PrimaryButton} from "../Buttons/Primary";
 
 export default function SectionBank() {
     return (
-        <section
-            data-sal="slide-up"
-            data-sal-duration="400"
-            data-sal-easing="ease-in"
-            id="bank-section"
-            className="section_bank">
+        <section id="bank-section" className="section_bank">
             <div className="padding-global">
                 <div className="container-large">
                     <div>
@@ -23,7 +18,7 @@ export default function SectionBank() {
                                     {bankContent.head2}
                                 </h2>
                                 <div className="spacer-small"></div>
-                                <p className="text-color-darkgrey margin-bottom-small paragraph24 text-align-left margin-bottom">
+                                <p className="text-color-darkgrey margin-bottom-small text-size-medium margin-bottom slide-from-bottom">
                                     {bankContent.paragraph}
                                 </p>
                                 <PrimaryButton text={'Learn More'} url={bankContent.firebasePage} />

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Avatar } from "rsuite";
 
 import LinkedinLogo from "../../../static/assets/images/social/linkedIn.svg";
-import styled from "styled-components";
+import {styled} from "@mui/material/styles";
 
 import Card from "@mui/material/Card";
 import {CardActions, CardHeader, Collapse} from "@mui/material";
@@ -11,33 +11,33 @@ import Typography from "@mui/material/Typography";
 import RemoveIcon from "@mui/icons-material/Remove";
 import ExpandableItem from "../Common/ExpandableItem";
 
-const TypographyTitle = styled(Typography)`
-    font-weight: 600 !important;
-    font-family: var(--font-header) !important;
-    font-size: 22px !important;
-`
+const TypographyTitle = styled(Typography)({
+    fontWeight: 600,
+    fontSize: "22px !important",
+    fontFamily: [
+        'Lexend'
+    ]
+});
 
-const TypographySubTItle = styled(Typography)`
-    background-color: #8366F4;
-    font-family: var(--font-paragraph) !important;
-    border-radius: 5rem;
-    margin-top: 1rem;
-    padding: 5px 10px ;
-    width: fit-content;
-    color: #ffffff
-`
+const TypographySubTItle = styled(Typography)({
+    backgroundColor: '#8366F4',
+    borderRadius: 100,
+    padding: "5px 10px ",
+    width: "fit-content",
+    color: "#ffffff"
+});
 
-const ImageMore = styled('img')`
-    font-size: 25px;
-    color: #f5f5fa;
-    border: none;
+const ImageMore = styled('img')({
+    fontSize: 25,
+    color: '#f5f5fa',
+    border: 'none',
     '&:hover': {
-        outline: none;
-    };
+        outline: "none",
+    },
     '&:focus': {
-        outline: none;
-    };
-`
+        outline: "none",
+    },
+})
 
 
 export default function Team({ titleObj, teamData }) {
@@ -69,7 +69,7 @@ export default function Team({ titleObj, teamData }) {
                                                 } aboutCardWrapper`}
                                             >
                                                 <CardHeader
-                                                    className="card-header"
+                                                    className="cardHeader"
                                                     avatar={
                                                         <Avatar className="teamAvatar" aria-label="avatar">
                                                             <img alt={item.name} src={item.src} />
@@ -78,9 +78,9 @@ export default function Team({ titleObj, teamData }) {
                                                     title={<TypographyTitle>{item.name}</TypographyTitle>}
                                                     titleTypographyProps={{variant:'h5'}}
 
-                                                    subheader={<TypographySubTItle className={`${item.role ? '' : 'hide'} card-role`}>{item.role}</TypographySubTItle>}
+                                                    subheader={<TypographySubTItle className="text-size-small">{item.role}</TypographySubTItle>}
                                                 />
-                                                <CardContent className={`${item.role ? 'cardContent' : 'cardBoard'}`}>
+                                                <CardContent className="cardContent ">
                                                     <Typography
                                                         variant="body2"
                                                         className={`${

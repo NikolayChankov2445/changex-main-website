@@ -47,7 +47,7 @@ const WalletPage = () => {
                     title={"The DeFi Wallet That Changes Everything"}
                     advantages={advantages}
                 />
-                <SwapCrypto titleObj={swapCryptoTitleObj} background={'background-color-off-white'} />
+                <SwapCrypto titleObj={swapCryptoTitleObj} />
                 <SliderSection
                     textData={textData}
                     sliderData={sliderDataWalletPage}

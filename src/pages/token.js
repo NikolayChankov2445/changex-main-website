@@ -40,8 +40,8 @@ export default TokenPage
 
 export const Head = () => (
     <>
-        <Seo  description={heroObj.titleObj.h3}
-              title={heroObj.titleObj.h2}
+        <Seo  description={heroObj.titleObj.head2}
+              title={heroObj.titleObj.head3}
               imageAlt="CHANGE Token"/>
     </>
 )

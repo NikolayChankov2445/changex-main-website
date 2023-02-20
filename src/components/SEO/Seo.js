@@ -2,7 +2,7 @@ import * as React from "react";
 
 const SEO = ({ title, description, imageAlt }) => (
     <>
-        <title>Changex | {title}</title>
+        <title>{title}</title>
         <meta property="og:title" content={title}/>
         <meta name="description" content={description}/>
         <meta property="og:description" content={description}/>

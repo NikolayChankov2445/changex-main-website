@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import styled from "styled-components"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Carousel from "react-multi-carousel";
-
+import "react-multi-carousel/lib/styles.css";
 import { FaAngleRight } from "react-icons/fa";
 
 const CardActionsWrapper = styled.div`
@@ -81,7 +81,7 @@ export default function CardSlider({
                             <div className="card-content">
                                 {item.head && (
                                     <div
-                                        className="card-header heading-style-h5"
+                                        className="card-header"
                                     >
                                         {item.head}
                                     </div>
@@ -95,20 +95,9 @@ export default function CardSlider({
                                 <CardActionsWrapper>
                                     {item.url && (
                                         <div className="card-link">
-                                            {item.route && (
-                                                <button onClick={() => scrollTo(item.url)}>
-                                                    {item.linkText} <FaAngleRight />
-                                                </button>
-                                            )}
-
-                                            {item.route === false && (
-                                                <a
-                                                    href={item.url}
-                                                    target="_blank"
-                                                    rel="noreferrer">
-                                                    {item.linkText} <FaAngleRight />
-                                                </a>
-                                            )}
+                                            <a onClick={() => scrollTo(item.url)}>
+                                                {item.linkText} <FaAngleRight />
+                                            </a>
                                         </div>
                                     )}
                                 </CardActionsWrapper>

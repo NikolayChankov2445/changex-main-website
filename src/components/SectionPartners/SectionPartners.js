@@ -6,8 +6,8 @@ export default function SectionPartners() {
         <section className="section_partners">
             <div className="padding-global">
                 <div className="container-large">
-                    <div className="grid-1">
-                        <h3 className="heading-style-h5 text-color-black margin-bottom margin-medium text-align-center">
+                    <div>
+                        <h3 className="heading-style-h6 text-color-black margin-bottom margin-medium text-align-center">
                             Revolutionizing Personal Finance One Community At A Time.
                         </h3>
                         <div className="logo-group r-marquee">
@@ -17,7 +17,7 @@ export default function SectionPartners() {
                                         <a
                                             key={index}
                                             href={logo.href}
-                                            id={`changex_${logo.id}`}
+                                            id={index.toString()}
                                             className="logo-link w-inline-block"
                                         >
                                             <img
@@ -34,11 +34,7 @@ export default function SectionPartners() {
                             <div className="logos-wrapper r-marquee-wrapper-left">
                                 {logosParners.map((logo, index) => {
                                     return (
-                                        <a
-                                            key={index}
-                                            id={logo.id}
-                                            href={logo.href}
-                                            className="logo-link w-inline-block">
+                                        <a key={index} id={logo.name} href={logo.href} className="logo-link w-inline-block">
                                             <img
                                                 src={logo.src || ''}
                                                 loading="lazy"
